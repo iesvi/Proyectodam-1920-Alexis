@@ -19,12 +19,12 @@ necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
 <ul>
     <li>Conocer los principales componentes en una arquitectura de microservicios...</li>
         <ul>
-        &nbsp; <li>Cloud Config.
-        &nbsp; <li>Service Discovery.
-        &nbsp; <li>Gateway.
+        &nbsp; <li>Cloud Config.</li>
+        &nbsp; <li>Service Discovery.</li>
+        &nbsp; <li>Gateway.</li>
         </ul>
-    <li>Codificación de la aplicación usando el modelo MVC y la arquitectura de microservicios.
-    <li>Despliege de la aplicación.
+    <li>Codificación de la aplicación usando el modelo MVC y la arquitectura de microservicios.</li>
+    <li>Despliege de la aplicación.</li>
 </ul>
 
 </br>
