@@ -4,9 +4,9 @@ El proyecto Organize-Us tratará el desarrollo de una aplicación con solución 
 a la organización de diferentes tipos de actividades permitiendo que varias personas se pongan de acuerdo de la forma más </br>
 rápida y eficiente posible. 
 
-</br>
-</br>
-</br>
+<br>
+<br>
+<br>
 
 ## Objetivo general
 Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando las partes claves </br>
