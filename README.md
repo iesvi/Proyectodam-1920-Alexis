@@ -34,7 +34,7 @@ necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Tecnologías de desarrollo
  
 <ul>
-    <li><b>SaaS</b></li>
+    <li><b>SaaS<b></li>
     
     <li><b>Microservicios</b></li>
     
