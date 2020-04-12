@@ -17,14 +17,13 @@ necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Objetivos específicos
 
 <ul>
-    <li>Conocer los principales componentes en una arquitectura de microservicios...</li>
-        <p>
+    <li>Conocer los principales componentes en una arquitectura de microservicios...
         <ul>
-        &nbsp; <li>Cloud Config.</li>
-        &nbsp; <li>Service Discovery.</li>
-        &nbsp; <li>Gateway.</li>
+        <li>Cloud Config.</li>
+        <li>Service Discovery.</li>
+        <li>Gateway.</li>
         </ul>
-        </p>
+    </li>    
     <li>Codificación de la aplicación usando el modelo MVC y la arquitectura de microservicios.</li>
     <li>Despliege de la aplicación.</li>
 </ul>
