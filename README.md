@@ -31,4 +31,14 @@ necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
 </br>
 </br>
 
-## Tecnologías
+## Tecnologías de desarrollo
+ 
+<ul>
+    <li><b>SaaS</b></li>
+    
+    <li><b>Microservicios</b></li>
+    
+    <li><b>Spring</b></li>
+    
+    <li><b>AWS</b></li>
+</ul>
