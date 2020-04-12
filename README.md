@@ -6,11 +6,13 @@ rápida y eficiente posible.
 
 </br>
 </br>
+</br>
 
 ## Objetivo general
 Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando las partes claves </br>
 necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
 
+</br>
 </br>
 </br>
 
@@ -28,6 +30,7 @@ necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
     <li>Despliege de la aplicación.</li>
 </ul>
 
+</br>
 </br>
 </br>
 
