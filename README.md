@@ -1,11 +1,22 @@
-# <p align="center">ProyectoDam TFG</p>
-<p align="center">Organize-It</p>
+# ProyectoDam: Organize-It App
+
 
 
 Este proyecto final para el grado DAM tratará el desarrollo de una aplicación con solución SaaS, la aplicación a su vez dará solución </br>
 a la organización de diferentes tipos de actividades permitiendo que varias personas se pongan de acuerdo de la forma más </br>
 rápida y eficiente posible. 
 
+<br>
+
+## Índice
+> **[1- Objetivo General.](#1)**
+>
+> **[2- Objetivos especificos.](#2)**
+>
+> **[3- Tecnologías de desarollo.](#3)**
+
+
+<br>
 <br>
 
 ## Objetivo general
