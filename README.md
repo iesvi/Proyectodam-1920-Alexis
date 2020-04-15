@@ -33,7 +33,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <ul>
     <li><b>SaaS:</b> Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible<br>
                 desde cualquier dispositivo. Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores.</li>
-    <li><b>Microservicios</b></li>
+    <li><b>Microservicios:</b></li>
     <li><b>Spring</b></li>
     <li><b>AWS</b></li>
 </ul>
