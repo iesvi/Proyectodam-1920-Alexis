@@ -1,21 +1,21 @@
-# Organize-Us
+# Organize-It
 
-El proyecto Organize-Us tratará el desarrollo de una aplicación con solución SaaS, la aplicación a su vez dará solución </br>
+El proyecto Organize-It tratará el desarrollo de una aplicación con solución SaaS, la aplicación a su vez dará solución </br>
 a la organización de diferentes tipos de actividades permitiendo que varias personas se pongan de acuerdo de la forma más </br>
 rápida y eficiente posible. 
 
 <br>
 
 ## Objetivo general
-Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando las partes claves </br>
-necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
+Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves </br>
+necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 
 ## Objetivos específicos
 
 <ul>
-    <li>Conocer los principales componentes en una arquitectura de microservicios...
+    <li>Conocer los principales componentes en una arquitectura de microservicios.
         <ul>
         <li>Cloud Config.</li>
         <li>Service Discovery.</li>
@@ -31,7 +31,8 @@ necesarias para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Tecnologías de desarrollo
  
 <ul>
-    <li><b>SaaS</b></li>
+    <li><b>SaaS:</b> Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible<br>
+                desde cualquier dispositivo. Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores.</li>
     <li><b>Microservicios</b></li>
     <li><b>Spring</b></li>
     <li><b>AWS</b></li>
