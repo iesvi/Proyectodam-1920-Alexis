@@ -273,6 +273,8 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 	<tr>
   		<td>
 		     <p><b>Alternativas:</b></p>
+		</td>
+		<td>
 		     <p>Ninguna.</p>
 		</td>
  	</tr>
@@ -295,7 +297,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
 	<tr>
 		<td><b>Descripción:</b></td>
-		<td>Un usuario se reistra en el sistema.</td>
+		<td>Un usuario se registra en el sistema.</td>
  	</tr>
  	<tr>
   		<td><b>Precondición:</b></td>
@@ -331,6 +333,143 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 		</td>
 		<td>
 			<p>5. El sistema lanza un mensaje al usuario "El nombre ya está en uso".</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
+
+
+
+### Descripción: Identificarse.
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_6.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario se identifica en el sistema.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>Ninguna.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuaio introduce sus credenciales.</p>
+            <p>2. El sistema comprueba los datos.</p>
+            <p>3. El sistema muestra una pantalla de inicio personalizada con las actividades relacionadas al usuario.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>Se  muestra una pantalla de inicio personalizada con las actividades relacionadas al usuario.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativa 1:</b></p>
+		     <p>El usuario no introduce las credenciales correctamente.</p>
+		</td>
+		<td>
+			<p>4. El sistema lanza un mensaje "Nombre de usuario o contraseña incorrectos."</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
+
+
+
+### Descripción: Proponer detalles extras.
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_7.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario propone detalles extras para una actividad.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>El usuario está identificado en el sistema, apuntado para la actividad a la que va a hacer proposiciones, la organización de la actividad es participativa, y no se ha superado la fécha límite de organización.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuario agrega los detalles extras que desee proponer, según el tipo de actividad configurada. ("Regalo", "Equipos", "Presupuesto general", "Presupuesto por cabeza", etc).</p>
+            <p>2. El usuario confirma las propuestas.</p>
+            <p>3. El sistema añade las propuestas a los detalles extras.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>Se agregan los detalles extras propuestos.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativas:</b></p>
+		</td>
+		<td>
+		     <p>Ninguna.</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
+
+### Descripción: Votar detalles extras.
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_8.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario vota detalles extras para una actividad.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>El usuario está identificado en el sistema, apuntado para la actividad en la que va a votar, la organización de la actividad es participativa, y no se ha superado la fécha límite de organización.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuario vota los detalles extras que desee.</p>
+            <p>2. El usuario confirma los votos.</p>
+            <p>3. El sistema suma los votos.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>Se suman las votaciones realizadas por el usuario.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativas:</b></p>
+		</td>
+		<td>
+		     <p>Ninguna.</p>
 		</td>
  	</tr>
 </table>
