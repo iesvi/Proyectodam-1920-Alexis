@@ -14,6 +14,8 @@ rápida y eficiente posible.
 > **[2- Objetivos especificos.](#2)**
 >
 > **[3- Tecnologías de desarollo.](#3)**
+>
+> **[4- Requisitos funcinoales (Casos de uso).](#4)**
 
 
 <br>
@@ -45,7 +47,8 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 
 
-<a name="3"></a>
+<a name="4"></a>
+
 ## Tecnologías de desarrollo
  
 <ul>
@@ -68,10 +71,82 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 
-##Diagrama de casos de uso.
+## Diagrama de casos de uso.
 
 <br>
-<img src="/img/diagramauso.jpg" height="400" width="600"/>
+<img src="/img/diagramauso.jpg" height="350" width="600"/>
+<br>
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU1.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario Identificado.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario identificado en el sistema crea una nueva actividad de tipo Excursión</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>El usuario está identificado en el sistema.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td> 	<p>1. El usuario configura el tipo de actividad "Quedada", "Deportiva" o"Celebración".</p>
+		     		<p>2. El usuario propone los detalles mínimos necesarios para publicar la actividad ("Lugar", "Fecha y hora", "descripción", "Fecha límite de organización" y otros que dependeran del tipo de actividad).</p>
+				<p>3. El usuario agrega los detalles extras que desee, según el tipo de actividad configurada. ("Regalo", "Equipos", "Presupuesto general", "Presupuesto por cabeza", etc).</p>
+				<p>4. El usuario clasifica la actividad como "pública" o "privada".</p>
+				<p>5. El usuario publica la actividad.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>Se crea una nueva actividad.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativa 1:</b></p>
+		     <p>El usuario no configura los detalles mínimos.</p>
+		</td>
+		<td>
+			<p>4. El usuario no propone ningún detalle mínimo necesario.</p>
+		     	<p>5. El usuario clasifica la actividad como "pública" o "privada".</p>
+			<p>6. El sistema no permite publicar la actividad.</p>
+		</td>
+ 	</tr>
+
+	<tr>
+  		<td>
+		     <p><b>Alternativa 2:</b></p>
+		     <p>El usuario no configura detalles extras.</p>
+		</td>
+		<td>
+			<p>4. El usuario no agrega ninguna opción extra.</p>
+		    <p>5. El usuario clasifica la actividad como "pública" o "privada".</p>
+			<p>6. El usuario publica la actividad.</p>
+		</td>
+ 	</tr>
+
+	<tr>
+  		<td>
+		     <p><b>Alternativa 3:</b></p>
+		     <p>El usuario no publica la actividad.</p>
+		</td>
+		<td>
+			<p>6. El usuario no publica la actividad.</p>
+		</td>
+ 	</tr>
+
+
+</table>
+
+<br>
+<br>
+
 
 
 
