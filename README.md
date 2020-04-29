@@ -510,17 +510,17 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Pantalla de identificación.
 
 <br>
-<img src="/img/login.jpg" height="400" width="890"/>
+<img src="/img/login.jpg" height="400" width="750"/>
 <br>
 
 ## Pantalla de registro.
 
 <br>
-<img src="/img/regist.jpg" height="400" width="800"/>
+<img src="/img/regist.jpg" height="400" width="750"/>
 <br>
 
 ## Pantalla de actividad detallada.
 
 <br>
-<img src="/img/activity.jpg" height="400" width="800"/>
+<img src="/img/activity.jpg" height="400" width="750"/>
 <br>
