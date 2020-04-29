@@ -18,6 +18,8 @@ rápida y eficiente posible.
 > **[4- Requisitos funcionales (Casos de uso).](#4)**
 >
 > **[5- Modelo de objetos de negocio.](#5)**
+>
+> **[6- Interfaz (React).](#6)**
 
 
 
@@ -493,4 +495,32 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <img src="/img/er.jpg" height="350" width="750"/>
 <br>
+<br>
+<br>
+<br>
+
+
+
+<a name="6"></a>
+
+# Interfaz
+
+<br>
+
+## Pantalla de identificación.
+
+<br>
+<img src="/img/login.jpg" height="400" width="600"/>
+<br>
+
+## Pantalla de registro.
+
+<br>
+<img src="/img/regist.jpg" height="400" width="600"/>
+<br>
+
+## Pantalla de actividad detallada.
+
+<br>
+<img src="/img/activity.jpg" height="400" width="600"/>
 <br>
