@@ -76,11 +76,15 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <img src="/img/diagramauso.jpg" height="350" width="600"/>
 <br>
+<br>
+<br>
+
+### Descripción: Crear actividad.
 
 <table>
 	<tr>
 		<td><b>Identificador:</b></td>
-		<td>CU1.1</td>
+		<td>CU_1.1</td>
  	</tr>
 	<tr>
 		<td><b>Actores:</b></td>
@@ -144,7 +148,48 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 
 
+### Descripción: Ver detalles de una actividad.
 
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_4.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario ve los detalles de una actividad.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>Ninguna.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td> 	
+			<p>1. El usuaio clica en la miniatura de una actividad.</p>
+     		<p>2. El sistema muestra los detalles de la actividad en una nueva ventana.</p>
+
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>SSe muestran los detalles de una actividad.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativas:</b></p>
+		<td>
+		     <p>Ninguna.</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
 
 
 
