@@ -56,3 +56,24 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
     <li><b>Spring: </b>Es un framework para java.</li>
     <li><b>AWS: </b>Es una colección de servicios cloud que ofrece amazon.</li>
 </ul>
+
+
+
+<br>
+<br>
+
+<a name="3"></a>
+
+# Analisis de requisitos funcionales.
+
+<br>
+
+##Diagrama de casos de uso.
+
+<br>
+<img src="/img/diagramauso.jpg" height="400" width="600"/>
+
+
+
+
+
