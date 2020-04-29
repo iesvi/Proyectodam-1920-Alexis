@@ -118,7 +118,6 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 			<p>6. El sistema no permite publicar la actividad.</p>
 		</td>
  	</tr>
-
 	<tr>
   		<td>
 		     <p><b>Alternativa 2:</b></p>
@@ -130,7 +129,6 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 			<p>6. El usuario publica la actividad.</p>
 		</td>
  	</tr>
-
 	<tr>
   		<td>
 		     <p><b>Alternativa 3:</b></p>
@@ -140,8 +138,6 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 			<p>6. El usuario no publica la actividad.</p>
 		</td>
  	</tr>
-
-
 </table>
 
 <br>
