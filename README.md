@@ -176,7 +176,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
 	<tr>
   		<td><b>Postcondición:</b></td>
-   		<td>SSe muestran los detalles de una actividad.</td>
+   		<td>Se muestran los detalles de una actividad.</td>
  	</tr>
 	<tr>
   		<td>
@@ -237,3 +237,103 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 
+
+### Descripción: Buscar una actividad.
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_4.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario se une a una actividad.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>El usuario está viendo los detalles de una actividad.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuario clica en "Buscar".</p>
+            <p>2. El sistema muestra una nueva ventana con opciones de filtrado para la búsqueda.</p>
+            <p>3. El usuario configura los filtros de búsqueda.</p>
+            <p>4. El sistema muestra una lista con las actividades que coincidan con los filtros aplicados.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>Se muestra un listado de actividades.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativas:</b></p>
+		     <p>Ninguna.</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
+
+
+### Descripción: Registrarse.
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_5.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario se reistra en el sistema.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>Ninguna.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuaio clica en "Registrarse"</p>
+			<p>2. El sistema abre una nueva ventana y muestra un formulario de registro.</p>
+            <p>3. El usuario rellena el formulario y clica en "Registrarse".</p>
+            <p>4. El sistema comprueba los datos introducidos por el usuario.</p>
+            <p>5. El sistema registra al usuario.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>El usuario es registrado en el sistema.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativa 1:</b></p>
+		     <p>El usuario no rellena el formulario correctamente.</p>
+		</td>
+		<td>
+			<p>5. El sistema lanza un mensaje al usuario "Datos incorrectos".</p>
+		</td>
+ 	</tr>
+ 		<tr>
+  		<td>
+		     <p><b>Alternativa 2:</b></p>
+		     <p>El usuario introduce un nombre en uso</p>
+		</td>
+		<td>
+			<p>5. El sistema lanza un mensaje al usuario "El nombre ya está en uso".</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
