@@ -92,7 +92,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
 	<tr>
 		<td><b>Descripción:</b></td>
-		<td>Un usuario identificado en el sistema crea una nueva actividad de tipo Excursión</td>
+		<td>Un usuario identificado en el sistema crea una nueva actividad.</td>
  	</tr>
  	<tr>
   		<td><b>Precondición:</b></td>
@@ -153,7 +153,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <table>
 	<tr>
 		<td><b>Identificador:</b></td>
-		<td>CU_4.1</td>
+		<td>CU_2.1</td>
  	</tr>
 	<tr>
 		<td><b>Actores:</b></td>
@@ -172,7 +172,6 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 			<td> 	
 			<p>1. El usuaio clica en la miniatura de una actividad.</p>
      		<p>2. El sistema muestra los detalles de la actividad en una nueva ventana.</p>
-
 		</td>
  	</tr>
 	<tr>
@@ -191,5 +190,50 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 
+### Descripción: Unirse a una actividad.
 
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_3.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Usuario.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario se une a una actividad.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>El usuario está viendo los detalles de una actividad.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuario clica en "Apuntarse a la actividad".</p>
+		    <p>2. Si el usuario no está identificado en el sistema, el sistema alerta al usuario para que se identifique.</p>
+			<p> 2.1 El usuario se identifica.</p>
+			<p>3. El usuario se une a la actividad.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>El usuario se une a una actividad.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativa 1:</b></p>
+		     <p>El usuario no se identifica.</p>
+		</td>
+		<td>
+			<p>2.1 El usuario no se identifica.</p>
+		    <p>3. El usuario no se une a la actividad.</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
 
