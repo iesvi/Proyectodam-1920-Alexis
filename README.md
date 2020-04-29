@@ -15,7 +15,10 @@ rápida y eficiente posible.
 >
 > **[3- Tecnologías de desarollo.](#3)**
 >
-> **[4- Requisitos funcinoales (Casos de uso).](#4)**
+> **[4- Requisitos funcionales (Casos de uso).](#4)**
+>
+> **[5- Modelo de objetos de negocio.](#5)**
+
 
 
 <br>
@@ -65,7 +68,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 
-<a name="3"></a>
+<a name="4"></a>
 
 # Analisis de requisitos funcionales.
 
@@ -474,5 +477,20 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
 </table>
 
+<br>
+<br>
+
+
+
+<a name="5"></a>
+
+# Modelo de objetos de negocio.
+
+<br>
+
+## Diagrama de entidad-relación.
+
+<br>
+<img src="/img/er.jpg" height="350" width="600"/>
 <br>
 <br>
