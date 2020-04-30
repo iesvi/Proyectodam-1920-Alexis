@@ -499,6 +499,188 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 
+<h2>Explicación</h2>
+
+<table>
+<tr>
+    <td>
+        <b>Entidad:</b>
+    </td>
+    <td>
+        Actividad
+    </td>
+</tr>
+<tr>
+    <td>
+    </td>
+    <td>
+        Esta entidad representa las actividades que pueden crear y con las que pueden interactuar los usuarios de distintas formas, <br>
+            ya sea apuntandose como partícipes, proponiendo nuevos detalles, votando detalles, viendo sus detalles o buscandolas.
+        <br>
+        <br>
+        Las actividades pueden ser de tres tipos: Deportiva, Quedada o Celebración, cada tipo tiene unos detalles extras diferentes.
+    </td>
+</tr>
+<tr>
+    <td>
+        <b>Atributos:</b>
+    </td>
+    <td>
+    </td>
+<tr>
+    <td>
+        Cod
+    </td>
+    <td>
+        <p>Codigo único que identifica a la actividad.</p>
+    </td>
+</tr>
+    <td>
+        Pública
+    </td>
+    <td>
+        Este atributo será un booleano que nos indicará si la actividad es pública o privada.<br>
+        De forma que si es pública puede ser encontrada mediante búsqueda, y si es privada tan sólo<br>
+        puede ser accesible a través de una invitación.
+    </td>
+</tr>
+<tr>
+    <td>
+        Participativa
+    </td>
+    <td>
+        Este atributo será un booleano que nos indicará si la actividad tiene unos detalles cerrados o por<br>
+        el contrario está abierta a que los participantes propongan detalles como la fecha, el lugar...
+    </td>
+</tr>
+<tr>
+    <td>
+        Fecha
+    </td
+    <td>
+        Fecha en la que se realizará la actividad.
+    </td>
+</tr>
+<tr>
+    <td>
+        Hora
+    </td
+    <td>
+        Hora en la que se realizará la actividad.
+    </td>
+</tr>
+<tr>
+    <td>
+        Fecha Límite
+    </td
+    <td>
+        En caso de que la actividad sea participativa, este atributo establece la fecha límite para<br>
+        realizar propuestas y concretar los detalles.
+    </td>
+</tr>
+<tr>
+    <td>
+        Presupuesto G(General).<br>
+        Presupuesto PC(Por cabeza).<br>
+        Regalo.<br>
+        Deporte.<br>
+        NºEquipos<br>
+    </td
+    <td>
+        Estos atributos son detalles extras que se pueden agregar a la entidad actividad dependiendo del tipo<br>
+        del que esta sea.
+    </td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<table>
+<tr>
+    <td>
+        <b>Entidad:</b>
+    </td>
+    <td>
+        Usuario
+    </td>
+</tr>
+<tr>
+    <td>
+    </td>
+    <td>
+        Esta entidad representa a los usuarios que podran acceder al sistema.
+    </td>
+</tr>
+<tr>
+    <td>
+        <b>Atributos:</b>
+    </td>
+    <td>
+    </td>
+<tr>
+    <td>
+        Nombre
+    </td>
+    <td>
+        <p>Nombre único que identifica al usuario.</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Contraseña
+    </td>
+    <td>
+        <p>Código alfanumérico que permite el acceso a una cuenta de usuario.</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        E-mail
+    </td>
+    <td>
+        <p>Dirección de correo electrónico de un usuario.</p>
+    </td>
+</tr>
+</table>
+
+<br>
+<br>
+
+
+<table>
+<tr>
+    <td>
+        <b>Relación:</b>
+    </td>
+    <td>
+        Participan
+    </td>
+</tr>
+<tr>
+    <td>
+    </td>
+    <td>
+        Los usuarios pueden participar en ninguna o varias actividades, de la misma forma que en una actividad pueden<br>
+        participar uno (creador) o varios usuarios.
+    </td>
+</tr>
+<tr>
+    <td>
+        <b>Atributos:</b>
+    </td>
+    <td>
+    </td>
+<tr>
+    <td>
+        Es creador
+    </td>
+    <td>
+        Este atributo define cual es el usuario creador de la actividad.
+    </td>
+</tr>
+</table>
+
 
 
 <a name="6"></a>
