@@ -585,7 +585,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
         Regalo.<br>
         Deporte.<br>
         NºEquipos<br>
-    </td
+    </td>
     <td>
         Estos atributos son detalles extras que se pueden agregar a la entidad actividad dependiendo del tipo<br>
         del que esta sea.
