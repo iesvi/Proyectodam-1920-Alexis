@@ -556,7 +556,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <tr>
     <td>
         Fecha
-    </td
+    </td>
     <td>
         Fecha en la que se realizará la actividad.
     </td>
@@ -564,7 +564,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <tr>
     <td>
         Hora
-    </td
+    </td>
     <td>
         Hora en la que se realizará la actividad.
     </td>
@@ -572,7 +572,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <tr>
     <td>
         Fecha Límite
-    </td
+    </td>
     <td>
         En caso de que la actividad sea participativa, este atributo establece la fecha límite para<br>
         realizar propuestas y concretar los detalles.
