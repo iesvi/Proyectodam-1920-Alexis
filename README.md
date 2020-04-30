@@ -681,7 +681,11 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 </tr>
 </table>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <a name="6"></a>
 
