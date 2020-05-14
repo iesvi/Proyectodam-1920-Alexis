@@ -12,7 +12,7 @@ public interface LoginApi {
 /*
     1- Registar nuevo usuario.
     2- Comprobar credenciales.
-    3-
+    3- Obtener usuario a partir de email. (lo consume microservicio activity)
 */
 
 @PostMapping(EndPointUris.LOGIN)
