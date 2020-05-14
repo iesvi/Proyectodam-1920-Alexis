@@ -43,7 +43,7 @@ ResponseEntity newActivity (@RequestBody(required = false)  Activity activity);
 
 
 @GetMapping(EndPointUris.GET)
-ResponseEntity getActivity (@PathVariable("title") String title);
+ResponseEntity<List<Activity>> getActivity (@PathVariable("title") String title);
 
 @PostMapping(EndPointUris.ADDUser)
 ResponseEntity addUser(@RequestBody String id, @RequestBody UserDTO userDTO);
