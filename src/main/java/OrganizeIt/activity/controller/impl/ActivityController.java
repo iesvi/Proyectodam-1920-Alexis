@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -19,8 +22,19 @@ public class ActivityController implements ActivityApi {
     @Autowired
     private ActivityService as;
 
+
+    @Override
+    public ResponseEntity newActivity(String id, String titulo, String descripcion, boolean participativa, boolean publica, Fecha[] fechas, Lugar[] lugar, Date fechaLimite, UserDTO[] usuarios) {
+        System.out.println(titulo);
+        Activity activity = Activity.builder().id(id).titulo(titulo).descripcion(descripcion).fechaLimite(fechaLimite).fechas(Arrays.asList(fechas))
+                .lugar(Arrays.asList(lugar)).participativa(participativa).publica(publica).usuarios(Arrays.asList(usuarios)).build();
+
+        return as.newActivity(activity);
+    }
+
     @Override
     public ResponseEntity newActivity(Activity activity) {
+        System.out.println(activity.getTitulo());
         return as.newActivity(activity);
     }
 

@@ -3,6 +3,7 @@ package OrganizeIt.activity.model;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Objects;
 
@@ -13,7 +14,7 @@ import java.util.Objects;
 @AllArgsConstructor
 
 @Document
-public class Lugar {
+public class Lugar implements Serializable {
     private String place;
     private int votes;
 

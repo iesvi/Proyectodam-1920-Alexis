@@ -10,7 +10,10 @@ import OrganizeIt.activity.model.dto.UserDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
+import java.util.List;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping(EndPointUris.API+EndPointUris.V1)
 public interface ActivityApi {
 
@@ -22,8 +25,22 @@ public interface ActivityApi {
     5- Votar detalles
 */
 
+@PostMapping(path = EndPointUris.GET)
+ResponseEntity newActivity(
+        @RequestParam("id") String id,
+        @RequestParam("titulo") String titulo,
+        @RequestParam("descripcion") String descripcion,
+        @RequestParam("participativa") boolean participativa,
+        @RequestParam("publica") boolean publica,
+        @RequestParam("fechas") Fecha[] fechas,
+        @RequestParam("lugar") Lugar[] lugar,
+        @RequestParam("fechaLimite") Date fechaLimite,
+        @RequestParam("usuarios") UserDTO[] usuarios
+);
+
 @PostMapping(EndPointUris.NEW)
-ResponseEntity newActivity(@RequestBody Activity activity);
+ResponseEntity newActivity (@RequestBody(required = false)  Activity activity);
+
 
 @GetMapping(EndPointUris.GET)
 ResponseEntity getActivity (@PathVariable("title") String title);
