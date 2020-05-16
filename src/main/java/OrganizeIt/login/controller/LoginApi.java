@@ -14,11 +14,12 @@ public interface LoginApi {
     2- Comprobar credenciales.
     3- Obtener usuario a partir de email. (lo consume microservicio activity)
 */
-
-@PostMapping(EndPointUris.LOGIN)
+@CrossOrigin(origins = "*", methods= {RequestMethod.POST} )
+@PostMapping(value = EndPointUris.LOGIN, consumes = {"multipart/form-data" })
 ResponseEntity validateUser(@RequestBody User user);
 
-@PostMapping(EndPointUris.REGIST)
+@CrossOrigin(origins = "*", methods= {RequestMethod.POST})
+@PostMapping(value = EndPointUris.REGIST, consumes = {"multipart/form-data" })
 ResponseEntity registUser(@RequestBody User user);
 
 
