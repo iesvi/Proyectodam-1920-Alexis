@@ -1,4 +1,4 @@
-package main.java.OrganizeIt.login.model.dto;
+package OrganizeIt.login.model.dto;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -11,6 +11,5 @@ import org.springframework.stereotype.Service;
 @Setter
 
 public class UserDTO {
-    String name;
     String email;
 }

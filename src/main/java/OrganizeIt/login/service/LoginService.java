@@ -9,5 +9,6 @@ import java.util.List;
 
 public interface LoginService {
     ResponseEntity validateUser(User user);
-    ResponseEntity registUser(User user);
+    ResponseEntity<String> registUser(User user);
+    ResponseEntity<User> findUserByEmail(UserDTO userDTO);
 }

@@ -2,9 +2,12 @@ package OrganizeIt.login.controller.impl;
 
 import OrganizeIt.login.controller.LoginApi;
 import OrganizeIt.login.model.User;
+import OrganizeIt.login.model.dto.UserDTO;
 import OrganizeIt.login.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,6 +24,11 @@ public class LoginController implements LoginApi {
     @Override
     public ResponseEntity registUser(User user){
         return ls.registUser(user);
+    }
+
+    @Override
+    public ResponseEntity<User> findUserByEmail(UserDTO userDTO) {
+        return ls.findUserByEmail(userDTO);
     }
 
 }
