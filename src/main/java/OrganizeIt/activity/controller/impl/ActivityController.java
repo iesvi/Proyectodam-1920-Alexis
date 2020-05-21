@@ -4,18 +4,29 @@ import OrganizeIt.activity.controller.ActivityApi;
 import OrganizeIt.activity.model.Activity;
 import OrganizeIt.activity.model.Fecha;
 import OrganizeIt.activity.model.Lugar;
+import OrganizeIt.activity.model.dto.ActivityDTO;
 import OrganizeIt.activity.model.dto.FechaDTO;
 import OrganizeIt.activity.model.dto.LugarDTO;
 import OrganizeIt.activity.model.dto.UserDTO;
 import OrganizeIt.activity.service.ActivityService;
+import OrganizeIt.activity.service.util.Converter;
+import org.apache.commons.io.FileUtils;
+import org.bson.BsonBinarySubType;
+import org.bson.types.Binary;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.Part;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 @RestController
 public class ActivityController implements ActivityApi {
@@ -23,20 +34,35 @@ public class ActivityController implements ActivityApi {
     private ActivityService as;
 
 
-    @Override
-    public ResponseEntity newActivity(String id, String titulo, String descripcion, boolean participativa, boolean publica, Fecha[] fechas, Lugar[] lugar, Date fechaLimite, UserDTO[] usuarios) {
-        System.out.println(titulo);
-        Activity activity = Activity.builder().id(id).titulo(titulo).descripcion(descripcion).fechaLimite(fechaLimite).fechas(Arrays.asList(fechas))
-                .lugar(Arrays.asList(lugar)).participativa(participativa).publica(publica).usuarios(Arrays.asList(usuarios)).build();
+   /* @Override
+    public ResponseEntity<String> uploadImage(MultipartFile imageData) {
+        try {
+            return as.uploadImage(imageData);
+        } catch (IOException e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }*/
 
-        return as.newActivity(activity);
+    @Override
+    public ResponseEntity<String> uploadImage(HttpServletRequest request) throws IOException, ServletException {
+
+        try {
+            Collection<Part> parts = request.getParts();
+            parts.forEach(e -> System.out.println(e.getName()));
+            ArrayList<Part> partsList = new ArrayList<Part>(parts);
+            return as.uploadImage(partsList.get(0));
+        } catch (Exception e){
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @Override
-    public ResponseEntity newActivity(Activity activity) {
-        System.out.println(activity.getTitulo());
-        return as.newActivity(activity);
+    public ResponseEntity newActivity(ActivityDTO activityDTO) {
+        return as.newActivity(Converter.converActivityDtoToActivity(activityDTO));
     }
+
 
     @Override
     public ResponseEntity<List<Activity>> getActivity(String title) {
@@ -56,6 +82,16 @@ public class ActivityController implements ActivityApi {
     @Override
     public ResponseEntity addDetail(FechaDTO fechaDTO) {
         return as.addDetail(fechaDTO);
+    }
+
+    @Override
+    public ResponseEntity<List<Activity>> getActivityList() {
+        return as.getActivityList();
+    }
+
+    @Override
+    public ResponseEntity<Activity> getActivityById(String id) {
+        return as.getActivityById(id);
     }
 
 }

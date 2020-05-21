@@ -12,11 +12,10 @@ import java.util.Objects;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-
 @Document
 public class Lugar implements Serializable {
     private String place;
-    private int votes;
+    private int votos;
 
     @Override
     public boolean equals(Object o) {
