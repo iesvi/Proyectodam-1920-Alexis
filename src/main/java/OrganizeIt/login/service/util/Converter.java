@@ -9,4 +9,9 @@ import java.util.stream.Collectors;
 @Component
 public class Converter {
 
+
+    public static UserDTO converterUserToUserDTO(User user){
+        return UserDTO.builder().email(user.getEmail()).name(user.getName()).build();
+    }
+
 }

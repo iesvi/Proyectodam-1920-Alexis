@@ -10,5 +10,4 @@ import java.util.List;
 public interface LoginRepository extends MongoRepository<User, String> {
     User findUserByName(String name);
     User findUserByEmail(String email);
-
 }

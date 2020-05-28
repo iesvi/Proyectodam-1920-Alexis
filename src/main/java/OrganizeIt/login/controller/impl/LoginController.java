@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 public class LoginController implements LoginApi {
     @Autowired
@@ -27,8 +30,27 @@ public class LoginController implements LoginApi {
     }
 
     @Override
-    public ResponseEntity<User> findUserByEmail(UserDTO userDTO) {
-        return ls.findUserByEmail(userDTO);
+    public ResponseEntity<List<UserDTO>> findUsersByEmail(List<String> usersEmails) {
+
+
+        if(!usersEmails.isEmpty()){
+            return ls.findUsersByEmail(usersEmails);
+        }
+        else{
+            System.out.println("entra");
+            List<UserDTO> tmp = new ArrayList<>();
+            return ResponseEntity.ok(tmp);
+        }
+
     }
 
+    @Override
+    public ResponseEntity<UserDTO> getUserByName(String nombre) {
+        return ls.getUserByName(nombre);
+    }
+
+    @Override
+    public ResponseEntity userExists(String nombre) {
+        return ls.userExists(nombre);
+    }
 }
