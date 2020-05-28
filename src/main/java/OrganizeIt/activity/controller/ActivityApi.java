@@ -2,31 +2,14 @@ package OrganizeIt.activity.controller;
 
 import OrganizeIt.activity.model.Activity;
 import OrganizeIt.activity.controller.constant.EndPointUris;
-import OrganizeIt.activity.model.Fecha;
-import OrganizeIt.activity.model.Lugar;
-import OrganizeIt.activity.model.dto.ActivityDTO;
-import OrganizeIt.activity.model.dto.FechaDTO;
-import OrganizeIt.activity.model.dto.LugarDTO;
-import OrganizeIt.activity.model.dto.UserDTO;
-import org.springframework.context.annotation.Bean;
-import org.springframework.http.MediaType;
+import OrganizeIt.activity.model.dto.*;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.MultipartResolver;
 
-import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import javax.xml.ws.Response;
 import java.io.IOException;
-import java.net.UnknownHostException;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping(EndPointUris.API+EndPointUris.V1)
@@ -37,38 +20,73 @@ public interface ActivityApi {
     2- Subir imagen.
     3- Buscar actividad por nombre.
     4- Agregar nuevo asistente.
-    5- Proponer detalles.
-    6- Votar detalles
-    7- Obener lista de actividades.
-    8- Obtener actividad por id.
+    5- Eliminar asistente.
+    6- Proponer detalles.
+    7- Votar detalles
+    8- Obener lista de actividades.
+    9- Obtener actividad por id.
 */
 
 
-@PostMapping(value=EndPointUris.IMG, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-ResponseEntity<String> uploadImage(HttpServletRequest request) throws IOException, ServletException;
+@PostMapping(value=EndPointUris.IMG, consumes = "multipart/form-data")
+ResponseEntity<String> uploadImage(@RequestPart(value = "file") MultipartFile request) throws IOException, ServletException;
 
 
 @PostMapping(EndPointUris.NEW)
-ResponseEntity newActivity (@RequestBody(required = false) ActivityDTO activityDTO);
+ResponseEntity newActivity (@RequestBody(required = false) ActivityDTOStringed activityDTOStringed);
 
 @GetMapping(EndPointUris.GET)
 ResponseEntity<List<Activity>> getActivity (@PathVariable("title") String title);
 
 @PostMapping(EndPointUris.ADDUser)
-ResponseEntity addUser(@RequestBody String id, @RequestBody UserDTO userDTO);
+ResponseEntity addUser(@RequestBody String data);
+
+
+@PostMapping(EndPointUris.RemoveUser)
+ResponseEntity removeUser (@RequestBody String data);
+
 
 @PostMapping(EndPointUris.ADDDate)
-ResponseEntity addDetail(@RequestBody FechaDTO fechaDTO);
+ResponseEntity addDetail(@RequestBody FechaDTO[] fechasDTOList);
 
 
 //Agregar el id de la actividad
 @PostMapping(EndPointUris.ADDPlace)
-ResponseEntity addDetail(@RequestBody LugarDTO lugarDTO);
+ResponseEntity addDetail(@RequestBody LugarDTO[] lugaresDTOList);
 
 @GetMapping()
 ResponseEntity<List<Activity>> getActivityList();
 
 
 @GetMapping(EndPointUris.GetById)
-ResponseEntity<Activity> getActivityById (@PathVariable("id") String id);
+ResponseEntity<ActivityDTO> getActivityById (@PathVariable("id") String id);
+
+
+
+
+@GetMapping(EndPointUris.DenieInvitation)
+ResponseEntity removeUserInvitationByName (@PathVariable("id") String id, @PathVariable("name") String name);
+
+
+@GetMapping(EndPointUris.DeleteById)
+ResponseEntity removeById (@PathVariable("id") String id);
+
+
+@GetMapping(EndPointUris.GetByUserInvited)
+ResponseEntity<List<Activity>> getActivityByUserIsInvited (@PathVariable("email") String email);
+
+@GetMapping(EndPointUris.GetByUserAssists)
+ResponseEntity<List<Activity>> getActivityByUserAssist (@PathVariable("email") String email);
+
+@GetMapping(EndPointUris.GetByUserIsCreator)
+ResponseEntity<List<Activity>> getActivityByUserIsCreator (@PathVariable("email") String email);
+
+
+
+
+
+
+
+
+
 }

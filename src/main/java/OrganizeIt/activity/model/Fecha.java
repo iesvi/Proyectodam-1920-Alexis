@@ -25,13 +25,15 @@ public class Fecha implements Serializable {
     private int votes;
 
 
-    public Fecha (String s, int votes){
+    public Fecha (String s){
         String newS = (s.substring(0,s.indexOf('+'))+"+00");
 
-        System.out.println(newS);
-
         this.date = new Date(newS.trim());
-        this.votes = votes;
+        this.votes = 1;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return this.date.equals(((Fecha)obj).getDate());
+    }
 }

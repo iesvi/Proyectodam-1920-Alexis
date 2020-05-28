@@ -2,29 +2,14 @@ package OrganizeIt.activity.controller.impl;
 
 import OrganizeIt.activity.controller.ActivityApi;
 import OrganizeIt.activity.model.Activity;
-import OrganizeIt.activity.model.Fecha;
-import OrganizeIt.activity.model.Lugar;
-import OrganizeIt.activity.model.dto.ActivityDTO;
-import OrganizeIt.activity.model.dto.FechaDTO;
-import OrganizeIt.activity.model.dto.LugarDTO;
-import OrganizeIt.activity.model.dto.UserDTO;
+import OrganizeIt.activity.model.dto.*;
 import OrganizeIt.activity.service.ActivityService;
 import OrganizeIt.activity.service.util.Converter;
-import org.apache.commons.io.FileUtils;
-import org.bson.BsonBinarySubType;
-import org.bson.types.Binary;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.Part;
-import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
@@ -34,33 +19,18 @@ public class ActivityController implements ActivityApi {
     private ActivityService as;
 
 
-   /* @Override
+    @Override
     public ResponseEntity<String> uploadImage(MultipartFile imageData) {
         try {
             return as.uploadImage(imageData);
         } catch (IOException e) {
             return ResponseEntity.badRequest().build();
         }
-    }*/
-
-    @Override
-    public ResponseEntity<String> uploadImage(HttpServletRequest request) throws IOException, ServletException {
-
-        try {
-            Collection<Part> parts = request.getParts();
-            parts.forEach(e -> System.out.println(e.getName()));
-            ArrayList<Part> partsList = new ArrayList<Part>(parts);
-            return as.uploadImage(partsList.get(0));
-        } catch (Exception e){
-            e.printStackTrace();
-            System.out.println(e.getMessage());
-            return ResponseEntity.badRequest().build();
-        }
     }
 
     @Override
-    public ResponseEntity newActivity(ActivityDTO activityDTO) {
-        return as.newActivity(Converter.converActivityDtoToActivity(activityDTO));
+    public ResponseEntity newActivity(ActivityDTOStringed activityDTOStringed) {
+        return as.newActivity(Converter.converActivityDtoStringedToActivity(activityDTOStringed));
     }
 
 
@@ -70,18 +40,23 @@ public class ActivityController implements ActivityApi {
     }
 
     @Override
-    public ResponseEntity addUser(String id, UserDTO userDTO) {
-        return as.addUser(userDTO,id);
+    public ResponseEntity addUser(String data) {
+        return as.addUser(data);
     }
 
     @Override
-    public ResponseEntity addDetail(LugarDTO lugarDTO) {
-        return as.addDetail(lugarDTO);
+    public ResponseEntity removeUser(String data) {
+        return as.removeUser(data);
     }
 
     @Override
-    public ResponseEntity addDetail(FechaDTO fechaDTO) {
-        return as.addDetail(fechaDTO);
+    public ResponseEntity addDetail(LugarDTO[] lugaresDTOList) {
+        return as.addDetail(lugaresDTOList);
+    }
+
+    @Override
+    public ResponseEntity addDetail(FechaDTO[] fechasDTO) {
+        return as.addDetail(fechasDTO);
     }
 
     @Override
@@ -90,8 +65,34 @@ public class ActivityController implements ActivityApi {
     }
 
     @Override
-    public ResponseEntity<Activity> getActivityById(String id) {
+    public ResponseEntity<ActivityDTO> getActivityById(String id) {
         return as.getActivityById(id);
+    }
+
+    @Override
+    public ResponseEntity removeUserInvitationByName(String id, String name) {
+        return as.removeUserInvitationByName(id,name);
+    }
+
+    @Override
+    public ResponseEntity removeById(String id) {
+        return as.removeById(id);
+    }
+
+
+    @Override
+    public ResponseEntity<List<Activity>> getActivityByUserIsInvited(String email) {
+        return as.findByUserIsIvited(email);
+    }
+
+    @Override
+    public ResponseEntity<List<Activity>> getActivityByUserAssist(String email) {
+        return as.findByUserAsisst(email);
+    }
+
+    @Override
+    public ResponseEntity<List<Activity>> getActivityByUserIsCreator(String email) {
+        return as.findByUserIsCreator(email);
     }
 
 }

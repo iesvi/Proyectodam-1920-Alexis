@@ -4,9 +4,7 @@ import OrganizeIt.activity.model.Activity;
 import OrganizeIt.activity.model.Fecha;
 import OrganizeIt.activity.model.Image;
 import OrganizeIt.activity.model.Lugar;
-import OrganizeIt.activity.model.dto.FechaDTO;
-import OrganizeIt.activity.model.dto.LugarDTO;
-import OrganizeIt.activity.model.dto.UserDTO;
+import OrganizeIt.activity.model.dto.*;
 import OrganizeIt.activity.repository.ActiviyRepository;
 import OrganizeIt.activity.repository.ImageRepository;
 import OrganizeIt.activity.service.ActivityService;
@@ -19,20 +17,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
-import sun.nio.ch.IOUtil;
-import com.mongodb.client.model.Aggregates;
+
 import javax.servlet.http.Part;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.lang.reflect.Array;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-
-import static com.mongodb.client.model.Aggregates.sample;
+import java.util.Objects;
 
 @Service
 public class ActivityServiceImpl implements ActivityService {
@@ -49,23 +42,12 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public ResponseEntity newActivity(Activity activity) {
-        Activity activityTpm = activity;
-            if (activity.getLugar() == null){
-            activity.setLugar(new ArrayList<>());
-        }
-
-        if (activity.getFechas() == null){
-            activity.setFechas(new ArrayList<>());
-        }
-
         return ResponseEntity.ok(activiyRepository.insert(activity));
     }
 
     @Override
-    public ResponseEntity<String> uploadImage(Part imageFile) throws IOException {
+    public ResponseEntity<String> uploadImage(MultipartFile imageFile) throws IOException {
         Image image = new Image();
-        //Path path = Paths.get(imageFile.toURI());
-        //byte[] x = Files.readAllBytes();
         image.setFile(new Binary(BsonBinarySubType.BINARY, IOUtils.toByteArray(imageFile.getInputStream())));
         return ResponseEntity.ok(imageRepository.insert(image).getId());
 
@@ -73,54 +55,97 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public ResponseEntity<List<Activity>> getActivity(String title) {
-
-
         return ResponseEntity.ok(activiyRepository.findActivityByTituloLike(title));
     }
 
     @Override
-    public ResponseEntity addUser(UserDTO userDTO, String id) {
-        Activity tmpActivity = activiyRepository.findById(id).get();
-        tmpActivity.getUsuarios().add(userDTO);
-        activiyRepository.save(tmpActivity);
+    public ResponseEntity addUser(String dataRequest) {
 
-        return ResponseEntity.ok().build();
+        try{
+            String data = URLDecoder.decode(dataRequest,"UTF-8");
+            String userEmail = data.substring(0,data.indexOf(","));
+            String id = data.substring(data.indexOf(",")+1, data.length()-1);
+
+
+            Activity tmpActivity = activiyRepository.findById(id).get();
+            tmpActivity.getUsuarios().add(userEmail);
+            activiyRepository.save(tmpActivity);
+
+            return ResponseEntity.ok().build();
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @Override
-    public ResponseEntity addDetail(FechaDTO fechaDTO) {
-        Fecha fecha = Converter.convertFechaDtoToFecha(fechaDTO);
-        String id = fechaDTO.getActivityId();
+    public ResponseEntity removeUser(String dataRequest) {
 
-        Activity tmpActivity = activiyRepository.findById(id).get();
 
-        if (tmpActivity.getFechas().contains(fecha)){
+        try{
+            String data = URLDecoder.decode(dataRequest,"UTF-8");
+            String userEmail = data.substring(0,data.indexOf(","));
+            String id = data.substring(data.indexOf(",")+1, data.length()-1);
 
-            int idx = tmpActivity.getFechas().indexOf(fecha);
 
-            tmpActivity.getFechas().get(idx).setVotes(
+            Activity tmpActivity = activiyRepository.findById(id).get();
+            tmpActivity.getUsuarios().remove(userEmail);
+            activiyRepository.save(tmpActivity);
 
-                    tmpActivity.getFechas().get(idx).getVotes()+fecha.getVotes());
-        }else   tmpActivity.getFechas().add(fecha);
+            return ResponseEntity.ok().build();
 
-        return ResponseEntity.ok().build();
+        }catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @Override
-    public ResponseEntity addDetail(LugarDTO lugarDTO) {
+    public ResponseEntity addDetail(FechaDTO[] fechasDTO) {
+        List<FechaDTO> fechaDTO = Arrays.asList(fechasDTO);
 
-        Lugar lugar = Converter.convertLugarDtoToLugar(lugarDTO);
-        String id = lugarDTO.getActivityId();
 
+        String id = fechaDTO.get(0).getActivityId();
         Activity tmpActivity = activiyRepository.findById(id).get();
 
-        if (tmpActivity.getLugar().contains(lugar)){
-            int idx = tmpActivity.getLugar().indexOf(lugar);
+        for(FechaDTO f : fechaDTO) {
+            Fecha fecha = Converter.convertFechaDtoToFecha(f);
 
-            tmpActivity.getLugar().get(idx).setVotos(
-                    tmpActivity.getLugar().get(idx).getVotos()+lugar.getVotos());
+            if (tmpActivity.getFechas().contains(fecha)){
+                int idx = tmpActivity.getFechas().indexOf(fecha);
+                tmpActivity.getFechas().get(idx).setVotes(
+                        tmpActivity.getFechas().get(idx).getVotes()+1);
 
-        }else   tmpActivity.getLugar().add(lugar);
+            }else   tmpActivity.getFechas().add(fecha);
+     }
+
+        tmpActivity.getUsuariosParticipanFecha().add(fechaDTO.get(0).getUserEmail());
+
+            return ResponseEntity.ok(activiyRepository.save(tmpActivity));
+    }
+
+    @Override
+    public ResponseEntity addDetail(LugarDTO[] lugaresDTOList) {
+        List<LugarDTO> lugares = Arrays.asList(lugaresDTOList);
+
+        String id = lugares.get(0).getActivityId();
+        Activity tmpActivity = activiyRepository.findById(id).get();
+
+        if(!lugares.get(0).getPlace().isEmpty()) {
+            for (LugarDTO l : lugares) {
+                Lugar lugar = Converter.convertLugarDtoToLugar(l);
+
+                if (tmpActivity.getLugar().contains(lugar)) {
+                    int idx = tmpActivity.getLugar().indexOf(lugar);
+
+                    tmpActivity.getLugar().get(idx).setVotos(
+                            tmpActivity.getLugar().get(idx).getVotos() + lugar.getVotos());
+                } else tmpActivity.getLugar().add(lugar);
+            }
+        }
+
+        tmpActivity.getUsuariosParticipanLugar().add(lugares.get(0).getUserEmail());
 
         activiyRepository.save(tmpActivity);
         return ResponseEntity.ok().build();
@@ -128,12 +153,53 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public ResponseEntity<List<Activity>> getActivityList() {
-        return ResponseEntity.ok(activiyRepository.findAll());
+
+        return ResponseEntity.ok(activiyRepository.findByPublicaIsTrue());
     }
 
     @Override
-    public ResponseEntity<Activity> getActivityById(String id) {
-        return ResponseEntity.ok(activiyRepository.findById(id).get());
+    public ResponseEntity<ActivityDTO> getActivityById(String id) {
+
+        Activity activityTmp = activiyRepository.findById(id).get();
+
+        List<UserDTO> usersDTO = Arrays.asList(
+            Objects.requireNonNull(
+                restTemplate.postForEntity(
+                "http://localhost:8082/api/v1/user", activityTmp.getUsuarios(), UserDTO[].class).getBody()));
+
+        return ResponseEntity.ok(Converter.convertActivityToActivityDTO(activityTmp,usersDTO));
+    }
+
+    @Override
+    public ResponseEntity removeById(String id) {
+
+        Activity tmp = activiyRepository.findById(id).get();
+        activiyRepository.delete(tmp);
+        return ResponseEntity.ok().build();
+    }
+
+    @Override
+    public ResponseEntity<List<Activity>> findByUserAsisst(String email) {
+       return ResponseEntity.ok(activiyRepository.findByUsuariosContaining(email));
+    }
+
+    @Override
+    public ResponseEntity<List<Activity>> findByUserIsCreator(String email) {
+        return ResponseEntity.ok(activiyRepository.findActivityByCreador(email));
+    }
+
+    @Override
+    public ResponseEntity<List<Activity>> findByUserIsIvited(String email) {
+        return ResponseEntity.ok(activiyRepository.findByUsuariosInvitadosContaining(email));
+    }
+
+    @Override
+    public ResponseEntity removeUserInvitationByName(String id, String name) {
+        Activity tmp = activiyRepository.findById(id).get();
+
+        tmp.getUsuariosInvitados().remove(name);
+        activiyRepository.save(tmp);
+        return ResponseEntity.ok().build();
     }
 
 

@@ -1,12 +1,14 @@
-package OrganizeIt.activity.model;
+package OrganizeIt.activity.model.dto;
 
-import OrganizeIt.activity.model.dto.UserDTO;
+import OrganizeIt.activity.model.Fecha;
+import OrganizeIt.activity.model.Lugar;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,24 +20,21 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 
-//Clase que se guarda en la base de datos
+//Clase que envía el cliente (react)
 
-@Document
-public class Activity implements Serializable {
-    @Id
+public class ActivityDTOStringed implements Serializable {
+
     private String id;
     private String titulo;
     private String descripcion;
     private String creador;
     private boolean participativa;
     private boolean publica;
-    private List<Fecha> fechas;
-    private List<Lugar> lugar;
+    private String fechas;
+    private String lugar;
+    private String usuarios;
+    private String usuariosInvitados;
     private String imgId;
-    private List<String> usuarios;
-    private List<String> usuariosInvitados;
-    private List<String> usuariosParticipanLugar;
-    private List<String> usuariosParticipanFecha;
-    private Date fechaLimite;
+    private String fechaLimite;
 
 }

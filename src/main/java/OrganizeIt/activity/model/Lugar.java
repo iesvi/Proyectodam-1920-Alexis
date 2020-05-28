@@ -19,7 +19,6 @@ public class Lugar implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this.place.equals( ((Lugar)o).getPlace() ) ) return true;
-        else return false;
+        return place.equals( ((Lugar)o).getPlace() );
     }
 }
