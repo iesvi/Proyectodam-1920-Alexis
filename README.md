@@ -752,5 +752,5 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Pantalla de actividad detallada.
 
 <br>
-<img src="/img/activity.jpg" height="400" width="750"/>
+<img src="/img/activity.jpg" height="650" width="600"/>
 <br>
