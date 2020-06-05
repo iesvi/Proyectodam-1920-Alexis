@@ -551,9 +551,6 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
     <td>
         Esta entidad representa las actividades que pueden crear y con las que pueden interactuar los usuarios de distintas formas, <br>
             ya sea apuntandose como partícipes, proponiendo nuevos detalles, votando detalles, viendo sus detalles o buscandolas.
-        <br>
-        <br>
-        Las actividades pueden ser de tres tipos: Deportiva, Quedada o Celebración, cada tipo tiene unos detalles extras diferentes.
     </td>
 </tr>
 <tr>
@@ -598,10 +595,10 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 </tr>
 <tr>
     <td>
-        Hora
+        Finalizada
     </td>
     <td>
-        Hora en la que se realizará la actividad.
+        Booleano que indica si la actividad a alcanzado la fecha límite marcada.
     </td>
 </tr>
 <tr>
@@ -615,15 +612,10 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 </tr>
 <tr>
     <td>
-        Presupuesto G(General).<br>
-        Presupuesto PC(Por cabeza).<br>
-        Regalo.<br>
-        Deporte.<br>
-        NºEquipos<br>
+        Descripción
     </td>
     <td>
-        Estos atributos son detalles extras que se pueden agregar a la entidad actividad dependiendo del tipo<br>
-        del que esta sea.
+        Texto que define el objetivo de la actividad.
     </td>
 </tr>
 </table>
@@ -689,15 +681,15 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
         <b>Relación:</b>
     </td>
     <td>
-        Participan
+        Asisten
     </td>
 </tr>
 <tr>
     <td>
     </td>
     <td>
-        Los usuarios pueden participar en ninguna o varias actividades, de la misma forma que en una actividad pueden<br>
-        participar uno (creador) o varios usuarios.
+        Los usuarios pueden asistir a ninguna o varias actividades, de la misma forma que a una actividad pueden<br>
+        asistir uno (creador) o varios usuarios.
     </td>
 </tr>
 <tr>
@@ -714,6 +706,23 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
         Este atributo define cual es el usuario creador de la actividad.
     </td>
 </tr>
+<tr>
+    <td>
+        Participa lugar
+    </td>
+    <td>
+        Este atributo indica si el usuario ha participado en la actividad votando o añadiendo lugares.
+    </td>
+</tr>
+<tr>
+    <td>
+        Participa fecha
+    </td>
+    <td>
+        Este atributo indica si el usuario ha participado en la actividad votando o añadiendo fechas.
+    </td>
+</tr>
+
 </table>
 
 <br>
