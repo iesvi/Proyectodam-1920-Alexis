@@ -105,11 +105,10 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	 	</tr>
 	<tr>
   		<td><b>Secuencia normal:</b></td>
-			<td> 	<p>1. El usuario configura el tipo de actividad "Quedada", "Deportiva" o"Celebración".</p>
-		     		<p>2. El usuario propone los detalles mínimos necesarios para publicar la actividad ("Lugar", "Fecha y hora", "descripción", "Fecha límite de organización" y otros que dependeran del tipo de actividad).</p>
-				<p>3. El usuario agrega los detalles extras que desee, según el tipo de actividad configurada. ("Regalo", "Equipos", "Presupuesto general", "Presupuesto por cabeza", etc).</p>
-				<p>4. El usuario clasifica la actividad como "pública" o "privada".</p>
-				<p>5. El usuario publica la actividad.</p>
+			<td><p>1. El usuario rellena los datos mínimos necesarios ("Una fecha y un lugar, fecha límite, descripción, título, participativa y pública")".</p>
+				<p>2. El usuario agreaga las fechas y lugares extras que desee (hasta un máximo de 5 posibilidades si la actividad se marca como 
+				<br>no participativa, y un máximo de 2 en caso de ser marcada como participativa).</p>
+				<p>3. El usuario publica la actividad.</p>
 		</td>
  	</tr>
 	<tr>
@@ -122,9 +121,9 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 		     <p>El usuario no configura los detalles mínimos.</p>
 		</td>
 		<td>
-			<p>4. El usuario no propone ningún detalle mínimo necesario.</p>
-		     	<p>5. El usuario clasifica la actividad como "pública" o "privada".</p>
-			<p>6. El sistema no permite publicar la actividad.</p>
+			<p>1. El usuario no propone ningún detalle mínimo necesario.</p>
+		    <p>2. El usuario agrega los datos extras que desee.</p>
+			<p>3. El sistema no permite publicar la actividad.</p>
 		</td>
  	</tr>
 	<tr>
@@ -133,9 +132,8 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 		     <p>El usuario no configura detalles extras.</p>
 		</td>
 		<td>
-			<p>4. El usuario no agrega ninguna opción extra.</p>
-		    <p>5. El usuario clasifica la actividad como "pública" o "privada".</p>
-			<p>6. El usuario publica la actividad.</p>
+			<p>2. El usuario no agrega ninguna opción extra.</p>
+			<p>3. El usuario publica la actividad.</p>
 		</td>
  	</tr>
 	<tr>
@@ -144,7 +142,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 		     <p>El usuario no publica la actividad.</p>
 		</td>
 		<td>
-			<p>6. El usuario no publica la actividad.</p>
+			<p>3. El usuario no publica la actividad.</p>
 		</td>
  	</tr>
 </table>
@@ -212,15 +210,13 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
  	<tr>
   		<td><b>Precondición:</b></td>
-   		<td>El usuario está viendo los detalles de una actividad.</td>
+   		<td>El usuario está viendo los detalles de una actividad y está identificado en el sistema.</td>
  	 	</tr>
 	<tr>
   		<td><b>Secuencia normal:</b></td>
 			<td>
-			<p>1. El usuario clica en "Apuntarse a la actividad".</p>
-		    <p>2. Si el usuario no está identificado en el sistema, el sistema alerta al usuario para que se identifique.</p>
-			<p> 2.1 El usuario se identifica.</p>
-			<p>3. El usuario se une a la actividad.</p>
+			<p>1. El usuario clica en "Asistiré".</p>
+			<p>2. El usuario se une a la actividad.</p>
 		</td>
  	</tr>
 	<tr>
@@ -229,12 +225,10 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
 	<tr>
   		<td>
-		     <p><b>Alternativa 1:</b></p>
-		     <p>El usuario no se identifica.</p>
+		     <p><b>Alternativas:</b></p>
 		</td>
 		<td>
-			<p>2.1 El usuario no se identifica.</p>
-		    <p>3. El usuario no se une a la actividad.</p>
+			<p>Ninguna.</p>
 		</td>
  	</tr>
 </table>
@@ -256,19 +250,17 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
 	<tr>
 		<td><b>Descripción:</b></td>
-		<td>Un usuario se une a una actividad.</td>
+		<td>El usuario busca actividades por título.</td>
  	</tr>
  	<tr>
   		<td><b>Precondición:</b></td>
-   		<td>El usuario está viendo los detalles de una actividad.</td>
+   		<td>Ninguna.</td>
  	 	</tr>
 	<tr>
   		<td><b>Secuencia normal:</b></td>
 			<td>
-			<p>1. El usuario clica en "Buscar".</p>
-            <p>2. El sistema muestra una nueva ventana con opciones de filtrado para la búsqueda.</p>
-            <p>3. El usuario configura los filtros de búsqueda.</p>
-            <p>4. El sistema muestra una lista con las actividades que coincidan con los filtros aplicados.</p>
+			<p>1. El usuario introduce en la barra de búsqueda el título que desea buscar".</p>
+            <p>2. El sistema muestra una lista con las actividades que tengan un título que contenga el texto buscado.</p>
 		</td>
  	</tr>
 	<tr>
@@ -416,9 +408,9 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 	<tr>
   		<td><b>Secuencia normal:</b></td>
 			<td>
-			<p>1. El usuario agrega los detalles extras que desee proponer, según el tipo de actividad configurada. ("Regalo", "Equipos", "Presupuesto general", "Presupuesto por cabeza", etc).</p>
+			<p>1. El usuario agrega las fechas y lugares extra que desee (un máximo de 2 fechas y 2 lugares).</p>
             <p>2. El usuario confirma las propuestas.</p>
-            <p>3. El sistema añade las propuestas a los detalles extras.</p>
+            <p>3. El sistema añade las propuestas a la actividad.</p>
 		</td>
  	</tr>
 	<tr>
@@ -455,7 +447,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
  	</tr>
  	<tr>
   		<td><b>Precondición:</b></td>
-   		<td>El usuario está identificado en el sistema, apuntado para la actividad en la que va a votar, la organización de la actividad es participativa, y no se ha superado la fécha límite de organización.</td>
+   		<td>El usuario está identificado en el sistema, apuntado para la actividad en la que va a votar y no se ha superado la fécha límite de organización.</td>
  	 	</tr>
 	<tr>
   		<td><b>Secuencia normal:</b></td>
@@ -482,6 +474,49 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 
+### Descripción: Creador borra una actividad.
+
+<table>
+	<tr>
+		<td><b>Identificador:</b></td>
+		<td>CU_9.1</td>
+ 	</tr>
+	<tr>
+		<td><b>Actores:</b></td>
+		<td>Creador.</td>
+ 	</tr>
+	<tr>
+		<td><b>Descripción:</b></td>
+		<td>Un usuario creador de una actividad, la cancela.</td>
+ 	</tr>
+ 	<tr>
+  		<td><b>Precondición:</b></td>
+   		<td>El usuario está identificado en el sistema y es el creador de la actividad.</td>
+ 	 	</tr>
+	<tr>
+  		<td><b>Secuencia normal:</b></td>
+			<td>
+			<p>1. El usuario está viendo una actividad.</p>
+            <p>2. El pulsa en "Cancelar actividad".</p>
+            <p>3. El sistema borra la actividad.</p>
+		</td>
+ 	</tr>
+	<tr>
+  		<td><b>Postcondición:</b></td>
+   		<td>Se elimina la actividad de la base de datos.</td>
+ 	</tr>
+	<tr>
+  		<td>
+		     <p><b>Alternativas:</b></p>
+		</td>
+		<td>
+		     <p>Ninguna.</p>
+		</td>
+ 	</tr>
+</table>
+
+<br>
+<br>
 
 
 <a name="5"></a>
