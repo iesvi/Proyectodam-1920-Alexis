@@ -528,7 +528,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Diagrama de entidad-relación.
 
 <br>
-<img src="/img/er.jpg" height="350" width="750"/>
+<img src="/img/er.jpg" height="150" width="750"/>
 <br>
 <br>
 <br>
