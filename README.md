@@ -79,7 +79,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Diagrama de casos de uso.
 
 <br>
-<img src="/img/diagramauso.jpg" height="350" width="600"/>
+<img src="/img/diagramauso.jpg" height="600" width="800"/>
 <br>
 <br>
 <br>
