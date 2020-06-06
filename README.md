@@ -9,32 +9,39 @@ rápida y eficiente posible.
 <br>
 
 ## Índice
-> **[1- Objetivo General.](#1)**
+> **[1- Introducción.](#1)**
 >
-> **[2- Objetivos especificos.](#2)**
+> **[ 1.2- Objetivo General.](#1.2)**
 >
-> **[3- Tecnologías de desarollo.](#3)**
+> **[ 1.3- Objetivos especificos.](#1.3)**
 >
-> **[4- Requisitos funcionales (Casos de uso).](#4)**
+> **[2- Tecnologías de desarollo.](#3)**
 >
-> **[5- Modelo de objetos de negocio.](#5)**
+> **[3- Requisitos funcionales (Casos de uso).](#4)**
 >
-> **[6- Interfaz (React).](#6)**
-
+> **[4- Modelo de objetos de negocio.](#5)**
+>
+> **[5- Interfaz (React).](#6)**
 
 
 <br>
 <br>
-
 
 <a name="1"></a>
+# Introducción
+
+
+
+
+
+<a name="1.2"></a>
 ## Objetivo general
 Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves </br>
 necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 
-<a name="2"></a>
+<a name="1.3"></a>
 ## Objetivos específicos
 
 <ul>
@@ -46,13 +53,13 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
         </ul>
     </li>    
     <li>Codificación de la aplicación usando el modelo MVC y la arquitectura de microservicios.</li>
-    <li>Despliege de la aplicación.</li>
+    <li>Despliege de la aplicación en aws.</li>
 </ul>
 
 <br>
 
 
-<a name="4"></a>
+<a name="3"></a>
 
 ## Tecnologías de desarrollo
  
@@ -63,6 +70,9 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
                 distintos servicios independientes que se despliegan según se vayan necesitando.</li>
     <li><b>Spring: </b>Es un framework para java.</li>
     <li><b>AWS: </b>Es una colección de servicios cloud que ofrece amazon.</li>
+    <li><b>MongoDB: </b></li>Base de datos no relacional.
+    <li><b>React: </b></li>
+    <li><b>Node.JS: </b>Gestor de paquetes</li>
 </ul>
 
 
@@ -753,4 +763,11 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 <img src="/img/activity.jpg" height="650" width="600"/>
+<br>
+
+
+## Pantalla para la creación de una actividad.
+
+<br>
+<img src="/img/newactivity.jpg" height="650" width="600"/>
 <br>
