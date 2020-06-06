@@ -769,5 +769,5 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Pantalla para la creación de una actividad.
 
 <br>
-<img src="/img/newactivity.jpg" height="650" width="600"/>
+<img src="/img/newactivity.jpg" height="650" width="700"/>
 <br>
