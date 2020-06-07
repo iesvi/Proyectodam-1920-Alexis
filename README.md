@@ -98,7 +98,7 @@ Es un modelo de distribución de software en el que se ofrece al usuario un serv
 Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
 
 </br>
-<img src="/img/piramidecloud.png" height="600" width="800"/>
+<img src="/img/piramidecloud.png" height="182" width="213"/>
 
 
 
