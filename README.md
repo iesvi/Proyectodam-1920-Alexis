@@ -94,16 +94,23 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 
 
+<img src="/img/piramidecloud.png" height="211" width="212" align="right"/>
+
 ### SaaS
 </br>
+Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos servicios han
+cambiado la forma de entender tanto la gestión como el acceso a los recursos informáticos, pues con ellos hemos dejado atrás un modelo
+modelo en el que la única manera de obtener estos recursos era adquiriendolos fisicamente y hacerse cargo de su instalación y mantenimiento
+y mantenimiento.<br><br>
+
+Con la aparición de los <b>cloud services</b> el escenario a dado un giro al consumo bajo demanda dónde los recursos <br>
+son consumidos como servicios. El usuario final se desentiende totalmente del mantenimiento y se limíta al uso y consumo,<br>
+volviendose algo intangible para el usuario, que no conoce, ni necesita conocer, la localización física de estos recursos
+(si fuese hardware), o la máquina en la que se está ejecutando (si fuese software).<br>
 
 
-Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible desde cualquier dispositivo.<br>
-Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
-
-
-<img src="/img/piramidecloud.png" height="182" width="213" align="right"/>
-   
+<b>SaaS</b> por tanto es un modelo de distribución de software en el que se ofrece al usuario un servicio disponible desde cualquier dispositivo,
+pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este.
 
 
 
