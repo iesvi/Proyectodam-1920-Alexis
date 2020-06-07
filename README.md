@@ -66,6 +66,7 @@ por funcionalidades que constituirán los distintos microservicios.
 Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves </br>
 necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
+
 <br>
 
 <a name="1.2"></a>
@@ -93,17 +94,16 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 
 
-
-<img align="right" src="/img/piramidecloud.png" height="182" width="213"/>
-
-
 ### SaaS
 </br>
 
 
-Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible desde cualquier dispositivo.</br>
+Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible desde cualquier dispositivo.<br>
 Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
 
+
+<img src="/img/piramidecloud.png" height="182" width="213" align="right"/>
+   
 
 
 
