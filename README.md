@@ -90,24 +90,46 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <a name="2"></a>
 ## Tecnologías de desarrollo
- 
+
+
+
+### SaaS
+Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible desde cualquier dispositivo.</br>
+Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
+
+</br>
+<img src="/img/piramidecloud.png" height="600" width="800"/>
+
+
+
+</br>
+</br>
+
 <ul>
-    <li><b>SaaS: </b>
-        Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible<br>
-        desde cualquier dispositivo. Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
-    </li>
-    
-    <li><b>Microservicios: </b>
+    <li>
+        <b>Microservicios: </b>
         Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
         distintos servicios independientes que se despliegan según se vayan necesitando.
     </li>
-                
-                
-    <li><b>Spring: </b>Es un framework para java.</li>
-    <li><b>AWS: </b>Es una colección de servicios cloud que ofrece amazon.</li>
-    <li><b>MongoDB: </b>Base de datos no relacional.</li>
-    <li><b>React: </b></li>
-    <li><b>Node.JS: </b>Gestor de paquetes</li>
+    <li>
+        <b>Spring: </b>
+        Es un framework para java.
+    </li>
+    <li>
+        <b>AWS: </b>
+        Es una colección de servicios cloud que ofrece amazon.
+    </li>
+    <li>
+        <b>MongoDB: </b>
+        Base de datos no relacional.
+    </li>
+    <li>
+        <b>React: </b>
+    </li>
+    <li>
+        <b>Node.JS: </b>
+        Gestor de paquetes
+    </li>
 </ul>
 
 
