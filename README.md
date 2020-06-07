@@ -2,27 +2,49 @@
 
 
 
-Este proyecto final para el grado DAM tratará el desarrollo de una aplicación con solución SaaS, la aplicación a su vez dará solución </br>
-a la organización de diferentes tipos de actividades permitiendo que varias personas se pongan de acuerdo de la forma más </br>
-rápida y eficiente posible. 
 
 <br>
 
 ## Índice
 > **[1- Introducción.](#1)**
 >
-> **[ 1.2- Objetivo General.](#1.2)**
+> **[ 1.1- Objetivo General.](#1.1)**
 >
-> **[ 1.3- Objetivos especificos.](#1.3)**
+> **[ 1.2- Objetivos especificos.](#1.2)**
 >
-> **[2- Tecnologías de desarollo.](#3)**
+> **[2- Tecnologías de desarollo.](#2)**
 >
-> **[3- Requisitos funcionales (Casos de uso).](#4)**
+> **[3- Entorno de desarrollo.](#3)**
 >
-> **[4- Modelo de objetos de negocio.](#5)**
+> **[4- Despliegue de la aplicación.](#4)**
 >
-> **[5- Interfaz (React).](#6)**
-
+> **[5- Análisis de la aplicación.](#5)**
+>
+> **[ 5.1- Requisitos funcionales.](#5.1)**
+>
+> **[  5.1.2- Diagrama de casos de uso.](#5.1.2)**
+>
+> **[  5.1.3- Descripción de casos de uso.](#5.1.3)**
+>
+> **[ 5.2- Diagrama de clases.](#5.2)**
+>
+> **[ 6- Diseño de la aplicación.](#6)**
+>
+> **[ 6.1- Modelo de objetos de negocio.](#6.1)**
+>
+> **[7- Codificación del proyecto.](#7)**
+>
+> **[8- Pruebas.](#8)**
+>
+> **[9- Detalles técnicos.](#9)**
+>
+> **[10- Problemas durante el desarrollo.](#10)**
+>
+> **[11- Mejoras posibles.](#11)**
+>
+> **[12- Conclusiones.](#12)**
+>
+> **[13- Bibliografia/Webgrafía.](#13)**
 
 <br>
 <br>
@@ -31,43 +53,54 @@ rápida y eficiente posible.
 # Introducción
 
 
+Este proyecto final para el grado DAM tratará el desarrollo de una aplicación con solución SaaS, la aplicación a su vez dará solución </br>
+a la organización de actividades permitiendo que varias personas se pongan de acuerdo de la forma más rápida y eficiente posible. 
+</br>
+Para el desarrollo del proyecto se utilizará una arquitectura basada en microservicios, siendo que la lógica de la aplicación será dividida</br>
+por funcionalidades que constituirán los distintos microservicios.
 
 
 
-<a name="1.2"></a>
+<a name="1.1"></a>
 ## Objetivo general
 Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves </br>
 necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 
-<a name="1.3"></a>
+<a name="1.2"></a>
 ## Objetivos específicos
 
 <ul>
     <li>Conocer los principales componentes en una arquitectura de microservicios.
         <ul>
+        <li>Microservicio</li>
         <li>Cloud Config.</li>
         <li>Service Discovery.</li>
         <li>Gateway.</li>
         </ul>
     </li>    
     <li>Codificación de la aplicación usando el modelo MVC y la arquitectura de microservicios.</li>
+    <li>Desarrolo de una interfaz usando la biblioteca React</li>
     <li>Despliege de la aplicación en aws.</li>
 </ul>
 
 <br>
 
 
-<a name="3"></a>
-
+<a name="2"></a>
 ## Tecnologías de desarrollo
  
 <ul>
-    <li><b>SaaS: </b>Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible<br>
-                desde cualquier dispositivo. Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores.</li>
-    <li><b>Microservicios: </b>Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
-                distintos servicios independientes que se despliegan según se vayan necesitando.</li>
+    <li><b>SaaS: </b>
+        Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible<br>
+        desde cualquier dispositivo. Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
+    </li>
+    
+    <li><b>Microservicios: </b>
+        Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
+        distintos servicios independientes que se despliegan según se vayan necesitando.</li>
+                
     <li><b>Spring: </b>Es un framework para java.</li>
     <li><b>AWS: </b>Es una colección de servicios cloud que ofrece amazon.</li>
     <li><b>MongoDB: </b></li>Base de datos no relacional.
@@ -80,12 +113,33 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 
-<a name="4"></a>
+<a name="3"></a>
+# Entorno de desarrollo.
 
-# Analisis de requisitos funcionales.
+
+
 
 <br>
+<br>
 
+<a name="4"></a>
+# Despliegue de la aplicación.
+
+
+
+
+
+<a name="5"></a>
+# Análisis de la aplicación.
+
+
+
+<a name="5.1"></a>
+# Requisitos funcionales.
+
+
+
+<a name="5.1.1"></a>
 ## Diagrama de casos de uso.
 
 <br>
@@ -93,6 +147,11 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <br>
 <br>
+
+
+<a name="5.1.2"></a>
+## Descripción de casos de uso.
+
 
 ### Descripción: Crear actividad.
 
@@ -529,13 +588,28 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 
 
-<a name="5"></a>
 
-# Modelo de objetos de negocio.
+<a name="5.2"></a>
+# Modelo de objeto de negocios.
+
+
+
+<a name="5.2"></a>
+# Diagrama de clases.
+
+
 
 <br>
 
-## Diagrama de entidad-relación.
+
+<a name="6"></a>
+# Diseño de la aplicación
+
+<a name="6.1"></a>
+## Modelo de objetos de negocio.
+
+
+### Diagrama de entidad-relación.
 
 <br>
 <img src="/img/er.jpg" height="180" width="750"/>
@@ -743,6 +817,12 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 <a name="6"></a>
 
+
+
+<a name="7"></a>
+# Codificación del proyecto.
+
+
 # Interfaz
 
 <br>
@@ -771,3 +851,29 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 <br>
 <img src="/img/newactivity.jpg" height="623" width="992"/>
 <br>
+
+
+
+
+
+<a name="8"></a>
+# Pruebas.
+
+
+<a name="9"></a>
+# Detalles técnicos.
+
+<a name="10"></a>
+# Problemas durante el desarrollo.
+
+
+
+<a name="11"></a>
+# Mejoras posibles.
+
+<a name="12"></a>
+# Conclusiones..
+
+<a name="13"></a>
+# Bibliografia/Webgrafía.
+
