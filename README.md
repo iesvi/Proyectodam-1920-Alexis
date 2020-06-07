@@ -93,12 +93,17 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 
 
+
+<img align="right" src="/img/piramidecloud.png" height="182" width="213"/>
+
+
 ### SaaS
+</br>
+
+
 Es un modelo de distribución de software en el que se ofrece al usuario un servicio accesible desde cualquier dispositivo.</br>
 Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
 
-</br>
-<img src="/img/piramidecloud.png" height="182" width="213"/>
 
 
 
