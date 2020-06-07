@@ -97,7 +97,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
         desde cualquier dispositivo. Esto se consigue alojando todo el soporte lógico y datos del cliente en servidores en la nube.
     </li>
     
-    <li><b>Microservicios: </b>
+    <li> <b>Microservicios: </b>
         Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
         distintos servicios independientes que se despliegan según se vayan necesitando.
     </li>
