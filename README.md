@@ -99,11 +99,12 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
     
     <li><b>Microservicios: </b>
         Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
-        distintos servicios independientes que se despliegan según se vayan necesitando.</li>
+        distintos servicios independientes que se despliegan según se vayan necesitando.
+    </li>
                 
     <li><b>Spring: </b>Es un framework para java.</li>
     <li><b>AWS: </b>Es una colección de servicios cloud que ofrece amazon.</li>
-    <li><b>MongoDB: </b></li>Base de datos no relacional.
+    <li><b>MongoDB: </b>Base de datos no relacional.</li>
     <li><b>React: </b></li>
     <li><b>Node.JS: </b>Gestor de paquetes</li>
 </ul>
