@@ -94,7 +94,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 
 
-<img src="/img/piramidecloud.png" height="211" width="212" align="right"/>
+<img src="/img/piramidecloud.png" height="216" width="217" align="right"/>
 
 ### SaaS
 </br>
