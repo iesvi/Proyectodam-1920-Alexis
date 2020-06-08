@@ -2,6 +2,15 @@
 
 
 ### Modelo de objetos de negocio.
+<br>
+<img src="/img/modeloobjetos.jpg" height="180" width="750"/>
+<br>
+<br>
+
+
+
+
+
 
 ### Diagrama de clases
 
