@@ -198,9 +198,10 @@ Spring es un framework para java que ofrece herramientas con las que podremos co
 <br>
 
 
+<img src="/img/mongodb.png" height="261" width="350" align="right"/>
+
 ## MongoDB:
   
-<img src="/img/mongodb.png" height="261" width="350" align="right"/>
 MongoDB es una base de datos no relacional, y será la utilizada para almacenar los datos de la aplicación.
 
 
