@@ -3,7 +3,7 @@
 Tal y como se detalla en el apartado ***tecnologías a desarrollar***, el proyecto tiene como uno de sus objetivos realizar el
 despliegue de la aplicación haciendo uso de los **amazon web services**, y es en este documento donde veremos como se ha llevado
 a cabo ese proceso.
-
+<br>
 
 
 ## Despliegue de los microservicios
@@ -83,3 +83,11 @@ npm start</code>
 
 
 ## Despliegue de MongoDB
+
+Por último para el despliegue de MongoDB en aws se puede utilizar una de las instancias desarrolladas por la comunidad, a la que sólo habría que
+configurar los puertos de entrada/salida.
+
+<br>
+<img src="/img/awsmongodb.jpg" height="301" width="1122" alt="AwsIps" />
+<br>
+<br>
