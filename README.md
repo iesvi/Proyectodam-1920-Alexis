@@ -235,11 +235,17 @@ Es una colección de servicios cloud que ofrece amazon, y será donde se realiza
 ## Node.Js:
 Gestor de paquetes
 
-
-
-
 <br>
 <br>
+
+
+### A continuación un diagrama en el que se muestra cómo se organizará la aplicación usando todas las tecnologías mencionadas.
+
+<img src="/img/arquitectura.png" height="110" width="100" align="right"/>
+
+
+
+
 
 <a name="3"></a>
 # Entorno de desarrollo.
