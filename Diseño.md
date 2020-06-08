@@ -21,7 +21,7 @@
 <br>
 <br>
 
-<h2>Explicación</h2>
+## Explicación
 
 <table>
 <tr>
