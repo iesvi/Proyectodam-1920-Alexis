@@ -94,6 +94,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 
 
 <img src="/img/piramidecloud.png" height="261" width="278" align="right"/>
+
 ### SaaS
 </br>
 Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos servicios han
@@ -111,20 +112,33 @@ de estos recursos (si fuese hardware), o la máquina en la que se está ejecutan
 pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este.
 
 
-</br>
-</br>
+<br>
+<br>
+<br>
+<br>
 
 
 
-
-
-
-<img src="/img/microservices.png" height="261" width="278" align="left"/>
 
 ### Microservicios:
 
-        Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
-        distintos servicios independientes que se despliegan según se vayan necesitando.
+<img src="/img/microservices.png" height="261" width="350" align="left"/>
+
+Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
+    distintos servicios independientes que se despliegan según se vayan necesitando.
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
 
 <ul>
     <li>
