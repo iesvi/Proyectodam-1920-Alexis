@@ -3,7 +3,7 @@
 
 ### Modelo de objetos de negocio.
 <br>
-<img src="/img/modeloobjetos.jpg" height="180" width="750"/>
+<img src="/img/modeloobjetos.jpg" height="518" width="1061"/>
 <br>
 <br>
 
@@ -24,7 +24,7 @@
 ## Diagrama de entidad-relación.
 
 <br>
-<img src="/img/er.jpg" height="180" width="750"/>
+<img src="/img/er.jpg" height="186" width="822"/>
 <br>
 <br>
 
