@@ -22,7 +22,7 @@
 >
 > **[6- Diseño de la aplicación.](./diseño/Diseño.md)**
 >
-> **[7- Codificación del proyecto.](#7)**
+> **[7- Codificación del proyecto.](./codificacion/Codificacion.md)**
 >
 > **[8- Pruebas.](#8)**
 >
