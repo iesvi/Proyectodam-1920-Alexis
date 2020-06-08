@@ -12,7 +12,7 @@
 <br>
 <br>
 
-### Diagrama de entidad-relación.
+## Diagrama de entidad-relación.
 
 <br>
 <img src="/img/er.jpg" height="180" width="750"/>
