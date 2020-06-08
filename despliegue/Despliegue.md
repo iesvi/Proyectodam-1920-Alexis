@@ -92,6 +92,6 @@ Por último para el despliegue de MongoDB en aws se puede utilizar una de las in
 configurar los puertos de entrada/salida.
 
 <br>
-<img src="./img/awsmongodb.jpg" height="398" width="1305" alt="AwsMongodb" />
+<img src="./img/awsmongodb.jpg" height="398" width="1307" alt="AwsMongodb" />
 <br>
 <br>
