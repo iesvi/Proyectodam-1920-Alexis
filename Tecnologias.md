@@ -1,5 +1,4 @@
-<a name="2"></a>
-## Tecnologías de desarrollo
+### Tecnologías de desarrollo
 
 *A continuación se describen las tecnologías que han sido usadas para el desarrollo y despliegue de la aplicación.*
 
