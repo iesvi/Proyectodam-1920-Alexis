@@ -91,12 +91,17 @@ necesarios para llegar a desplegar una<br>  aplicación basada en esta arquite
 <a name="2"></a>
 ## Tecnologías de desarrollo
 
+*A continuación se describen las tecnologías que han sido usadas para el desarrollo y despliegue de la aplicación.*
 
-<img src="/img/piramidecloud.png" height="261" width="278" align="right"/>
+<br>
 <br>
 
 
-- ### SaaS
+
+
+## SaaS
+
+<img src="/img/piramidecloud.png" height="261" width="278" align="right"/>
  
 Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos <br>
  servicios han cambiado la forma de entender tanto la gestión como el acceso a los recursos informáticos, pues con<br>
@@ -115,16 +120,15 @@ Con la aparición de los <b>cloud services</b> el escenario a dado un giro al co
  cualquier dispositivo, pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este.
 
 
+
+
 <br>
 <br>
-<br>
-<br>
 
 
 
 
-- ### Microservicios:
-
+## Microservicios:
 
 
 Es una arquitectura para el desarrollo del software en la que una aplicación es formada por distintos servicios
@@ -137,14 +141,16 @@ A la hora de desplegar una arquitectura de estas características, surgen cierta
 descentralizada de esta. Para dar solución a estos problemas, surgen los siguientes componentes o servicios, que
 deberemos de añadir a nuestra aplicación:
 
-<img src="/img/microservices.png" height="261" width="350" align="left"/>
 
-  - **Cloud Config:**
+  - Cloud Config:
     <br>
         Este servicio nos permitirá centralizar la configuración de todos los servicios en un único repositorio, de esta<br> 
          forma nuestra aplicación será facilmente parametrizable e incluso podremos realizar cambios en caliente.<br>
 
-  - **Service Discovery**: 
+<img src="/img/microservices.png" height="261" width="350" align="left"/>
+
+
+  - Service Discovery: 
     <br>
         La arquitectura de microservicios se basa en que cada servicio consuma de otros microservicios, cada uno<br>
          con un número n de instancias desplegadas. Esto significa que un microservicio no puede tener configurado<br>
@@ -155,29 +161,44 @@ deberemos de añadir a nuestra aplicación:
         Para solucionar este problema se usa el Service Discovery, este servidor almacena las direcciones de cada<br>
          instancia conforme se van desplegando y registra el id del servicio al que pertenecen. De esta forma, cada<br>
          microservicio sólo necesita conocer los id de los microservicios que vaya a consumir y la dirección del<br>
-                        service discovery, cuando vayan a realizar una comunicación con otro servicio, preguntarán al<br>
-                        service discovery por la dirección de *x* id y este les devolverá una dirección que en ese<br>
-                        momento esté siendo usada por el servicio en cuestión.
+         service discovery, cuando vayan a realizar una comunicación con otro servicio, preguntarán al<br>
+         service discovery por la dirección de *x* id y este les devolverá una dirección que en ese<br>
+         momento esté siendo usada por el servicio en cuestión.
         
-  - **Gateway:**
+  - Gateway:
     <br>
         Con este definiremos un único punto de entrada a nuestra aplicación, que se encargará de enrutar<br>
          las peticiones externas hacia el microservicio pertinente y de devolver las respuestas.
 
 
 
+<br>
+<br>
 
 
-<br>
-<br>
-<br>
-<br>
+
+## Spring:
+
+<img src="/img/spring.png" height="261" width="350" align="right"/>
+
+ 
+Spring es un framework para java que ofrece herramientas con las que podremos construir rápidamente los <br>
+ servicios mencionados en el punto anterior. Para cada uno de ellos usaremos las siguientes herramientas<br>
+ de Spring:
+
+- **Spring Boot** →  Para construir los microservicios que manejen la lógica de nuestra aplicación.
+- **Spring Cloud Config** →  Para construir el Config server.
+- **Spring Cloud Netflix Zuul** →  Para construir el Gateway
+- **Spring Cloud Netflix Eureka** →  Para construir el Service discover. 
+
+
+
+
+
+
+
 
 <ul>
-    <li>
-        <b>Spring: </b>
-        Es un framework para java.
-    </li>
     <li>
         <b>AWS: </b>
         Es una colección de servicios cloud que ofrece amazon.
