@@ -1,25 +1,31 @@
 # Diseño de la aplicación
 
 
+
+
+
+## Diagramas de clases
+
+
+
+<br>
+<br>
+
+### Microservicio Login
+<br>
+<img src="/img/diagramalogin.jpg" height="518" width="1061"/>
+<br>
+<br>
+
+
+
+
 ### Modelo de objetos de negocio.
 <br>
 <img src="/img/modeloobjetos.jpg" height="518" width="1061"/>
 <br>
 <br>
 
-
-
-
-
-
-### Diagrama de clases
-
-
-
-
-<br>
-<br>
-<br>
 
 ## Diagrama de entidad-relación.
 
