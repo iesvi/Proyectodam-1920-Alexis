@@ -14,7 +14,7 @@
 >
 > **[2- Tecnologías de desarollo.](./Tecnologias.md)**
 >
-> **[3- Entorno de desarrollo.](./EntornoDesarrollo)**
+> **[3- Entorno de desarrollo.](./EntornoDesarrollo.md)**
 >
 > **[4- Despliegue de la aplicación.](#4)**
 >
