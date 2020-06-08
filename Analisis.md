@@ -1,12 +1,7 @@
 # Análisis de la aplicación.
 
-<a name="5.1"></a>
-# Requisitos funcionales.
 
-
-
-<a name="5.1.1"></a>
-## Diagrama de casos de uso.
+## Requisitos funcionales: diagrama de casos de uso.
 
 <br>
 <img src="/img/diagramauso.jpg" height="600" width="800"/>
@@ -15,8 +10,7 @@
 <br>
 
 
-<a name="5.1.2"></a>
-## Descripción de casos de uso.
+## Requisitos funcionales: descripción de casos de uso.
 
 
 ### Descripción: Crear actividad.
@@ -449,12 +443,11 @@
 
 
 <a name="5.2"></a>
-# Modelo de objeto de negocios.
 
 
-<a name="5.2"></a>
-# Diagrama de clases.
+## Modelo de objeto de negocios.
 
 
+## Diagrama de clases.
 
-<br>
+
