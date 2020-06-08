@@ -221,7 +221,7 @@ Es una colección de servicios cloud que ofrece amazon, y será donde se realiza
 
 
 
-<img src="/img/react.png" height="110" width="100" align="right"/>
+<img src="/img/react.png" height="110" width="400" align="right"/>
 <br>
 
 ## React:
