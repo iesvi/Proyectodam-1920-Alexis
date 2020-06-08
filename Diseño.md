@@ -18,8 +18,7 @@
 <img src="/img/er.jpg" height="180" width="750"/>
 <br>
 <br>
-<br>
-<br>
+
 
 ## Explicación
 
