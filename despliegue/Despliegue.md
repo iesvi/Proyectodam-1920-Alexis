@@ -57,6 +57,7 @@ sean necesarios en cada caso.
 
 
 <br>
+
 ## Despliegue de la interfaz en react.
 
 Para desplegar la interfaz de react se ha usado el mismo tipo de instancia que para los microservicios, pero en lugar de instalar el
@@ -81,6 +82,9 @@ es el contenido del script, que pasará a ser este:<br>
 <code>cd /var/www/app
 npm start</code>
 
+
+
+<br>
 
 ## Despliegue de MongoDB
 
