@@ -7,6 +7,10 @@
 
 
 
+
+<br>
+<br>
+<br>
 ### Diagrama de entidad-relación.
 
 <br>
