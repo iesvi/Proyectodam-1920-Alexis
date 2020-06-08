@@ -92,15 +92,6 @@ necesarios para llegar a desplegar una<br>  aplicación basada en esta arquite
 <br>
 
 
-<a name="3"></a>
-# Entorno de desarrollo.
-
-
-
-
-<br>
-<br>
-
 <a name="4"></a>
 # Despliegue de la aplicación.
 
