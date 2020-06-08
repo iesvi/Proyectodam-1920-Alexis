@@ -13,7 +13,7 @@
 
 ### Microservicio Login
 <br>
-<img src="/img/diagramalogin.jpg" height="542" width="752"/>
+<img src="./img/diagramalogin.jpg" height="542" width="752"/>
 <br>
 <br>
 
@@ -22,7 +22,7 @@
 
 ### Modelo de objetos de negocio.
 <br>
-<img src="/img/modeloobjetos.jpg" height="518" width="1061"/>
+<img src="./img/modeloobjetos.jpg" height="518" width="1061"/>
 <br>
 <br>
 
@@ -30,7 +30,7 @@
 ## Diagrama de entidad-relación.
 
 <br>
-<img src="/img/er.jpg" height="186" width="822"/>
+<img src="./img/er.jpg" height="186" width="822"/>
 <br>
 <br>
 

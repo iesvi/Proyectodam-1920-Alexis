@@ -10,7 +10,7 @@
 
 ## SaaS
 
-<img src="/img/piramidecloud.png" height="261" width="278" align="right"/>
+<img src="./img/piramidecloud.png" height="261" width="278" align="right"/>
  
 Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos <br>
  servicios han cambiado la forma de entender tanto la gestión como el acceso a los recursos informáticos, pues con<br>
@@ -56,7 +56,7 @@ deberemos de añadir a nuestra aplicación:
         Este servicio nos permitirá centralizar la configuración de todos los servicios en un único repositorio, de esta<br> 
          forma nuestra aplicación será facilmente parametrizable e incluso podremos realizar cambios en caliente.<br>
 
-<img src="/img/microservices.png" height="261" width="350" align="left"/>
+<img src="./img/microservices.png" height="261" width="350" align="left"/>
 
 
   - Service Discovery: 
@@ -88,7 +88,7 @@ deberemos de añadir a nuestra aplicación:
 
 ## Spring:
 
-<img src="/img/spring.png" height="261" width="350" align="right"/>
+<img src="./img/spring.png" height="261" width="350" align="right"/>
 
  
 Spring es un framework para java que ofrece herramientas con las que podremos construir rápidamente los <br>
@@ -112,7 +112,7 @@ Spring es un framework para java que ofrece herramientas con las que podremos co
 
 
 
-<img src="/img/mongodb.png" height="110" width="200" align="right"/>
+<img src="./img/mongodb.png" height="110" width="200" align="right"/>
 <br>
 
 ## MongoDB:
@@ -121,7 +121,7 @@ MongoDB es una base de datos no relacional, y será la utilizada para almacenar 
 
 
 
-<img src="/img/aws.png" height="110" width="100" align="right"/>
+<img src="./img/aws.png" height="110" width="100" align="right"/>
 <br>
 
 ## AWS:
@@ -130,7 +130,7 @@ Es una colección de servicios cloud que ofrece amazon, y será donde se realiza
 
 
 
-<img src="/img/react.png" height="70" width="70" align="right"/>
+<img src="./img/react.png" height="70" width="70" align="right"/>
 
 ## React:
 Es una colección de servicios cloud que ofrece amazon, y será donde se realizará el despliegue de la aplicación.
@@ -138,7 +138,7 @@ Es una colección de servicios cloud que ofrece amazon, y será donde se realiza
 
 
 
-<img src="/img/nodejs.png" height="110" width="100" align="right"/>
+<img src="./img/nodejs.png" height="110" width="100" align="right"/>
 <br>
 
 ## Node.Js:
@@ -154,5 +154,5 @@ Gestor de paquetes
 <br>
 
 
-<img src="/img/arquitectura.jpg" height="600" width="991" align="right"/>
+<img src="./img/arquitectura.jpg" height="600" width="991" align="right"/>
 

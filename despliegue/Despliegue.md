@@ -37,7 +37,7 @@ Antes de intentar arrancar los microservicios, hay que configurar las dirección
 otorga una dirección dinámica a las instancias, la cual podemos ver en una de las columnas que describe cada instancia.
 
 <br>
-<img src="/img/awsips.jpg" height="301" width="1122" alt="AwsIps" />
+<img src="./img/awsips.jpg" height="301" width="1122" alt="AwsIps" />
 <br>
 <br>
 
@@ -88,6 +88,6 @@ Por último para el despliegue de MongoDB en aws se puede utilizar una de las in
 configurar los puertos de entrada/salida.
 
 <br>
-<img src="/img/awsmongodb.jpg" height="400 width="1305" alt="AwsMongodb" />
+<img src="./img/awsmongodb.jpg" height="400 width="1305" alt="AwsMongodb" />
 <br>
 <br>
