@@ -192,9 +192,23 @@ Spring es un framework para java que ofrece herramientas con las que podremos co
 - **Spring Cloud Netflix Eureka** →  Para construir el Service discover. 
 
 
+<br>
+<br>
+<br>
+<br>
+
+
+## MongoDB:
+  
+<img src="/img/mongodb.png" height="261" width="350" align="right"/>
+MongoDB es una base de datos no relacional, y será la utilizada para almacenar los datos de la aplicación.
 
 
 
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -203,10 +217,7 @@ Spring es un framework para java que ofrece herramientas con las que podremos co
         <b>AWS: </b>
         Es una colección de servicios cloud que ofrece amazon.
     </li>
-    <li>
-        <b>MongoDB: </b>
-        Base de datos no relacional.
-    </li>
+  
     <li>
         <b>React: </b>
     </li>
