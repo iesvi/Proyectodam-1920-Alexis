@@ -12,7 +12,7 @@
 >
 > **[ 1.2- Objetivos especificos.](#1.2)**
 >
-> **[2- Tecnologías de desarollo.](#2)**
+> **[2- Tecnologías de desarollo.](./Tecnologias.md)**
 >
 > **[3- Entorno de desarrollo.](#3)**
 >
