@@ -221,8 +221,7 @@ Es una colección de servicios cloud que ofrece amazon, y será donde se realiza
 
 
 
-<img src="/img/react.png" height="110" width="400" align="right"/>
-<br>
+<img src="/img/react.png" height="70" width="70" align="right"/>
 
 ## React:
 Es una colección de servicios cloud que ofrece amazon, y será donde se realizará el despliegue de la aplicación.
