@@ -436,18 +436,3 @@
 		</td>
  	</tr>
 </table>
-
-<br>
-<br>
-
-
-
-<a name="5.2"></a>
-
-
-## Modelo de objeto de negocios.
-
-
-## Diagrama de clases.
-
-
