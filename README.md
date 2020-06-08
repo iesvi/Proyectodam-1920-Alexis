@@ -93,9 +93,7 @@ necesarios para llegar a desplegar una aplicación basada en esta arquitectura.
 ## Tecnologías de desarrollo
 
 
-
-<img src="/img/piramidecloud.png" height="232" width="221" align="right"/>
-
+<img src="/img/piramidecloud.png" height="261" width="278" align="right"/>
 ### SaaS
 </br>
 Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos servicios han
@@ -104,25 +102,31 @@ modelo en el que la única manera de obtener estos recursos era adquiriendolos f
 y mantenimiento.<br><br>
 
 Con la aparición de los <b>cloud services</b> el escenario a dado un giro al consumo bajo demanda dónde los recursos <br>
-son consumidos como servicios. El usuario final se desentiende totalmente del mantenimiento y se limíta al uso y consumo,<br>
-volviendose algo intangible para el usuario, que no conoce, ni necesita conocer, la localización física de estos recursos
-(si fuese hardware), o la máquina en la que se está ejecutando (si fuese software).<br>
+son consumidos como servicios. El usuario final se desentiende totalmente del mantenimiento y se limíta al uso y
+consumo, volviendose algo intangible para el usuario, que no conoce, ni necesita conocer, la localización física
+de estos recursos (si fuese hardware), o la máquina en la que se está ejecutando (si fuese software).<br>
 
 
 <b>SaaS</b> por tanto es un modelo de distribución de software en el que se ofrece al usuario un servicio disponible desde cualquier dispositivo,
 pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este.
 
 
-
 </br>
 </br>
 
-<ul>
-    <li>
-        <b>Microservicios: </b>
+
+
+
+
+
+<img src="/img/microservices.png" height="261" width="278" align="left"/>
+
+### Microservicios:
+
         Es una arquitectura para el desarrollo del software en la que una aplicación es formada por <br>
         distintos servicios independientes que se despliegan según se vayan necesitando.
-    </li>
+
+<ul>
     <li>
         <b>Spring: </b>
         Es un framework para java.
