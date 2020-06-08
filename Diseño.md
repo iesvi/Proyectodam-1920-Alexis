@@ -13,7 +13,7 @@
 
 ### Microservicio Login
 <br>
-<img src="/img/diagramalogin.jpg" height="518" width="1061"/>
+<img src="/img/diagramalogin.jpg" height="542" width="752"/>
 <br>
 <br>
 
