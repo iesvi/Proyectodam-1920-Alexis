@@ -240,15 +240,54 @@ Gestor de paquetes
 
 
 ### A continuación un diagrama en el que se muestra cómo se organizará la aplicación usando todas las tecnologías mencionadas.
+<br>
+<br>
+<br>
 
-<img src="/img/arquitectura.png" height="110" width="100" align="right"/>
+
+<img src="/img/arquitectura.jpg" height="600" width="991" align="right"/>
 
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <a name="3"></a>
 # Entorno de desarrollo.
+
+
+
 
 
 
@@ -353,7 +392,6 @@ Gestor de paquetes
 <br>
 <br>
 
-
 ### Descripción: Ver detalles de una actividad.
 
 <table>
@@ -439,7 +477,6 @@ Gestor de paquetes
 <br>
 <br>
 
-
 ### Descripción: Buscar una actividad.
 
 <table>
@@ -482,7 +519,6 @@ Gestor de paquetes
 
 <br>
 <br>
-
 
 ### Descripción: Registrarse.
 
@@ -540,8 +576,6 @@ Gestor de paquetes
 <br>
 <br>
 
-
-
 ### Descripción: Identificarse.
 
 <table>
@@ -586,8 +620,6 @@ Gestor de paquetes
 
 <br>
 <br>
-
-
 
 ### Descripción: Proponer detalles extras.
 
@@ -727,7 +759,6 @@ Gestor de paquetes
 # Modelo de objeto de negocios.
 
 
-
 <a name="5.2"></a>
 # Diagrama de clases.
 
@@ -737,6 +768,7 @@ Gestor de paquetes
 
 
 <a name="6"></a>
+
 # Diseño de la aplicación
 
 <a name="6.1"></a>
