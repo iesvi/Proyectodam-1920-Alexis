@@ -206,14 +206,13 @@ Spring es un framework para java que ofrece herramientas con las que podremos co
 <img src="/img/mongodb.png" height="110" width="200" align="right"/>
 <br>
 
-
 ## MongoDB:
-  
 MongoDB es una base de datos no relacional, y será la utilizada para almacenar los datos de la aplicación.
 
 
 
-<img src="/img/aws.png" height="110" width="200" align="right"/>
+
+<img src="/img/aws.png" height="110" width="100" align="right"/>
 <br>
 
 ## AWS:
@@ -222,16 +221,20 @@ Es una colección de servicios cloud que ofrece amazon, y será donde se realiza
 
 
 
-<ul>
-    <li>
-        <b>React: </b>
-    </li>
-    <li>
-        <b>Node.JS: </b>
-        Gestor de paquetes
-    </li>
-</ul>
+<img src="/img/react.png" height="110" width="100" align="right"/>
+<br>
 
+## React:
+Es una colección de servicios cloud que ofrece amazon, y será donde se realizará el despliegue de la aplicación.
+
+
+
+
+<img src="/img/nodejs.png" height="110" width="100" align="right"/>
+<br>
+
+## Node.Js:
+Gestor de paquetes
 
 
 
