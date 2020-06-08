@@ -126,7 +126,6 @@ Con la aparición de los <b>cloud services</b> el escenario a dado un giro al co
 - ### Microservicios:
 
 
-<img src="/img/microservices.png" height="261" width="350" align="left"/>
 
 Es una arquitectura para el desarrollo del software en la que una aplicación es formada por distintos servicios
 independientes que se despliegan según se vayan necesitando. Con este tipo de arquitectura conseguimos una 
@@ -138,12 +137,14 @@ A la hora de desplegar una arquitectura de estas características, surgen cierta
 descentralizada de esta. Para dar solución a estos problemas, surgen los siguientes componentes o servicios, que
 deberemos de añadir a nuestra aplicación:
 
+<img src="/img/microservices.png" height="261" width="350" align="left"/>
 
-    - Cloud Config: Este servicio nos permitirá centralizar la configuración de todos los servicios en un único 
+- Cloud Config: 
+        Este servicio nos permitirá centralizar la configuración de todos los servicios en un único 
         repositorio, de esta forma nuestra aplicación será facilmente parametrizable e incluso podremos realizar
         cambios en caliente.
         
-    - Service Discovery: 
+- Service Discovery: 
         <br>
         La arquitectura de microservicios se basa en que cada servicio consuma de otros microservicios,
         cada uno con un número n de instancias desplegadas. Esto significa que un microservicio no puede tener configurado una dirección
