@@ -139,25 +139,30 @@ deberemos de añadir a nuestra aplicación:
 
 <img src="/img/microservices.png" height="261" width="350" align="left"/>
 
-- Cloud Config: 
-        Este servicio nos permitirá centralizar la configuración de todos los servicios en un único 
-        repositorio, de esta forma nuestra aplicación será facilmente parametrizable e incluso podremos realizar
-        cambios en caliente.
-        
-- Service Discovery: 
-        <br>
-        La arquitectura de microservicios se basa en que cada servicio consuma de otros microservicios,
-        cada uno con un número n de instancias desplegadas. Esto significa que un microservicio no puede tener configurado una dirección
-        estática indicando en que dirección están los otros microservicios que va a consumir, pues cada microservicio
-        va a tener numerosas instancias funcionando con distintas direcciones.
-        Para solucionar este problema se usa el Service Discovery, este servidor almacena las direcciones de cada instancia
-        conforme se van desplegando y registra el id del servicio al que pertenecen. De esta forma, cada microservicio
-        sólo necesita conocer los id de los microservicios que vaya a consumir y la dirección del service discovery, cuando
-        vayan a realizar una comunicación con otro servicio, preguntarán al service discovery por la dirección de <i>x</i> id
-        y este les devolverá una dirección que en ese momento esté siendo usada por el servicio en cuestión.
-        
-    - Gateway.
+  - **Cloud Config:**
+    <br>
+        Este servicio nos permitirá centralizar la configuración de todos los servicios en un único repositorio, de esta<br> 
+         forma nuestra aplicación será facilmente parametrizable e incluso podremos realizar cambios en caliente.<br>
 
+  - **Service Discovery**: 
+    <br>
+        La arquitectura de microservicios se basa en que cada servicio consuma de otros microservicios, cada uno<br>
+         con un número n de instancias desplegadas. Esto significa que un microservicio no puede tener configurado<br>
+         una dirección estática indicando en que dirección están los otros microservicios que va a consumir, pues<br>
+         cada microservicio va a tener numerosas instancias funcionando con distintas direcciones.
+    <br>
+    <br>
+        Para solucionar este problema se usa el Service Discovery, este servidor almacena las direcciones de cada<br>
+         instancia conforme se van desplegando y registra el id del servicio al que pertenecen. De esta forma, cada<br>
+         microservicio sólo necesita conocer los id de los microservicios que vaya a consumir y la dirección del<br>
+                        service discovery, cuando vayan a realizar una comunicación con otro servicio, preguntarán al<br>
+                        service discovery por la dirección de *x* id y este les devolverá una dirección que en ese<br>
+                        momento esté siendo usada por el servicio en cuestión.
+        
+  - **Gateway:**
+    <br>
+        Con este definiremos un único punto de entrada a nuestra aplicación, que se encargará de enrutar<br>
+         las peticiones externas hacia el microservicio pertinente y de devolver las respuestas.
 
 
 
