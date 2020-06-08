@@ -12,15 +12,15 @@
 >
 > **[ 1.2- Objetivos especificos.](#1.2)**
 >
-> **[2- Tecnologías de desarollo.](./Tecnologias.md)**
+> **[2- Tecnologías de desarollo.](./tecnologias/Tecnologias.md)**
 >
-> **[3- Entorno de desarrollo.](./EntornoDesarrollo.md)**
+> **[3- Entorno de desarrollo.](./entornoDesarrollo/EntornoDesarrollo.md)**
 >
 > **[4- Despliegue de la aplicación.](#4)**
 >
-> **[5- Análisis de la aplicación.](./Analisis.md)**
+> **[5- Análisis de la aplicación.](./analisis/Analisis.md)**
 >
-> **[6- Diseño de la aplicación.](./Diseño.md)**
+> **[6- Diseño de la aplicación.](./diseño/Diseño.md)**
 >
 > **[7- Codificación del proyecto.](#7)**
 >
