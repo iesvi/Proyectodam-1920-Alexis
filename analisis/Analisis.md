@@ -4,7 +4,7 @@
 ## Requisitos funcionales: diagrama de casos de uso.
 
 <br>
-<img src="/img/diagramauso.jpg" height="600" width="800"/>
+<img src="./img/diagramauso.jpg" height="600" width="800"/>
 <br>
 <br>
 <br>
