@@ -96,16 +96,6 @@ en la base de datos de MongoDB.
 
 
 
-
-
-
-
-
-
-
-
-
-
 #### ActivityApi.java
 
 <code>@PostMapping("/new")
@@ -133,3 +123,98 @@ a la clase ActivityService que devolverá un objeto ResponseEntity.
 
 Se inserta el objeto en la base de datos usando la clase ActivityRepository, y se devuelve el resultado de esta operación encapsulado
 en un objeto de ResponseEntity con un mensaje de estado Http 200.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+## Caso de Uso: Ver actividades relacionadas a un usuario.
+
+El sistema muestra al usuario una lista de actividades relacionadas con él, actividades a las que el usuario asista, haya sido invitado, o
+de las que él sea creador.
+
+
+### Interfaz de react.
+
+<img src="./img/react/myactivities.jpg" />
+
+
+
+#### ActivityApi.java
+
+<code>@GetMapping(EndPointUris.GetByUserInvited)
+ResponseEntity<List<Activity>> getActivityByUserIsInvited (@PathVariable("email") String email);</code>
+
+Crea un punto de entrada en el que el microservicio recibe el email de un usuario y devuelve una lista con las actividades en las que
+ha sido invitado.
+
+<code>@GetMapping(EndPointUris.GetByUserAssists)
+ResponseEntity<List<Activity>> getActivityByUserAssist (@PathVariable("email") String email);</code>
+
+Crea un punto de entrada en el que el microservicio recibe el email de un usuario y devuelve una lista con las actividades a las que
+el usuario asiste.
+
+<code>@GetMapping(EndPointUris.GetByUserIsCreator)
+ResponseEntity<List<Activity>> getActivityByUserIsCreator (@PathVariable("email") String email);</code>
+
+Crea un punto de entrada en el que el microservicio recibe el email de un usuario y devuelve una lista con las actividades en las que
+el usuario es creador.
+
+
+
+
+
+
+
+
+
+
+
+### ActivityController.java
+
+<code>public ResponseEntity newActivity(ActivityDTOStringed activityDTOStringed) {
+        return as.newActivity(Converter.converActivityDtoStringedToActivity(activityDTOStringed));
+    }</code>
+    
+El objeto ActivityDTOStringed que se recive, se convierte a un objeto de la clase Activity usando la clase Converter, y se pasa
+a la clase ActivityService que devolverá un objeto ResponseEntity.
+
+
+### ActivityServiceImpl.java
+
+<code>public ResponseEntity newActivity(Activity activity) {
+    return ResponseEntity.ok(activiyRepository.insert(activity));
+}</code>
+
+Se inserta el objeto en la base de datos usando la clase ActivityRepository, y se devuelve el resultado de esta operación encapsulado
+en un objeto de ResponseEntity con un mensaje de estado Http 200.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
