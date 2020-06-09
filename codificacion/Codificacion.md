@@ -125,10 +125,11 @@ El objeto ActivityDTOStringed que se recive, se convierte a un objeto de la clas
 a la clase ActivityService que devolverá un objeto ResponseEntity.
 
 
-### ActivityService.java
+### ActivityServiceImpl.java
 
 <code>public ResponseEntity newActivity(Activity activity) {
     return ResponseEntity.ok(activiyRepository.insert(activity));
 }</code>
 
-
+Se inserta el objeto en la base de datos usando la clase ActivityRepository, y se devuelve el resultado de esta operación encapsulado
+en un objeto de ResponseEntity con un mensaje de estado Http 200.
