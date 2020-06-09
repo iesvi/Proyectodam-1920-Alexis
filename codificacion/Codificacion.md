@@ -9,15 +9,15 @@ interfaz gráfica. Pero primero veamos como están construidos los microservicio
 Este microservicio se encarga de realizar las operaciones que tengan que ver con la creación/modificación de actividades y 
 está organizado en las siguientes carpetas y clases:<br>
 
-<img src="./img/arbolActivity.jpg"
+<img src="./img/arbolActivity.jpg" align="right" />
 
 
 
 
 
 
-
-
+<br>
+<br>
 
 ## Crear actividad:
 
