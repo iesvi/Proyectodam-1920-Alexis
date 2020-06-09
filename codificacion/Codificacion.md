@@ -131,14 +131,6 @@ en un objeto de ResponseEntity con un mensaje de estado Http 200.
 
 
 
-
-
-
-
-
-
-
-
 <br>
 <br>
 <br>
@@ -168,42 +160,51 @@ ha sido invitado.
 ResponseEntity<List<Activity>> getActivityByUserAssist (@PathVariable("email") String email);</code>
 
 Crea un punto de entrada en el que el microservicio recibe el email de un usuario y devuelve una lista con las actividades a las que
-el usuario asiste.
+el usuario asiste. El email que recibe lo pasa a un método de la la interfaz ActivityService que se encargará de devolver la lista de
+actividades.
 
 <code>@GetMapping(EndPointUris.GetByUserIsCreator)
 ResponseEntity<List<Activity>> getActivityByUserIsCreator (@PathVariable("email") String email);</code>
 
 Crea un punto de entrada en el que el microservicio recibe el email de un usuario y devuelve una lista con las actividades en las que
-el usuario es creador.
+el usuario es creador. El email que recibe lo pasa a un método de la la interfaz ActivityService que se encargará de devolver la lista de
+actividades.
 
-
-
-
-
-
-
-
-
-
-
-### ActivityController.java
-
-<code>public ResponseEntity newActivity(ActivityDTOStringed activityDTOStringed) {
-        return as.newActivity(Converter.converActivityDtoStringedToActivity(activityDTOStringed));
-    }</code>
-    
-El objeto ActivityDTOStringed que se recive, se convierte a un objeto de la clase Activity usando la clase Converter, y se pasa
-a la clase ActivityService que devolverá un objeto ResponseEntity.
 
 
 ### ActivityServiceImpl.java
 
-<code>public ResponseEntity newActivity(Activity activity) {
-    return ResponseEntity.ok(activiyRepository.insert(activity));
+<code>public ResponseEntity<List<Activity>> findByUserAsisst(String email) {
+   return ResponseEntity.ok(activiyRepository.findByUsuariosContaining(email));
 }</code>
 
-Se inserta el objeto en la base de datos usando la clase ActivityRepository, y se devuelve el resultado de esta operación encapsulado
-en un objeto de ResponseEntity con un mensaje de estado Http 200.
+Usa la intefaz ActivityRepository para buscar en la base de datos las actividades que tengan el email recibido por parámetro en la lista
+de usuarios que son asistentes, y devuelve el resultado de la operación encapsulado en un objeto de ResponseEntity con un mensaje de estado
+Http 200.
+
+
+<code>public ResponseEntity<List<Activity>> findByUserIsCreator(String email) {
+    return ResponseEntity.ok(activiyRepository.findActivityByCreador(email));
+}</code>
+
+Usa la intefaz ActivityRepository para buscar en la base de datos las actividades en las que el email sea el valor del atributo creador,
+y devuelve el resultado de la operación encapsulado en un objeto de ResponseEntity con un mensaje de estado
+Http 200.
+
+
+<code>public ResponseEntity<List<Activity>> findByUserIsIvited(String email) {
+    return ResponseEntity.ok(activiyRepository.findByUsuariosInvitadosContaining(email));
+}</code>
+
+Usa la intefaz ActivityRepository para buscar en la base de datos las actividades que tengan el email recibido por parámetro en la lista
+de usuarios que han sido invitados, y devuelve el resultado de la operación encapsulado en un objeto de ResponseEntity con un mensaje de estado
+Http 200.
+
+
+
+
+
+
 
 
 
