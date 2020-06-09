@@ -4,9 +4,10 @@ En este documento se va a tratar uno a uno los casos de uso de la aplicacón, ac
 interfaz gráfica. Pero primero veamos como están construidos los microservicios para entender mejor el código:
 
 
+<br>
 
 ### Microservicio Activity:<br>
-Este microservicio se encarga de realizar las operaciones que tengan que ver con la creación/modificación de actividades y 
+Este microservicio se encarga de realizar las operaciones que tengan que ver con la **creación/modificación de actividades** y 
 está organizado en las siguientes carpetas y clases:<br>
 
 <img src="./img/arbolActivity.jpg" align="right" />
@@ -43,17 +44,12 @@ está organizado en las siguientes carpetas y clases:<br>
       - **LoginFeign**: Intefaz que define un cliente feign del microservicio login. En esta interfaz se declaran los métodos que vayan a ser necesarios para obtener información del microservicio login.
   - **ActiviyApplication**: Clase principal de la aplición, es la que inicia el programa.
 
-
 <br>
 <br>
-<br>
-<br>
-<br>
-
 
 
 ### Microservicio Login:<br>
-Este microservicio se encarga de realizar las operaciones que tengan que ver con la creación/modificación de usuarios y 
+Este microservicio se encarga de realizar las operaciones que tengan que ver con la **creación/modificación de usuarios** y 
 está organizado en las siguientes carpetas y clases:<br>
 
 <img src="./img/arbolLogin.jpg" align="right" />
@@ -83,17 +79,34 @@ está organizado en las siguientes carpetas y clases:<br>
       - **LoginService**: Interfaz que funciona entre el controlador y el repositorio encargandose de procesar los datos que viajan entre estas.
   - **LoginApplication**: Clase principal de la aplición, es la que inicia el programa.
 
-
-<br>
-<br>
 <br>
 <br>
 <br>
 
 
-## Crear actividad:
+## Caso de Uso: Crear actividad:
 
-#### ActivityApi.java (interfaz)
+El usuario crea una actividad en la interfaz de react, la actividad es envida al microservicio **activity** que la almacena
+en la base de datos de MongoDB.
+
+
+### Interfaz de react.
+
+<img src="./img/react/newActivity.jpg" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### ActivityApi.java
 
 <code>@PostMapping("/new")
 ResponseEntity newActivity (@RequestBody(required = false) ActivityDTOStringed activityDTOStringed);</code>
@@ -102,7 +115,7 @@ Se crea un punto de entrada en el que se recibirá un objeto ActivityDTOStringed
 Se usa la propiedad **requiered=false** para permitir objetos de la clase ActivityDTOStringed con el atributo id vacío.
 
 
-*ActivityController.java (implementa ActivityApi)*
+### ActivityController.java
 
 <code>public ResponseEntity newActivity(ActivityDTOStringed activityDTOStringed) {
         return as.newActivity(Converter.converActivityDtoStringedToActivity(activityDTOStringed));
@@ -110,5 +123,12 @@ Se usa la propiedad **requiered=false** para permitir objetos de la clase Activi
     
 El objeto ActivityDTOStringed que se recive, se convierte a un objeto de la clase Activity usando la clase Converter, y se pasa
 a la clase ActivityService que devolverá un objeto ResponseEntity.
+
+
+### ActivityService.java
+
+<code>public ResponseEntity newActivity(Activity activity) {
+    return ResponseEntity.ok(activiyRepository.insert(activity));
+}</code>
 
 
