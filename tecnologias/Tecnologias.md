@@ -15,7 +15,7 @@
 Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos <br>
  servicios han cambiado la forma de entender tanto la gestión como el acceso a los recursos informáticos, pues con<br>
  ellos hemos dejado atrás un modelo modelo en el que la única manera de obtener estos recursos era adquiriéndolos<br>
- fisicamente y hacerse cargo de su instalación y mantenimiento y mantenimiento.
+ fisicamente y hacerse cargo de su instalación y mantenimiento.
 
 
 Con la aparición de los <b>cloud services</b> el escenario a dado un giro al consumo bajo demanda dónde los recursos <br>
