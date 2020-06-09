@@ -92,7 +92,7 @@ en la base de datos de MongoDB.
 
 ### Interfaz de react.
 
-<img src="./img/react/newActivity.jpg" />
+<img src="./img/react/newactivity.jpg" />
 
 
 
