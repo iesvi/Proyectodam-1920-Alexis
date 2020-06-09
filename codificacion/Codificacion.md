@@ -50,6 +50,47 @@ está organizado en las siguientes carpetas y clases:<br>
 <br>
 <br>
 
+
+
+### Microservicio Login:<br>
+Este microservicio se encarga de realizar las operaciones que tengan que ver con la creación/modificación de usuarios y 
+está organizado en las siguientes carpetas y clases:<br>
+
+<img src="./img/arbolLogin.jpg" align="right" />
+
+
+- **OrganizeIt**: Carpeta que contiene todo el proyecto.
+  - **login**: Carpeta que se usa para separar la clase ActivityApplication del resto del proyecto.
+    - **config**
+      - **Configuration**: Clase que define la configuración de beans.
+    - **controller**
+      - **constant**
+        - **EndPointUris**: Clase en la que se definen las constantes que se van a usar para el mapeo de los puntos de entrada.
+      - **impl**
+        - **LoginController**: Clase que implementa a la interfaz LoginApi y define los métodos de esta.
+      - **LoginApi**: Interfaz en la que se definen los puntos de entrada a la aplicación.
+    - **model**
+      - **dto**
+        - **UserDTO**: Clase se evía cuando se consume este microservicio.
+      - **User**: Clase que se almacena en la base de datos.
+    - **repository**
+      - **LoginRepository**: Interfaz que extiende a MongoRepository y con la que se manejan los documentos de la clase User.
+    - **service**
+      - **impl**
+        - **LoginServiceImpl** Clase que implementa a la interfaz LoginService y define los métodos de esta.
+      - **util**
+        - **Converter**: Clase en la que se definen los métodos necesarios para la conversion entre clases. 
+      - **LoginService**: Interfaz que funciona entre el controlador y el repositorio encargandose de procesar los datos que viajan entre estas.
+  - **LoginApplication**: Clase principal de la aplición, es la que inicia el programa.
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 ## Crear actividad:
 
 #### ActivityApi.java (interfaz)
