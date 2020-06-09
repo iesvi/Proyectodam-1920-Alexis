@@ -12,10 +12,40 @@ está organizado en las siguientes carpetas y clases:<br>
 <img src="./img/arbolActivity.jpg" align="right" />
 
 
+- **OrganizeIt**: Carpeta que contiene todo el proyecto.
+  - **activity**: Carpeta que se usa para separar la clase ActivityApplication del resto del proyecto.
+    - **config**
+      - **Configuration**: Clase que define la configuración de beans.
+    - **controller**
+      - **constant**
+        - **EndPointUris**: Clase en la que se definen las constantes que se van a usar para el mapeo de los puntos de entrada.
+      - **impl**
+        - **ActivityController**: Clase que implementa a la interfaz ActivityApi y define los métodos de esta.
+      - **ActivityApi**: Interfaz en la que se definen los puntos de entrada a la aplicación.
+    - **model**
+      - **dto**
+        - **ActivityDTO**: Clase que se usa para enviar información sobre una actividad a la interfaz.
+        - **ActivityDTOStringed**: Objeto que se recibe desde la interfaz en el que todos los datos son de tipo primario.
+        - **FechaDTO**: Clase que envia la interfaz cuando un usuario vota o propone una fecha.
+        - **LugarDTO**: Clase que envia la interfaz cuando un usuario vota o propone un lugar.
+        - **UserDTO**: Clase se recive desde el microservicio login.
+      - **Activity**: Clase que se almacena en la base de datos.
+      - **Fecha**: Clase que guarda una fecha junto a los votos de esta.
+      - **Lugar**: Clase que guarda un lugar junto a los votos de este.
+    - **repository**
+      - **ActivityRepository**: Interfaz que extiende a MongoRepository y con la que se manejan los documentos de la clase activity.
+    - **service**
+      - **impl**
+        - **ActivityServiceImpl** Clase que implementa a la interfaz ActivityService y define los métodos de esta.
+      - **util**
+        - **Converter**: Clase en la que se definen los métodos necesarios para la conversion entre clases. 
+      - **ActivityService**: Interfaz que funciona entre el controlador y el repositorio encargandose de procesar los datos que viajan entre estas.
+      - **LoginFeign**: Intefaz que define un cliente feign del microservicio login. En esta interfaz se declaran los métodos que vayan a ser necesarios para obtener información del microservicio login.
+  - **ActiviyApplication**: Clase principal de la aplición, es la que inicia el programa.
 
 
-
-
+<br>
+<br>
 <br>
 <br>
 <br>
