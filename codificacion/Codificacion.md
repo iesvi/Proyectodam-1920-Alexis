@@ -32,14 +32,14 @@ endpoints usando las anotaciones **@RestController**,**GetMapping** y **PostMapp
 Ejemplo de uno de los microservicios: <br>
 
 <br>
-<div align="center" >
+<div align="center">
 
-***ActivityApi***
+***<p>ActivityApi</p>***
 <img src="./img/ApiActivity.jpg" alt="repository" />
 <br>
 <br>
 <br>
-***ActivityController***
+***<p>ActivityController</p>***
 <img src="./img/ControllerActivity.jpg" alt="repository" />
 </div>
 
@@ -54,7 +54,19 @@ clase, basta con definir un método tal que así: <code>Object findByAtributo(Ti
 en la base de datos con un atributo que tenga el valor parametrizado.<br>
 Ejemplo de uno de los microservicios:<br>
 
-<img src="repositoryActivity.jpg" alt="repository" />
+<br>
+<br>
+
+<div align="center">
+
+***<p>ActivityRepository</p>***
+<img src="./img/ActivityRepository.jpg" alt="repository" />
+
+</div>
+
+<br>
+<br>
+
 
 Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** y es donde se desarrolla la
 logica de negocio del microservicio.
