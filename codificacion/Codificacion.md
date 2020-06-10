@@ -25,10 +25,9 @@ encargado de la lógica de negocios actuando como intermediario entre el compone
 El microservicio alert tiene una estructura similar, pero presciende del paquete controller ya que este no se comunica con otros microservicios directamente,
 sino que ejecuta una serie de comprobaciones los datos cada 24 horas e interactúa únicamente con la base de datos.
 
-
 Siguiendo con la explicación de como funcionan los microservicios, las peticiones son recibidas por una interfaz **NnombreApi** en la que se definen los 
-endpoints usando las anotaciones **@RestController**,**GetMapping** y **PostMapping**. Esta interfaz la implementa una clase **NombreController** 
-(ambas dentro del paqute **controller**), que es definida como **servicio REST** usando la anotación **@RestController**.<br>
+endpoints usando las anotaciones **@RequestMapping**,**GetMapping** y **PostMapping**. Esta interfaz la implementa una clase **NombreController** 
+(ambas dentro del paqute **controller**), que es definida como **componente controller** usando la anotación **@RestController**.<br>
 Ejemplo de uno de los microservicios: <br>
 
 <br>
@@ -46,7 +45,8 @@ Ejemplo de uno de los microservicios: <br>
 <br>
 <br>
 
-Las operaciones relacionadas con la base de datos se realizan usando una interfaz **NombreRepository** que extiende de **MongoRepository**. 
+Las operaciones relacionadas con la base de datos se realizan usando una interfaz **NombreRepository** que extiende de **MongoRepository** y
+declarada como **componente repository** usando la anotación **@Repository**. 
 MongoRepository es una interfaz que nos permite realiazar múltiples operaciones con una base de datos MongoDB. Algunas de estas operaciones 
 están ya definidase en MongoRepository y otras sólo tenemos que declararlas como métodos en nuestra interfaz *NombreRepository* utilizando palabras
 claves que, Spring interpretará generando los métodos automaticamente. Un ejemplo sería para buscar cualquier objeto a partir de un atributo de su
@@ -68,8 +68,8 @@ Ejemplo de uno de los microservicios:<br>
 <br>
 
 
-Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** y es donde se desarrolla la
-logica de negocio del microservicio.
+Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** que es declarado como 
+**componente service** usando la anotación **@Service** y es donde se desarrolla la logica de negocio del microservicio.
 
 
 <br>
