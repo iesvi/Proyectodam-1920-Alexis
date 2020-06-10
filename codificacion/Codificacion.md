@@ -12,7 +12,7 @@ genérica de las anotaciones que se usan en los microservicios y como se adapta 
 - **@RestController**: Esta anotación convierte la clase en la que se use en un servicio REST.
 - **@GetMapping()**: Esta anotación se usa para definir un controlador a peticiones de tipo GET que se hagan a la dirección definida entre los parentesis.
 - **@PostMapping()**: Esta anotación se usa para definir un controlador a peticiones de tipo POST que se hagan a la dirección definida entre los parentesis.
-- **@Service**: Con esta anotación definimos un componente Service.
+- **@ Service**: Con esta anotación definimos un componente Service.
 - **@Repository**: Con esta anotación definimos un comonente Repository
 - **@RequestBody**: Con esta anotación definimos un objeto que esperamos recibir en el cuerpo de una peticion http.
 - **@PathVariable()**: Con esta anotación definimos una variable que esperamos obtener en la url de una petición http.
@@ -573,6 +573,11 @@ public ResponseEntity addDetail(LugarDTO[] lugaresDTOList) {
 }</code
 
 
-
+Los objetos DTO que recibe el service contienen el id de la actividad como uno de sus atributos, por lo que lo primero que hacemos es obtener ese id
+para saber que actividad vamos a modificar y recuperarla de la base de datos. A continuación recorremos la lista de objetos FechaDTO o LugaresDTO
+conviertiendo cada objeto su equivalente objeto Fecha o Lugar y comprobando si existe en la actividad recuperada. Si existe, se suma un voto a la
+fecha o lugar, y si no existe, se añade con un voto. Por último se guarda el email del usuario en la lista de usuarios que han participado en la
+actividad para que no pueda volver a realizar propuestas y se sobreescribe el documento orginal con el modificado, usando para ello el método
+**save** del **repository**, y finalmente se devuelve un objeto ResponseEntity con mensaje de estado http 200. 
 
 
