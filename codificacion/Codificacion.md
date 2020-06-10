@@ -70,9 +70,22 @@ Ejemplo de uno de los microservicios:<br>
 
 Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** que es declarado como 
 **componente service** usando la anotación **@Service** y es donde se desarrolla la logica de negocio del microservicio.
-
+Ejemplo de uno de los microservicios:<br>
 
 <br>
+<br>
+
+<div align="center">
+
+***<p>ActivityService</p>***
+<img src="./img/ActivityService.jpg" alt="service" />
+
+</div>
+
+<br>
+<br>
+
+
 
 ### Microservicio Activity:<br>
 Este microservicio se encarga de realizar las operaciones que tengan que ver con la **creación/modificación de actividades** y 
