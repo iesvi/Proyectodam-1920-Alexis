@@ -506,3 +506,68 @@ a la lista.
 #### ActivityApi.java
 
 
+
+<code>@PostMapping(EndPointUris.ADDDate)
+ResponseEntity addDetail(@RequestBody FechaDTO[] fechasDTOList);
+<br>
+@PostMapping(EndPointUris.ADDPlace)
+ResponseEntity addDetail(@RequestBody LugarDTO[] lugaresDTOList);</code>
+
+
+Se crean dos puntos de entrada en el microservicio para recibir o bien una lista de lugares o una de fechas, y se pasan al service que sigue el
+mismo procedimiento para cualquiera de los dos casos.
+
+
+<code>public ResponseEntity addDetail(FechaDTO[] fechasDTO) {
+    List<FechaDTO> fechaDTO = Arrays.asList(fechasDTO);
+<br>
+    String id = fechaDTO.get(0).getActivityId();
+    Activity tmpActivity = activiyRepository.findById(id).get();
+<br>
+    for(FechaDTO f : fechaDTO) {
+        Fecha fecha = Converter.convertFechaDtoToFecha(f);
+<br>
+            if (tmpActivity.getFechas().contains(fecha)){
+                int idx = tmpActivity.getFechas().indexOf(fecha);
+            tmpActivity.getFechas().get(idx).setVotes(
+                    tmpActivity.getFechas().get(idx).getVotes()+1);
+<br>
+        }else   tmpActivity.getFechas().add(fecha);
+    }
+<br>
+        tmpActivity.getUsuariosParticipanFecha().add(fechaDTO.get(0).getUserEmail());
+<br>
+        return ResponseEntity.ok(activiyRepository.save(tmpActivity));
+}
+<br>
+<br>
+<br>
+public ResponseEntity addDetail(LugarDTO[] lugaresDTOList) {
+    List<LugarDTO> lugares = Arrays.asList(lugaresDTOList);
+<br>
+    String id = lugares.get(0).getActivityId();
+    Activity tmpActivity = activiyRepository.findById(id).get();
+<br>
+    if(!lugares.get(0).getPlace().isEmpty()) {
+        for (LugarDTO l : lugares) {
+            Lugar lugar = Converter.convertLugarDtoToLugar(l);
+<br>
+            if (tmpActivity.getLugar().contains(lugar)) {
+                int idx = tmpActivity.getLugar().indexOf(lugar);
+<br>
+                tmpActivity.getLugar().get(idx).setVotos(
+                        tmpActivity.getLugar().get(idx).getVotos() + lugar.getVotos());
+            } else tmpActivity.getLugar().add(lugar);
+        }
+    }
+<br>
+    tmpActivity.getUsuariosParticipanLugar().add(lugares.get(0).getUserEmail());
+<br>
+    activiyRepository.save(tmpActivity);
+    return ResponseEntity.ok().build();
+}</code
+
+
+
+
+
