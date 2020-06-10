@@ -357,13 +357,9 @@ El array que nos devuelve el microservicio login es transformado en un objeto Li
 a ActivityDTO encapsulado en un objeto de ResponseEntity con un mensaje de estado Http 200.
 
 
-
-
 <br>
 <br>
 <br>
-
-
 
 
 ## Caso de Uso: Buscar actividad.
@@ -372,6 +368,8 @@ El usuario introuce en la barra de búsqueda un título y pulsa en buscar. Al pu
 que realiza una búsqueda de las activiades que contengan ese texto en su título para devolver una lista de actividades.
 
 ### Interfaz de react.
+
+<br>
 
 <div align="center">
 
@@ -406,6 +404,68 @@ ResponseEntity con un mensaje de estado Http 200.
 
 
 
+<br>
+<br>
+<br>
 
+
+## Caso de Uso: Apuntarse a la actividad
+
+El usuario está viendo una actividad y pulsa en el boton "asistiré", react envía un string que contiene el id de la actividad y el email del usuario al
+microservicio activity. El microservicio busca la actividad en la base de datos, añade el usuario a la lista de usuarios que asisten y reemplaza el
+documento en MongoDB.
+
+### Interfaz de react.
+
+<br>
+
+<div align="center">
+
+<img src="./img/react/apuntarse.jpg" />
+
+</div>
+
+<br>
+<br>
+
+#### ActivityApi.java
+
+<code>@PostMapping(EndPointUris.ADDUser)
+ResponseEntity addUser(@RequestBody String data);</code>
+
+
+Se crea un punto de entrada en el microservicio para recibir un objeto String que contiene un email de usuario y un id de actividad. Este String se
+pasa al componente **service** que procesa el string.
+
+
+<code>public ResponseEntity addUser(String dataRequest) {
+<br>
+    try{
+        String data = URLDecoder.decode(dataRequest,"UTF-8");
+        String userEmail = data.substring(0,data.indexOf(","));
+        String id = data.substring(data.indexOf(",")+1, data.length()-1);
+    <br>
+    <br>
+        Activity tmpActivity = activiyRepository.findById(id).get();
+        tmpActivity.getUsuarios().add(userEmail);
+        activiyRepository.save(tmpActivity);
+    <br>
+        return ResponseEntity.ok().build();
+    <br>
+    }catch (Exception e){
+        e.printStackTrace();
+        return ResponseEntity.badRequest().build();
+    }
+}</code>
+
+El **service** decodifica el String, que, al ser enviado en el body de una petición de tipo POST, necesita convertir el texto a UTF. Una vez 
+decodificado separa el String usando el carácter ',' como indicador para diferenciar el id de la actividad del email del usuario. A continuación
+obtiene un objeto Activity usando el método **findById** del componente **repository** y le añade el email a la lista de usuarios asistentes. Por
+último utiliza el método **save** del **repository** para sobreescribir el documento que ha sido modificado y se devuelve un objeto ResponseEntity 
+con mensaje de estado http 200.
+Todo el bloque se ejecuta dentro de un try-catch porque el método de decodificación (*URLDecoder.decode()*) lanza una excepción que obliga a ser
+capturada. En caso de que fallase, el microservicio devuelve un objeto ResponseEntity con mensaje de estado http 400. 
+
+<br>
 
 
