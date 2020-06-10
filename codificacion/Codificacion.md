@@ -347,18 +347,61 @@ El cliente feign se crea a partir de una interfaz y utilizando la anotación **@
 ya en el cuerpo de la interfaz se definen los métodos que se vayan a usar. Los métodos se definen especificando el endpoint con la anotación **@GetMapping**, **@PostMapping**,
 o cual sea el tipo de petición http, y definiendo los parámetros y el objeto que retorna el método.
 
-<code>
-@FeignClient(name = "login")
+<code>@FeignClient(name = "login")
 public interface LoginFeign {
     @GetMapping("/user")
     UserDTO[] getActivityUsers(@RequestBody List<String> users);
 }</code>
 
+El array que nos devuelve el microservicio login es transformado en un objeto List y por último se devuelve el resultado de convertir el objeto Activity
+a ActivityDTO encapsulado en un objeto de ResponseEntity con un mensaje de estado Http 200.
 
 
 
 
+<br>
+<br>
+<br>
 
+
+
+
+## Caso de Uso: Buscar actividad.
+
+El usuario introuce en la barra de búsqueda un título y pulsa en buscar. Al pulsar en buscar, react envía el texto introducido al microservicio activity,
+que realiza una búsqueda de las activiades que contengan ese texto en su título para devolver una lista de actividades.
+
+### Interfaz de react.
+
+<div align="center">
+
+<img src="./img/react/buscar.jpg" />
+
+</div>
+
+<br>
+<br>
+
+#### ActivityApi.java
+
+<code>@GetMapping(EndPointUris.GET)
+ResponseEntity<List<Activity>> getActivity (@PathVariable("title") String title);</code>
+
+<br>
+
+Se crea un punto de entrada en al microservicio para recibir una petición con un objeto String, a esta petición se le responde devolviendo
+una lista de objetos Activity recuperando de la base de datos todas las actividades que contengan en su título el texto recibido.
+Para obtener la lista de objetos Activity, se le pasa el texto al método **getActivity** del **service** que devolverá un objeto
+ResponseEntity<List<Activity>>.
+
+
+<code>public ResponseEntity<List<Activity>> getActivity(String title) {
+    return ResponseEntity.ok(activiyRepository.findActivityByTituloLike(title));
+}</code>
+
+
+El *service* recibe el texto y devuelve el resultado del método **findActivityByTituloLike** del **repository** encapsulado en un objeto de 
+ResponseEntity con un mensaje de estado Http 200.  
 
 
 
