@@ -6,7 +6,7 @@ genérica de las anotaciones que se usan en los microservicios y como se adapta 
 
 
 - **@Autowired**: Esta anotación declarada sobre una variable hará que Spring automaticamente la inicialize.
-- **@CrossOrigin(origins = "\*", allowedHeaders = "\*")**: con esta anotación se permite el intercambio de recursos de origen cruzado. 
+- **@ CrossOrigin(origins = "\*", allowedHeaders = "\*")**: con esta anotación se permite el intercambio de recursos de origen cruzado. 
 - **@RequestMapping()**: Con RequestMapping asociamos la url definida entre los perentesis con el controlador donde se situe esta anotación.
                          si no se introduce ninguna url la dirección asociada será la dirección raiz (/).
 - **@RestController**: Esta anotación convierte la clase en la que se use en un servicio REST.
