@@ -69,7 +69,7 @@ Ejemplo de uno de los microservicios:<br>
 
 
 Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** que es declarado como 
-**componente service** usando la anotación **@Service** y es donde se desarrolla la logica de negocio del microservicio.
+**componente service** usando la anotación **@Service** y es donde se desarrolla la logica de negocio del microservicio.<br>
 Ejemplo de uno de los microservicios:<br>
 
 <br>
