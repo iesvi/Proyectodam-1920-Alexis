@@ -31,11 +31,11 @@ endpoints usando las anotaciones **@RestController**,**GetMapping** y **PostMapp
 (ambas dentro del paqute **controller**), que es definida como **servicio REST** usando la anotación **@RestController**.<br>
 Ejemplo de uno de los microservicios: <br>
 
-
+<div align="center" >
 <img src="./img/ApiActivity.jpg" alt="repository" />
 <br>
 <img src="./img/ControllerActivity.jpg" alt="repository" />
-
+</div>
 Las operaciones relacionadas con la base de datos se realizan usando una interfaz **NombreRepository** que extiende de **MongoRepository**. 
 MongoRepository es una interfaz que nos permite realiazar múltiples operaciones con una base de datos MongoDB. Algunas de estas operaciones 
 están ya definidase en MongoRepository y otras sólo tenemos que declararlas como métodos en nuestra interfaz *NombreRepository* utilizando palabras
