@@ -397,6 +397,7 @@ una lista de objetos Activity recuperando de la base de datos todas las activida
 Para obtener la lista de objetos Activity, se le pasa el texto al método **getActivity** del **service** que devolverá un objeto
 ResponseEntity<List<Activity>>.
 
+#### ActivityServiceImpl.java
 
 <code>public ResponseEntity<List<Activity>> getActivity(String title) {
     return ResponseEntity.ok(activiyRepository.findActivityByTituloLike(title));
@@ -442,6 +443,7 @@ ResponseEntity addUser(@RequestBody String data);</code>
 Se crea un punto de entrada en el microservicio para recibir un objeto String que contiene un email de usuario y un id de actividad. Este String se
 pasa al componente **service** que procesa el string.
 
+#### ActivityServiceImpl.java
 
 <code>public ResponseEntity addUser(String dataRequest) {
     try{
@@ -508,8 +510,8 @@ a la lista.
 <br>
 <br>
 
-#### ActivityApi.java
 
+#### ActivityApi.java
 
 
 <code>@PostMapping(EndPointUris.ADDDate)
@@ -522,6 +524,8 @@ ResponseEntity addDetail(@RequestBody LugarDTO[] lugaresDTOList);</code>
 Se crean dos puntos de entrada en el microservicio para recibir o bien una lista de lugares o una de fechas, y se pasan al service que sigue el
 mismo procedimiento para cualquiera de los dos casos.
 
+
+#### ActivityServiceImpl.java
 
 <code>public ResponseEntity addDetail(FechaDTO[] fechasDTO) {
     List<FechaDTO> fechaDTO = Arrays.asList(fechasDTO);
@@ -579,5 +583,118 @@ conviertiendo cada objeto su equivalente objeto Fecha o Lugar y comprobando si e
 fecha o lugar, y si no existe, se añade con un voto. Por último se guarda el email del usuario en la lista de usuarios que han participado en la
 actividad para que no pueda volver a realizar propuestas y se sobreescribe el documento orginal con el modificado, usando para ello el método
 **save** del **repository**, y finalmente se devuelve un objeto ResponseEntity con mensaje de estado http 200. 
+
+
+<br>
+<br>
+<br>
+
+
+## Caso de Uso: Registrarse
+
+El usuario solicita el registro de un nuevo usuario introduciendo un email, nombre y contraseña. React los envía al microservicio login, quien comprueba
+si los datos son correctos y le da de alta.
+
+### Interfaz de react.
+
+<br>
+
+<div align="center">
+
+<br>
+<img src="./img/react/regist.jpg" />
+<br>
+
+</div>
+
+<br>
+<br>
+
+#### LoginApi.java
+
+<code>@PostMapping(EndPointUris.REGIST)
+ResponseEntity registUser(@RequestBody User user);</code>
+
+Se crea un punto de entrada en el microservicio login para recibir un objeto User, este objeto se pasa al service.
+
+
+#### LoginServiceImpl.java
+
+<code>public ResponseEntity<String> registUser(User user){
+<br>
+        if( (repository.findUserByEmail(user.getEmail())==null)){
+<br>
+            if( (repository.findUserByName(user.getName())==null)){
+                repository.insert(user);
+                return ResponseEntity.ok().build();
+<br>
+            }else return new ResponseEntity<>("name", HttpStatus.valueOf(403));
+        }else return new ResponseEntity<>("email", HttpStatus.valueOf(403));
+}</code>
+
+El service comprueba que el email en el objeto User no se encuentre ya registrado en la base de datos, si no está registrado continua comprobando
+que el nombre de usuario no esté registrado en el sistema, y si no está registrado, guarda el nuevo usuario en la base de datos usando el método
+**insert** del componente **repository** y envía un objeto ResponseEntity con mensaje de estado http 200. 
+
+Si el email está ya registrado, se envíaun objeto ResponseEntity con mensaje de estado http 403 y un texto "email" para indicar a react que el fallo
+es por el email. 
+Si el nombre está ya registrado, se envíaun objeto ResponseEntity con mensaje de estado http 403 y un texto "name" para indicar a react que el fallo
+es por el nombre.
+
+
+
+
+<br>
+<br>
+<br>
+
+
+## Caso de Uso: Identificarse
+
+El usuario introduce su nombre y contraseña y se identifica en el sistema. React envía los datos al microservicio login, que comprueba que los datos
+sean correctos y envía una respuesta a react indicando si el usuario puede o no identificarse.
+
+### Interfaz de react.
+
+<br>
+
+<div align="center">
+
+<br>
+<img src="./img/react/login.jpg" />
+<br>
+
+</div>
+
+<br>
+<br>
+
+#### LoginApi.java
+
+<code>@PostMapping(EndPointUris.LOGIN)
+ResponseEntity validateUser(@RequestBody User user);</code>
+
+Se crea un punto de entrada en el microservicio login para recibir un objeto User, este objeto se pasa al service.
+
+
+#### LoginServiceImpl.java
+
+<code>public ResponseEntity validateUser(User user) {
+<br>
+Optional<User> user1 = Optional.ofNullable(repository.findUserByName(user.getName()));
+<br>
+  if (user1.isPresent() && user1.get().getPassword().equals(user.getPassword())){
+      return ResponseEntity.ok().build();
+    }else return ResponseEntity.notFound().build();
+}</code>
+
+El service trata de recuperar de la base de datos el documento correspondiente al objeto User que recibe por parámetro usando el método **findUserByName**
+del **componente repository** para buscar un usuario que tenga el mismo atributo name. Si lo encuentra, compara la contraseña que ha introducido el usuario
+con la almacenada en la base de datos, y si son iguales, devuelve un objeto ResponseEntity con mensaje de estado http 200 que hará que react permita al
+usuario identificarse en el sistema. Si por el contrario, no se encuentra nigun documento User con ese nombre, o las contraseñas no coinciden, se envía un
+objeto ResponseEntity con mensaje de estado http 400 que hara que react deniegue el acceso al usuario.
+
+
+
 
 
