@@ -10,7 +10,12 @@ genérica de las anotaciones que se usan en los microservicios y como se adapta 
 - **@RequestMapping()**: Con RequestMapping asociamos la url definida entre los perentesis con el controlador donde se situe esta anotación.
                          si no se introduce ninguna url la dirección asociada será la dirección raiz (/).
 - **@RestController**: Esta anotación convierte la clase en la que se use en un servicio REST.
-- 
+- **@GetMapping()**: Esta anotación se usa para definir un controlador a peticiones de tipo GET que se hagan a la dirección definida entre los parentesis.
+- **@PostMapping()**: Esta anotación se usa para definir un controlador a peticiones de tipo POST que se hagan a la dirección definida entre los parentesis.
+- **@Service**: Con esta anotación definimos un componente Service.
+- **@Repository**: Con esta anotación definimos un comonente Repository
+- **@RequestBody**: Con esta anotación definimos un objeto que esperamos recibir en el cuerpo de una peticion http.
+- **@PathVariable()**: Con esta anotación definimos una variable que esperamos obtener en la url de una petición http.
 
 
 Los microservicios activity y login están construido usando la misma estructura:<br>
