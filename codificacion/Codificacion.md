@@ -697,4 +697,50 @@ objeto ResponseEntity con mensaje de estado http 400 que hara que react deniegue
 
 
 
+<br>
+<br>
+<br>
 
+
+## Caso de Uso: Cancelar actividad
+
+El creador de una actividad cancela la actividad. React envía el id de la actividad al microservicio activity y este la borra de la base de datos.
+
+### Interfaz de react.
+
+<br>
+
+<div align="center">
+
+<br>
+<img src="./img/react/cancelar.jpg" />
+<br>
+
+</div>
+
+<br>
+<br>
+
+
+### ActivityApi.java
+
+<code>@GetMapping(EndPointUris.DeleteById)
+ResponseEntity removeById (@PathVariable("id") String id);</code>
+
+Se crea un punto de entrada en el microservicio para recibir el id de una actividad. Este id se pasa al service.
+
+
+
+
+### ActivityServiceImpl.java
+
+<code>public ResponseEntity removeById(String id) {
+<br>
+    Activity tmp = activiyRepository.findById(id).get();
+    activiyRepository.delete(tmp);
+    return ResponseEntity.ok().build();
+}</code>
+
+Para eliminar un documento usando el método **delete** del **repository**, hay que pasarle por parámetro el documento que se desea borrar, por lo que
+primero se obtiene el documento de la base de datos usando el id que se recibe por parámetro a través del método **findById** del **repository**.
+Finalmente se envía un objeto ResponseEntity con mensaje de estado http 200. 
