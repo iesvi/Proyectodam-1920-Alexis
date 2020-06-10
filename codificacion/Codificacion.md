@@ -32,9 +32,9 @@ endpoints usando las anotaciones **@RestController**,**GetMapping** y **PostMapp
 Ejemplo de uno de los microservicios: <br>
 
 
-<img src="ApiActivity.jpg" alt="repository" />
+<img src="./img/ApiActivity.jpg" alt="repository" />
 <br>
-<img src="ControllerActivity.jpg" alt="repository" />
+<img src="./img/ControllerActivity.jpg" alt="repository" />
 
 Las operaciones relacionadas con la base de datos se realizan usando una interfaz **NombreRepository** que extiende de **MongoRepository**. 
 MongoRepository es una interfaz que nos permite realiazar múltiples operaciones con una base de datos MongoDB. Algunas de estas operaciones 
