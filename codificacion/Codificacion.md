@@ -439,12 +439,10 @@ pasa al componente **service** que procesa el string.
 
 
 <code>public ResponseEntity addUser(String dataRequest) {
-<br>
     try{
         String data = URLDecoder.decode(dataRequest,"UTF-8");
         String userEmail = data.substring(0,data.indexOf(","));
         String id = data.substring(data.indexOf(",")+1, data.length()-1);
-    <br>
     <br>
         Activity tmpActivity = activiyRepository.findById(id).get();
         tmpActivity.getUsuarios().add(userEmail);
@@ -466,6 +464,45 @@ con mensaje de estado http 200.
 Todo el bloque se ejecuta dentro de un try-catch porque el método de decodificación (*URLDecoder.decode()*) lanza una excepción que obliga a ser
 capturada. En caso de que fallase, el microservicio devuelve un objeto ResponseEntity con mensaje de estado http 400. 
 
+
+
+
+
 <br>
+<br>
+<br>
+
+
+## Caso de Uso: Proponer fecha o lugar y Votar fecha o lugar.
+
+El usuario está viendo una actividad y pulsa en los botones "fecha" o "lugar", react muestra las fechas o lugares y permite al usuario votar
+o proponer nuevos valores. El usuario acepta los cambios y react envía un array de objetos FechaDTO o LugarDTO al microservicio activity.
+Finalmente el microservicio comprueba si las fechas o lugares ya existen existen en la actividad, si existe suma un voto y si no lo añade
+a la lista.
+
+### Interfaz de react.
+
+<br>
+
+<div align="center">
+
+***<p>Votar o proponer fechas</p>***
+<br>
+<img src="./img/react/verFechas.jpg" />
+<br>
+<br>
+
+***<p>Votar o proponer fechas</p>***
+<br>
+<img src="./img/react/verLugares.jpg" />
+<br>
+<br>
+
+</div>
+
+<br>
+<br>
+
+#### ActivityApi.java
 
 
