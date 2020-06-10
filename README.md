@@ -44,16 +44,16 @@
 
 
 Este proyecto final para el grado DAM tratará el desarrollo de una aplicación con solución SaaS, la aplicación a su vez dará solución
-a la organización de actividades <br> permitiendo que varias personas se pongan de acuerdo de la forma más rápida y eficiente posible. 
-Para el desarrollo del proyecto se utilizará una arquitectura <br> basada en microservicios, siendo que la lógica de la aplicación será dividida
- por funcionalidades que constituirán los distintos microservicios.
+a la organización de actividades permitiendo que varias personas se pongan de acuerdo de la forma más rápida y eficiente posible. 
+Para el desarrollo del proyecto se utilizará una arquitectura basada en microservicios, siendo que la lógica de la aplicación será dividida
+por funcionalidades que constituirán los distintos microservicios.
 
 
 
 <a name="1.1"></a>
 ## Objetivo general
-Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves </br>
-necesarios para llegar a desplegar una<br>  aplicación basada en esta arquitectura.
+Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves necesarios para
+llegar a desplegar una aplicación basada en esta arquitectura.
 
 
 <br>
