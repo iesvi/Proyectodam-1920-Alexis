@@ -704,7 +704,7 @@ objeto ResponseEntity con mensaje de estado http 400 que hara que react deniegue
 
 ## Caso de Uso: Cancelar actividad
 
-El creador de una actividad cancela la actividad. React envía el id de la actividad al microservicio activity y este la borra de la base de datos.
+El creador de una actividad cancela la actividad pulsando en "Cancelar actividad". React envía el id de la actividad al microservicio activity y este la borra de la base de datos.
 
 ### Interfaz de react.
 
@@ -729,8 +729,8 @@ ResponseEntity removeById (@PathVariable("id") String id);</code>
 
 Se crea un punto de entrada en el microservicio para recibir el id de una actividad. Este id se pasa al service.
 
-
-
+<br>
+<br>
 
 ### ActivityServiceImpl.java
 
