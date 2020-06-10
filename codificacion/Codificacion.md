@@ -304,8 +304,19 @@ la interfaz envía al microservicio activity el id de la actividad que desea mos
 
 ### Interfaz de react.
 
-<img src="./img/react/activity.jpg" />
+<div align="center">
 
+<img src="./img/react/activity.jpg" />
+<br>
+<br>
+<img src="./img/react/verfechas.jpg" />
+<br>
+<br>
+<img src="./img/react/verlugares.jpg" />
+<br>
+<br>
+
+</div>
 
 
 #### ActivityApi.java
