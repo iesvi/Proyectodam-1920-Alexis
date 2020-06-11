@@ -142,8 +142,8 @@ redirigirá hacia la pantalla de logueo.
 </div>
 <br>
 
-En esta pantalla se muestran las actividades que ha creado el usuario, las actividades a las que el usuario se a apuntado como asistente, y las<br>
-actividades privadas a las que han invitado al usuario.
+En esta pantalla se muestra en varias listas las actividades que ha creado el usuario, las actividades a las que el usuario se a apuntado como asistente,<br>
+y las actividades privadas a las que han invitado al usuario.
 
 <br>
 <div align="left">
