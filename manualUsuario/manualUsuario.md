@@ -181,7 +181,7 @@ Cuando se pulse en "buscar", se presentará una lista con actividades que conten
 
 <br>
 <div align="left">
-<img src="buscaractividad.jpg" alt="buscar" />
+<img src="buscar.jpg" alt="buscar" />
 <br>
 </div>
 
