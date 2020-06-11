@@ -339,8 +339,6 @@ a la lista. Si lo que queremos es eliminar usuarios de la lísta, basta con puls
 
 
 
-
-
 <br>
 <br>
 <br>
@@ -382,7 +380,7 @@ queremos rechazar la invitación para que no nos apareca más en nuestra lista d
 <br>
 Si deseamos dejar de ser asistentes de la actividad, podemos hacerlo pulsando en **No Asistiré**.
 <br>
-
+<br>
 Una vez que somos asistentes de la actividad, para votar y proponer nuevas fechas o lugares, dependerá de si la actividad es participativa o no, <br>
 esto lo habrá decidido el usuario al crearla. Si es participativa podremos votar y proponer, y si no, sólo podremos votar los lugares que el creador<br>
 haya propuesto.<br>
