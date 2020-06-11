@@ -401,3 +401,27 @@ Arriba del todo hay un recuadro de texto que nos permitirá proponer un lugar.
 <br>
 <img src="plugar2.jpg" />
 </div>
+<br>
+<br>
+<br>
+
+Cuando terminemos, pulsamos en **Aceptar** y se nos mostrará un mensaje. El mensaje viene a decir, que si aceptamos se guardarán las propuestas y votaciones
+y ya no podremos realizar más nuevas aportaciones.
+
+<br>
+<div align="center">
+<img src="plugar3.jpg" />
+</div>
+<br>
+<br>
+Aceptamos, y si volvemos a abrir la lista de lugares podremos ver cómo se han guardado las propuestas.
+
+<br>
+<br>
+<br>
+<div align="center">
+<img src="plugar4.jpg" />
+</div>
+<br>
+<br>
+<br>
