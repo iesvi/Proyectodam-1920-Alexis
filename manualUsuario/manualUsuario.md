@@ -43,6 +43,14 @@ hay que estar registrado y loguearse en el sistema.
 </div>
 
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <a name="2"></a>
 
 ## Registrarse.
