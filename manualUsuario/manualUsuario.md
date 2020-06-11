@@ -51,6 +51,10 @@ hay que estar registrado y loguearse en el sistema.
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
 <a name="2"></a>
 
 ## Registrarse.
@@ -58,8 +62,9 @@ hay que estar registrado y loguearse en el sistema.
 Pulsando sobre **'Registrase'** en la barra de navegación, podremos acceder a esta funcionalidad.
 
 <div align="center">
-<img src="./registarse.jpg" alt="center" />
+<img src="./registrarsebar.jpg" alt="center" />
 </div>
+<br>
 
 Usando esta página podemos darnos de alta en el sistema rellenando el formulario de registro y pulsando en **register**. Si los datos que se introducen
 son correctos, es decir, que el email no se haya usado ya para darse de alta, y el nombre no esté en uso, el sistema da de alta un nuevo usuario, muestra
@@ -71,7 +76,7 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 <br>
 <br>
 <br>
-<img src="./registarusuario.jpg" alt="center" />
+<img src="./registarusuario.jpg" alt="center" width="800" height="400" />
 
 </div>
 
