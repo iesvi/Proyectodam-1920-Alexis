@@ -175,7 +175,7 @@ se presentará una lista con actividades que contengan el texto introducido en s
 
 <br>
 <div align="left">
-<img src="buscar.jpg" alt="buscar" />
+<img src="buscar.jpg" alt="buscar" width="800" height="600" />
 <br>
 </div>
 
