@@ -244,11 +244,11 @@ Otros detalles:
 
 <br>
 <br>
+
 ### Añadir fechas
 
-Para añadir nuevas fechas cuando se está creando una actividad, hay que usar el
-buscador de fechas, que al pulsar sobre él nos mostrará un calendario para que
-seleccionemos la fecha deseada.
+Para añadir nuevas fechas cuando se está creando una actividad, hay que usar el buscador de fechas, que al pulsar sobre él nos mostrará un<br>
+calendario para que seleccionemos la fecha deseada.
 
 
 <div align="center">
@@ -257,16 +257,16 @@ seleccionemos la fecha deseada.
 
 <br>
 
-Cuando seleccionemos una fecha, tendremos que pulsar en el botón azúl con el símbolo
-\+ para que se añada a la actividad. Si queremos eliminar una fecha, lo podemos
-hacer pulsando el botón rojo con el símbolo \-, con este eliminaremos la fecha
-que se encuentre más abajo de la lista.
+Cuando seleccionemos una fecha, tendremos que pulsar en el botón azúl con el símbolo (**\+**) para que se añada a la actividad. Si queremos <br>
+eliminar una fecha, lo podemos hacer pulsando el botón rojo con el símbolo (**\-**), con este eliminaremos la fecha que se encuentre más<br>
+abajo de la lista.
 
 
 <div align="center">
 
 ***<p>Fecha no añadida a la actividad</p>***
 <img src="./fecha1.jpg" alt="calendario" />
+<br>
 <br>
 <br>
 ***<p>Fecha añadida a la actividad</p>***
