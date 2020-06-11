@@ -118,7 +118,6 @@ son correctos, el sistema al usuario, muestra un mensaje informativo y lo rediri
 
 
 
-
 <br>
 <br>
 <br>
@@ -153,3 +152,37 @@ y las actividades privadas a las que han invitado al usuario.
 <br>
 <img src="actividadesinvitado.jpg" alt="actividades invitado" width="430" height="350" />
 </div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a name="5"></a>
+
+## Buscar una actividad.
+
+En la barra de navegación hay un recuadro de texo en el que podemos escribir para buscar actividades por su título.
+
+<div align="center">
+<img src="./buscarbar.jpg" alt="center" />
+</div>
+<br>
+
+Cuando se pulse en "buscar", se presentará una lista con actividades que contengan el texto buscado en su título.
+
+<br>
+<div align="left">
+<img src="buscaractividad.jpg" alt="buscar" />
+<br>
+</div>
+
+
