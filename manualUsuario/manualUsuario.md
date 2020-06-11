@@ -204,7 +204,7 @@ para ello debemos estar identicados en el sistema, sino se nos redirigirá a la 
 
 <br>
 <div align="center">
-<img src="crearbar.jpg" alt="crear navbar" width="800" height="400" />
+<img src="crearbar.jpg" alt="crear navbar"/>
 <br>
 </div>
 <br>
