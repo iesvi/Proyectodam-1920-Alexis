@@ -81,6 +81,28 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 </div>
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a name="3"></a>
 
+## Loguearse.
 
+Pulsando sobre **'Identificarse'** en la barra de navegación, podremos acceder a esta funcionalidad.
+
+<div align="center">
+<img src="./loguinbar.jpg" alt="center" />
+</div>
+<br>
+
+Usando esta página podemos identificarnos en el sistema introduciendo nuestras credenciales y pulsando en **LOG IN**. Si los datos que se introducen
+son correctos, el sistema al usuario, muestra un mensaje informativo y lo redirige a la pantalla "MyActivities".
 
