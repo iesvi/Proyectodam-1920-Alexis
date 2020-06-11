@@ -170,14 +170,8 @@ y las actividades privadas a las que han invitado al usuario.
 
 ## Buscar una actividad.
 
-En la barra de navegación hay un recuadro de texo en el que podemos escribir para buscar actividades por su título.
-
-<div align="center">
-<img src="./buscarbar.jpg" alt="center" />
-</div>
-<br>
-
-Cuando se pulse en "buscar", se presentará una lista con actividades que contengan el texto buscado en su título.
+En la barra de navegación hay un recuadro de texo en el que podemos escribir para buscar actividades por su título. Cuando se pulse en "buscar",<br>
+se presentará una lista con actividades que contengan el texto introducido en su título.
 
 <br>
 <div align="left">
