@@ -240,3 +240,40 @@ Para crear una nueva actividad debemos introducir unos detalles mínimos:
 Otros detalles:
  - **Imágen**: El creador puede añadir una imagen que se muestre en el cuerpo de la actividad, si no añade nada, se mostrará una imagen por<br>
                defecto.
+
+
+<br>
+<br>
+### Añadir fechas
+
+Para añadir nuevas fechas cuando se está creando una actividad, hay que usar el
+buscador de fechas, que al pulsar sobre él nos mostrará un calendario para que
+seleccionemos la fecha deseada.
+
+
+<div align="center">
+<img src="./fechacalendario.jpg" alt="calendario" />
+</div>
+
+<br>
+
+Cuando seleccionemos una fecha, tendremos que pulsar en el botón azúl con el símbolo
+\+ para que se añada a la actividad. Si queremos eliminar una fecha, lo podemos
+hacer pulsando el botón rojo con el símbolo \-, con este eliminaremos la fecha
+que se encuentre más abajo de la lista.
+
+
+<div align="center">
+
+***<p>Fecha no añadida a la actividad</p>***
+<img src="./fecha1.jpg" alt="calendario" />
+<br>
+<br>
+***<p>Fecha añadida a la actividad</p>***
+<img src="./fecha2.jpg" alt="calendario" />
+
+</div>
+
+
+
+
