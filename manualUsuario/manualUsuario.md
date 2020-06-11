@@ -63,7 +63,7 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 <br>
 <br>
 <br>
-<img src="./registrarusuario.jpg" alt="center" />
+<img src="./registarusuario.jpg" alt="center" />
 
 </div>
 
