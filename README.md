@@ -35,6 +35,8 @@
 > **[12- Conclusiones.](#12)**
 >
 > **[13- Bibliografia/Webgrafía.](#13)**
+>
+> **[Manual de Usuario](./manualUsuario/manualUsuario.md)**
 
 <br>
 <br>
