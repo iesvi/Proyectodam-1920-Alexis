@@ -435,13 +435,16 @@ Para proponer y votar fechas, se procede exactamente igual que como acabamos de 
 
 
 <div align="center">
+**<p>Abrimos la lista de fechas</p>**
 <img src="pfecha1.jpg" />
 <br>
 <br>
 <br>
+**<p>Aportamos nuestras propuestas</p>**
 <img src="pfecha2.jpg" />
 <br>
 <br>
 <br>
+**<p>Aceptamos y los cambios y combrobamos como se han guardado</p>**
 <img src="pfecha4.jpg" />
 </div>
