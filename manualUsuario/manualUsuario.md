@@ -174,8 +174,8 @@ En la barra de navegación hay un recuadro de texo en el que podemos escribir pa
 se presentará una lista con actividades que contengan el texto introducido en su título.
 
 <br>
-<div align="left">
-<img src="buscar.jpg" alt="buscar" width="800" height="600" />
+<div align="center">
+<img src="buscar.jpg" alt="buscar" width="800" height="400" />
 <br>
 </div>
 
