@@ -47,6 +47,8 @@ hay que estar registrado y loguearse en el sistema.
 
 ## Registrarse.
 
+Pulsando sobre **'Registrase'** en la barra de navegación, podremos acceder a esta funcionalidad.
+
 <div align="center">
 <img src="./registarse.jpg" alt="center" />
 </div>
