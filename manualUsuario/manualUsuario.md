@@ -435,13 +435,13 @@ Para proponer y votar fechas, se procede exactamente igual que como acabamos de 
 
 
 <div align="center">
-<img src="pfecha1jpg" />
+<img src="pfecha1.jpg" />
 <br>
 <br>
 <br>
-<img src="pfecha2jpg" />
+<img src="pfecha2.jpg" />
 <br>
 <br>
 <br>
-<img src="pfecha4jpg" />
+<img src="pfecha4.jpg" />
 </div>
