@@ -1,0 +1,1 @@
+# Manual de usuario para el uso de Organize-It
