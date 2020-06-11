@@ -113,6 +113,6 @@ son correctos, el sistema al usuario, muestra un mensaje informativo y lo rediri
 <br>
 <br>
 <br>
-<img src="./identificado.jpg" alt="identificado" width="800" height="400" />
+<img src="./identificado.jpg" alt="identificado" width="820" height="400" />
 </div>
 <br>
