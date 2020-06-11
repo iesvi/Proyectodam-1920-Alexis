@@ -77,7 +77,6 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 <br>
 <br>
 <img src="./registarusuario.jpg" alt="center" width="840" height="400" />
-
 </div>
 
 
@@ -115,4 +114,42 @@ son correctos, el sistema al usuario, muestra un mensaje informativo y lo rediri
 <br>
 <img src="./identificado.jpg" alt="identificado" width="820" height="400" />
 </div>
+
+
+
+
+
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a name="4"></a>
+
+## Ver mis actividades.
+
+Pulsando sobre **'MyActivities'** en la barra de navegación, podremos acceder a esta funcionalidad si estamos logueados en el sistema, sino ser nos<br>
+redirigirá hacia la pantalla de logueo.
+
+<div align="center">
+<img src="./loguinbar.jpg" alt="center" />
+</div>
+<br>
+
+En esta pantalla se muestran las actividades que ha creado el usuario, las actividades a las que el usuario se a apuntado como asistente, y las<br>
+actividades privadas a las que han invitado al usuario.
+
+<br>
+<div align="center">
+<img src="actividadescreador.jpg" alt="actividades creador" />
+<br>
+<img src="actividadesasistente.jpg" alt="actividades asistente" />
+<br>
+<img src="actividadesinvitado.jpg" alt="actividades invitado" />
+</div>
