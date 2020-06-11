@@ -2,17 +2,17 @@
 
 
 
->**[Página principal.]("#1")**
+>**[Página principal.](#1)**
 >
->**[Registrarse.]("#2")**
+>**[Registrarse.](#2)**
 >
->**[Loguearse.]("#3")**
+>**[Loguearse.](#3)**
 >
->**[Ver mis actividades.]("#4")**
+>**[Ver mis actividades.](#4)**
 >
->**[Buscar una actividad.]("#5")**
+>**[Buscar una actividad.](#5)**
 >
->**[Interactuar con las actividades.]("#6")**
+>**[Interactuar con las actividades.](#6)**
 
 <br>
 <br>
@@ -76,7 +76,7 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 <br>
 <br>
 <br>
-<img src="./registarusuario.jpg" alt="center" width="800" height="400" />
+<img src="./registarusuario.jpg" alt="center" width="840" height="400" />
 
 </div>
 
