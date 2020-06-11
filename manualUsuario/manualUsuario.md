@@ -425,3 +425,23 @@ Aceptamos, y si volvemos a abrir la lista de lugares podremos ver cómo se han g
 <br>
 <br>
 <br>
+
+
+
+### Proponer y votar fechas.
+
+Para proponer y votar fechas, se procede exactamente igual que como acabamos de ver con los lugares:
+
+
+
+<div align="center">
+<img src="pfecha1jpg" />
+<br>
+<br>
+<br>
+<img src="pfecha2jpg" />
+<br>
+<br>
+<br>
+<img src="pfecha4jpg" />
+</div>
