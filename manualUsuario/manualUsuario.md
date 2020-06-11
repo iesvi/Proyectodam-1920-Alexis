@@ -257,8 +257,8 @@ para que seleccionemos la fecha deseada.
 
 <br>
 
-Cuando seleccionemos una fecha, tendremos que pulsar en el botón azúl con el símbolo (**\+**) para que se añada a la actividad. Si queremos eliminar una<br>
-fecha, lo podemos hacer pulsando el botón rojo con el símbolo (**\-**), con este eliminaremos la fecha que se encuentre más abajo de la lista.
+Cuando seleccionemos una fecha, tendremos que pulsar en el botón azúl con el símbolo **(\+)** para que se añada a la actividad. Si queremos eliminar una<br>
+fecha, lo podemos hacer pulsando el botón rojo con el símbolo **(\-)**, con este eliminaremos la fecha que se encuentre más abajo de la lista.
 
 
 <div align="center">
