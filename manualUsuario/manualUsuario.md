@@ -2,19 +2,19 @@
 
 
 
->**[Página principal.](#1)**
+>**[1.Página principal.](#1)**
 >
->**[Registrarse.](#2)**
+>**[2.Registrarse.](#2)**
 >
->**[Loguearse.](#3)**
+>**[3.Loguearse.](#3)**
 >
->**[Ver mis actividades.](#4)**
+>**[4.Ver mis actividades.](#4)**
 >
->**[Buscar una actividad.](#5)**
+>**[5.Buscar una actividad.](#5)**
 >
->**[Crear una actividad.](#6)**
+>**[6.Crear una actividad.](#6)**
 >
->**[Interactuar con las actividades.](#7)**
+>**[7.Participar en una actividad.](#7)**
 
 <br>
 <br>
@@ -22,7 +22,7 @@
 
 <a name="1"></a>
 
-## Página principal.
+## 1. Página principal.
 
 En la página principal, cuando se accede a la aplicación, se muestra una lista de actividades que han sido creadadas por los usuarios de la comunidad,
 <br>si nos fijamos en la parte superior hay una barra de navegación que nos permite la movilidad entre las diferentes partes de la aplicación.
@@ -59,7 +59,7 @@ hay que estar registrado y loguearse en el sistema.
 <br>
 <a name="2"></a>
 
-## Registrarse.
+## 2. Registrarse.
 
 Pulsando sobre **'Registrase'** en la barra de navegación, podremos acceder a esta funcionalidad.
 
@@ -95,7 +95,7 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 <br>
 <a name="3"></a>
 
-## Loguearse.
+## 3. Loguearse.
 
 Pulsando sobre **'Identificarse'** en la barra de navegación, podremos acceder a esta funcionalidad.
 
@@ -133,7 +133,7 @@ son correctos, el sistema al usuario, muestra un mensaje informativo y lo rediri
 <br>
 <a name="4"></a>
 
-## Ver mis actividades.
+## 4. Ver mis actividades.
 
 Pulsando sobre **'MyActivities'** en la barra de navegación, podremos acceder a esta funcionalidad si estamos logueados en el sistema, sino ser nos<br>
 redirigirá hacia la pantalla de logueo.
@@ -170,7 +170,7 @@ y las actividades privadas a las que han invitado al usuario.
 <br>
 <a name="5"></a>
 
-## Buscar una actividad.
+## 5. Buscar una actividad.
 
 En la barra de navegación hay un recuadro de texo en el que podemos escribir para buscar actividades por su título. Cuando se pulse en "buscar",<br>
 se presentará una lista con actividades que contengan el texto introducido en su título.
@@ -197,7 +197,7 @@ se presentará una lista con actividades que contengan el texto introducido en s
 <br>
 <a name="6"></a>
 
-## Crear una actividad.
+## 6. Crear una actividad.
 
 Pulsando sobre **'Crear Actividad'** en la barra de navegación, podremos acceder a esta funcionalidad que nos permite crear nuevas actividades, pero<br>
 para ello debemos estar identicados en el sistema, sino se nos redirigirá a la pantalla de login para que nos identifiquemos.
@@ -337,3 +337,48 @@ Para añadir nuevos usuarios a la lista de invitación, introduce su nombre en e
 a la lista. Si lo que queremos es eliminar usuarios de la lísta, basta con pulsar el botón rojo con el símbolo **(x)** que aparece a la derecha de cada uno.
 
 
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a name="7"></a>
+
+## 7. Participar en una actividad.
+
+Cuando estamos viendo los detalles de una actividad, podremos votar y realizar proupestas de fechas y lugares, siempre y cuando seamos asistentes de la
+actividad. Para asistir a una actividad basta con marcar el botón "asistiré" que aparece bajo el título de la actividad.
+
+<br>
+<div align="center">
+<img src="asistire.jpg" alt="crear navbar"/>
+<br>
+</div>
+En este caso, aparece otra opción que es la de cancelar la invitación, esto es porque se trata de una actividad privada a la que nos han ivitado, si 
+queremos cancelar la invitación para que no nos apareca más en nuestra lista de invitaciones, basta con pulsar ahí.
+
+<br>
+<br>
+<div align="center">
+
+***Si la actividad es pública no nos aparecerá esa opción de cancelar.***
+<img src="asistire1.jpg" alt="crear navbar"/>
+<br>
+<br>
+<br>
+<img src="asistire1.jpg" alt="crear navbar"/>
+</div>
+<br>
+<br>
+Si deseamos dejar de ser asistentes de la actividad, podemos hacerlo pulsando en **No Asistiré**.
+<br>
