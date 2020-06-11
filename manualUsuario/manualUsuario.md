@@ -362,6 +362,7 @@ actividad. Para asistir a una actividad basta con marcar el botón **Asistiré**
 <img src="asistire.jpg" alt="crear navbar"/>
 <br>
 </div>
+
 En este caso, aparece otra opción que es la de **Rechazar Invitación**, esto es porque se trata de una actividad privada a la que nos han ivitado, si 
 queremos rechazar la invitación para que no nos apareca más en nuestra lista de invitaciones, basta con pulsar ahí.
 
@@ -378,6 +379,7 @@ queremos rechazar la invitación para que no nos apareca más en nuestra lista d
 </div>
 <br>
 <br>
+
 Si deseamos dejar de ser asistentes de la actividad, podemos hacerlo pulsando en **No Asistiré**.
 <br>
 <br>
