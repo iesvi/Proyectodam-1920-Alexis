@@ -106,3 +106,8 @@ Pulsando sobre **'Identificarse'** en la barra de navegación, podremos acceder 
 Usando esta página podemos identificarnos en el sistema introduciendo nuestras credenciales y pulsando en **LOG IN**. Si los datos que se introducen
 son correctos, el sistema al usuario, muestra un mensaje informativo y lo redirige a la pantalla "MyActivities".
 
+
+<div align="center">
+<img src="./loguin.jpg" alt="center" />
+</div>
+<br>
