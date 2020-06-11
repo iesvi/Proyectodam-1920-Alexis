@@ -371,7 +371,7 @@ queremos cancelar la invitación para que no nos apareca más en nuestra lista d
 <br>
 <div align="center">
 
-***Si la actividad es pública no nos aparecerá esa opción de cancelar.***
+***<p>Si la actividad es pública no nos aparecerá esa opción de cancelar.</p>***
 <img src="asistire1.jpg" alt="crear navbar"/>
 <br>
 <br>
@@ -382,3 +382,22 @@ queremos cancelar la invitación para que no nos apareca más en nuestra lista d
 <br>
 Si deseamos dejar de ser asistentes de la actividad, podemos hacerlo pulsando en **No Asistiré**.
 <br>
+
+Una vez que somos asistentes de la actividad, para votar y proponer nuevas fechas o lugares, dependerá de si la actividad es participativa o no, <br>
+esto lo habrá decidido el usuario al crearla. Si es participativa podremos votar y proponer, y si no, sólo podremos votar los lugares que el creador<br>
+haya propuesto.<br>
+
+
+### Votar y proponer lugares.
+Para realizar estas acciones pulsamos en el botón **Lugar**, que nos mostrará los lugares que se hayan propuesto. Al lado de cada lugar tenemos un botón<br>
+verde, si pulsamos este botón se añadira un voto a ese lugar, y aparecerá un botón rojo que nos permitirá quitarle el voto.<br>
+Arriba del todo hay un recuadro de texto que nos permitirá proponer un lugar.
+
+<br>
+<div align="center">
+<img src="plugar1.jpg" />
+<br>
+<br>
+<br>
+<img src="plugar2.jpg" />
+</div>
