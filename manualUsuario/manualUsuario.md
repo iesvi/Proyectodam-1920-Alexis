@@ -305,7 +305,34 @@ lugar, lo podemos hacer pulsando el botón rojo con el símbolo **(\-)**, con es
 
 </div>
 
+<br>
+<br>
 
 
+### Invitar usuarios a una actividad privada.
+
+Cuando marcamos una actividad como no pública, aparece al lado un icono que al pulsarlo nos abre una ventana en la que podremos introducir el nombre
+de los usuarios a los que queramos invitar y añadirlos a la lista de invitación.
+
+
+<div align="center">
+
+***<p>Actividad marcada como pública</p>***
+<img src="./publica.jpg" alt="publica" />
+<br>
+<br>
+<br>
+***<p>Actividad marcada como privada</p>***
+<img src="./nopublica.jpg" alt="nopublica" />
+<br>
+<br>
+<br>
+***<p>Lista de usuarios invitados</p>***
+<img src="./invitausuarios.jpg" alt="invitados" />
+</div>
+
+<br>
+
+Si queremos eliminar usuarios de esta lísta, basta con pulsar el botón rojo con el símbolo **(x)** que aparece a la derecha de cada uno.
 
 
