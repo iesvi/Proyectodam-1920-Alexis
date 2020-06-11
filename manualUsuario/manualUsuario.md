@@ -274,5 +274,38 @@ fecha, lo podemos hacer pulsando el botón rojo con el símbolo **(\-)**, con es
 </div>
 
 
+<br>
+<br>
+
+### Añadir lugares.
+
+Para añadir nuevos lugares cuando se está creando una actividad, hay que usar el buscador de lugares. El buscador de lugares sugiere posible lugares conforme<br>
+se va introduciendo texto, pero no es obligatorio seleccionar ninguna de las sugerencias, se puede introducir un texto cualquiera para definir el lugar.
+
+
+<div align="center">
+<img src="./lugarbuscar.jpg" alt="bucar lugar" />
+</div>
+
+<br>
+
+Cuando seleccionemos un lugar, tendremos que pulsar en el botón azúl con el símbolo **(\+)** para que se añada a la actividad. Si queremos eliminar un<br>
+lugar, lo podemos hacer pulsando el botón rojo con el símbolo **(\-)**, con este eliminaremos el lugar que se encuentre más abajo de la lista.
+
+
+<div align="center">
+
+***<p>Lugar no añadido a la actividad</p>***
+<img src="./lugar1.jpg" alt="calendario" />
+<br>
+<br>
+<br>
+***<p>Lugar añadido a la actividad</p>***
+<img src="./lugar2.jpg" alt="calendario" />
+
+</div>
+
+
+
 
 
