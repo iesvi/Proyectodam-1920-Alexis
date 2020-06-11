@@ -108,6 +108,11 @@ son correctos, el sistema al usuario, muestra un mensaje informativo y lo rediri
 
 
 <div align="center">
-<img src="./loguin.jpg" alt="center" />
+<img src="./loguin.jpg" alt="loguin" />
+<br>
+<br>
+<br>
+<br>
+<img src="./identificado.jpg alg="identificado" />
 </div>
 <br>
