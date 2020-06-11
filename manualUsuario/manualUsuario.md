@@ -138,7 +138,7 @@ Pulsando sobre **'MyActivities'** en la barra de navegación, podremos acceder a
 redirigirá hacia la pantalla de logueo.
 
 <div align="center">
-<img src="./loguinbar.jpg" alt="center" />
+<img src="./myactivitiesbar.jpg" alt="center" />
 </div>
 <br>
 
