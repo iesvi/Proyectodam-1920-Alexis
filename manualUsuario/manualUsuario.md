@@ -333,6 +333,7 @@ de los usuarios a los que queramos invitar y añadirlos a la lista de invitació
 
 <br>
 
-Si queremos eliminar usuarios de esta lísta, basta con pulsar el botón rojo con el símbolo **(x)** que aparece a la derecha de cada uno.
+Para añadir nuevos usuarios a la lista de invitación, introduce su nombre en el cuadro de texto, y si existe un usuario con ese nombre, será agregado<br>
+a la lista. Si lo que queremos es eliminar usuarios de la lísta, basta con pulsar el botón rojo con el símbolo **(x)** que aparece a la derecha de cada uno.
 
 
