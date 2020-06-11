@@ -59,8 +59,14 @@ un mensaje informativo y lo redirige a la pantalla "MyActivities".
 
 
 <div align="center">
+<img src="./registrarformulario.jpg" alt="center" />
+<br>
+<br>
+<br>
 <img src="./registrarusuario.jpg" alt="center" />
+
 </div>
+
 
 
 
