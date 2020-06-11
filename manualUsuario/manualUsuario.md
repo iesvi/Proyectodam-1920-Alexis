@@ -357,21 +357,21 @@ a la lista. Si lo que queremos es eliminar usuarios de la lísta, basta con puls
 ## 7. Participar en una actividad.
 
 Cuando estamos viendo los detalles de una actividad, podremos votar y realizar proupestas de fechas y lugares, siempre y cuando seamos asistentes de la
-actividad. Para asistir a una actividad basta con marcar el botón "asistiré" que aparece bajo el título de la actividad.
+actividad. Para asistir a una actividad basta con marcar el botón **Asistiré** que aparece bajo el título de la actividad.
 
 <br>
 <div align="center">
 <img src="asistire.jpg" alt="crear navbar"/>
 <br>
 </div>
-En este caso, aparece otra opción que es la de cancelar la invitación, esto es porque se trata de una actividad privada a la que nos han ivitado, si 
-queremos cancelar la invitación para que no nos apareca más en nuestra lista de invitaciones, basta con pulsar ahí.
+En este caso, aparece otra opción que es la de **Rechazar Invitación**, esto es porque se trata de una actividad privada a la que nos han ivitado, si 
+queremos rechazar la invitación para que no nos apareca más en nuestra lista de invitaciones, basta con pulsar ahí.
 
 <br>
 <br>
 <div align="center">
 
-***<p>Si la actividad es pública no nos aparecerá esa opción de cancelar.</p>***
+***<p>Si la actividad es pública no nos aparecerá esa opción de rechazar.</p>***
 <img src="asistire1.jpg" alt="crear navbar"/>
 <br>
 <br>
