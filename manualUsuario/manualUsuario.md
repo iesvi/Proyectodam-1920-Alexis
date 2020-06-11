@@ -151,5 +151,5 @@ actividades privadas a las que han invitado al usuario.
 <br>
 <img src="actividadesasistente.jpg" alt="actividades asistente" width="800" height="350" />
 <br>
-<img src="actividadesinvitado.jpg" alt="actividades invitado" width="450" height="400" />
+<img src="actividadesinvitado.jpg" alt="actividades invitado" width="450" height="380" />
 </div>
