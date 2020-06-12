@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping(EndPointUris.API+EndPointUris.V1)
+@RequestMapping()
 public interface LoginApi {
 
 /*
