@@ -5,43 +5,9 @@
 
 <br>
 
-## Índice
-> **[1- Introducción.](#1)**
->
-> **[ 1.1- Objetivo General.](#1.1)**
->
-> **[ 1.2- Objetivos especificos.](#1.2)**
->
-> **[2- Tecnologías de desarollo.](./tecnologias/Tecnologias.md)**
->
-> **[3- Entorno de desarrollo.](./entornoDesarrollo/EntornoDesarrollo.md)**
->
-> **[4- Despliegue de la aplicación.](./despliegue/Despliegue.md)**
->
-> **[5- Análisis de la aplicación.](./analisis/Analisis.md)**
->
-> **[6- Diseño de la aplicación.](./diseño/Diseño.md)**
->
-> **[7- Codificación del proyecto.](./codificacion/Codificacion.md)**
->
-> **[8- Pruebas.](#8)**
->
-> **[9- Detalles técnicos.](#9)**
->
-> **[10- Problemas durante el desarrollo.](#10)**
->
-> **[11- Mejoras posibles.](#11)**
->
-> **[12- Conclusiones.](#12)**
->
-> **[13- Bibliografia/Webgrafía.](#13)**
->
-> **[Manual de Usuario](./manualUsuario/manualUsuario.md)**
-
 <br>
 <br>
 
-<a name="1"></a>
 # Introducción
 
 
@@ -52,7 +18,6 @@ por funcionalidades que constituirán los distintos microservicios.
 
 
 
-<a name="1.1"></a>
 ## Objetivo general
 Ralizar un estudio del modelo de distribución de software SaaS basado en microservicios, identificando los componentes claves necesarios para
 llegar a desplegar una aplicación basada en esta arquitectura.
@@ -60,7 +25,6 @@ llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 
-<a name="1.2"></a>
 ## Objetivos específicos
 
 <ul>
@@ -80,6 +44,36 @@ llegar a desplegar una aplicación basada en esta arquitectura.
 
 <br>
 <br>
+
+
+## Índice de contenido
+> **[1- Tecnologías de desarollo.](./tecnologias/Tecnologias.md)**
+>
+> **[2- Entorno de desarrollo.](./entornoDesarrollo/EntornoDesarrollo.md)**
+>
+> **[3- Despliegue de la aplicación.](./despliegue/Despliegue.md)**
+>
+> **[4- Análisis de la aplicación.](./analisis/Analisis.md)**
+>
+> **[5- Diseño de la aplicación.](./diseño/Diseño.md)**
+>
+> **[6- Codificación del proyecto.](./codificacion/Codificacion.md)**
+>
+> **[7- Pruebas.](#8)**
+>
+> **[8- Detalles técnicos.](#9)**
+>
+> **[9- Problemas durante el desarrollo.](#10)**
+>
+> **[10- Mejoras posibles.](#11)**
+>
+> **[11- Conclusiones.](#12)**
+>
+> **[12- Bibliografia/Webgrafía.](#13)**
+>
+> **[Manual de Usuario](./manualUsuario/manualUsuario.md)**
+
+
 <br>
 <br>
 
