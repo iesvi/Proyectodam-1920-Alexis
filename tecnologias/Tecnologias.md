@@ -45,7 +45,8 @@ servicio es donde se alojarán el código, y la documentación de la aplicación
 
 **Amazon Web Services** es una colección de servicios que ofrece amazon, será la plataforma que se usará para desplegar los microservicios<br>
 de la aplicación. Concretamente se usará un servicio de los que ofrece esta plataforma, llamado EC2, este servicio permite alquilar maquinas<br>
-virtuales *(IaaS)* con unos recursos personalizables y en las que tenemos un control total sobre el sistema.
+virtuales *(IaaS)* con unos recursos personalizables y en las que tenemos un control total sobre el sistema. En el apartado [despliegue](depliegue/Despliegue.md)
+se explica paso a paso cómo se han usado estos servicios para hacer el despliuegue de la aplicación.
 
 <br>
 <br>
@@ -160,16 +161,6 @@ ni crear nada, se instala el servidor, se arranca y ya se puede utilizar, la bas
 sin entrar demasiado en detalle de como funcionan las bases de datos no relacionales, es algo así como una carpeta en la que se guardan todos
 los documentos que pertenecen a una misma clase. Esto de identificar una clase como documento se puede ver en la [explicación del código](codificacion/Codificacion.md#repository)
 inserte el primer documento, y ya el resto de documentos que sean de la misma clase, se insertarán en esa colección.
-
-
-
-
-<img src="./img/aws.png" height="110" width="100" align="right"/>
-<br>
-
-## AWS:
-Es una colección de servicios cloud que ofrece amazon, y será donde se realizará el despliegue de la aplicación.
-
 
 
 
