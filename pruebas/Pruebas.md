@@ -7,7 +7,8 @@ Para testear el funcionamiento de los microservicios se ha usado Postman y el na
 
 ## Microservicio Eureka
 El servicio Eureka tiene una interfaz web en la que podemos ver y comprobar que el servicio está activo y cumple su función registrando
-los servicios que se comunican con él.
+los servicios que se comunican con él. Para acceder a esta interfaz, introducimos la dirección del microservicio más el puerto en el que 
+está funcionando y nos aparecerá tal que así:
 
 <br>
 
