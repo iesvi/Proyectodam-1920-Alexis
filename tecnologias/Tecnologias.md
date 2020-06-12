@@ -8,14 +8,15 @@
 
 
 
-## SaaS
+## Cloud Services
 
 <img src="./img/piramidecloud.png" height="261" width="278" align="right"/>
- 
-Como se puede ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos <br>
- servicios han cambiado la forma de entender tanto la gestión como el acceso a los recursos informáticos, pues con<br>
- ellos hemos dejado atrás un modelo modelo en el que la única manera de obtener estos recursos era adquiriéndolos<br>
- fisicamente y hacerse cargo de su instalación y mantenimiento.
+
+Uno de los objetivos de este proyecto, es el de desplegar la aplición como SaaS *(Software como servicio)*, como se puede<br>
+  ver en la figura a la derecha, SaaS forma parte de un conjunto de servicios llamados Servicios cloud, estos servicios<br>
+ han cambiado la forma de entender tanto la gestión como el acceso a los recursos informáticos, pues con ellos hemos <br>
+ dejado atrás un modelo en el que la única manera de obtener estos recursos era adquiriéndolos fisicamente y hacesrse<br>
+ cargo de su instalación y mantenimiento.
 
 
 Con la aparición de los <b>cloud services</b> el escenario a dado un giro al consumo bajo demanda dónde los recursos <br>
@@ -24,12 +25,27 @@ Con la aparición de los <b>cloud services</b> el escenario a dado un giro al co
  de estos recursos (si fuese hardware), o la máquina en la que se está ejecutando (si fuese software).
 
 
+Veamos ahora cómo se aplicará esta tecnología al desarrollo y puesta en producción del proyecto:
+
+
+### SaaS
 
 <b>SaaS</b> por tanto es un modelo de distribución de software en el que se ofrece al usuario un servicio disponible desde <br>
- cualquier dispositivo, pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este.
+ cualquier dispositivo, pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este. Este modelo<br>
+ de distribución es el que se usará para el despliegue de la aplicación.
 
 
+### Gitab
 
+Gitlab es un **PaaS** *(Plataforma como servicio)* que nos permite hacer control de versiones de un proyecto de desarrollo, en este<br>
+servicio es donde se alojarán el código, y la documentación de la aplicación.
+
+
+### AWS
+
+**Amazon Web Services** es una colección de servicios que ofrece amazon, será la plataforma que se usará para desplegar los microservicios<br>
+de la aplicación. Concretamente se usará un servicio de los que ofrece esta plataforma, llamado EC2, este servicio permite alquilar maquinas<br>
+virtuales *(IaaS)* con unos recursos personalizables y en las que tenemos un control total sobre el sistema.
 
 <br>
 <br>
@@ -40,14 +56,14 @@ Con la aparición de los <b>cloud services</b> el escenario a dado un giro al co
 ## Microservicios:
 
 
-Es una arquitectura para el desarrollo del software en la que una aplicación es formada por distintos servicios
+Es una arquitectura para el desarrollo del software, en la que una aplicación es formada por distintos servicios
 independientes que se despliegan según se vayan necesitando. Con este tipo de arquitectura conseguimos una 
 alta escalabilidad y una gran facilidad para la ampliación de funcionalidades, pues al estar la aplicación
-compuesta por pequeños servicios que se comunican entre ellos, para añadir uno nuevo no es necesario detener
+compuesta por pequeños servicios que se comunican entre ellos, para añadir uno nuevo, no es necesario detener
 nada.
 
 A la hora de desplegar una arquitectura de estas características, surgen ciertas problemáticas por la naturaleza
-descentralizada de esta. Para dar solución a estos problemas, surgen los siguientes componentes o servicios, que
+descentralizada de la mismsa. Para dar solución a estos problemas, surgen los siguientes componentes o servicios, que
 deberemos de añadir a nuestra aplicación:
 
 
@@ -79,6 +95,29 @@ deberemos de añadir a nuestra aplicación:
         Con este definiremos un único punto de entrada a nuestra aplicación, que se encargará de enrutar<br>
          las peticiones externas hacia el microservicio pertinente y de devolver las respuestas.
 
+
+Al mismo tiempo, esta descentralización tiene unas ventajas que con una arquitectura monolítica serían imposibles de<br>
+conseguir:
+
+  - Tolerancia a fallos: El tener la posibilidad de desplegar varias instancias por cada microervicio hace sea<br>
+                         muy poco probable que se caigan todas, esto junto a una buena configuracion que redirija<br>
+                         las peticiones cuando no haya respuesta, nos da una garantía casi al 100% de ofrecer un<br>
+                         servicio siempre disponible.
+  - Distintos lenguajes: Cada microservicio pude estar codificado con un lenguaje distinto.
+  - Escalado: Podemos tener un cluster por cada microservicio y tener en funcionamiento la cantidad de instancias<br>
+              que necesitemos en cada momento.
+
+
+La aplicación se basará en este tipo de arquitectura, siendo estos los microservicios que se desarrollarán:
+- Activity
+- Login
+- Alert
+- Gateway
+- Cloud Config
+- Eureak
+
+En este [apartado](/codificacion/Codificacion.md) se explica más a fondo la funcionalidad de cada uno, y como se han desarrollado. Más [abajo](#figura) encontraréis una figura<br>
+en la que se explica gráficamente la arquitectura de la aplicación.
 
 
 <br>
@@ -147,6 +186,8 @@ Gestor de paquetes
 <br>
 <br>
 
+
+<a name="figura" />
 
 ### A continuación un diagrama en el que se muestra cómo se organizará la aplicación usando todas las tecnologías mencionadas.
 <br>
