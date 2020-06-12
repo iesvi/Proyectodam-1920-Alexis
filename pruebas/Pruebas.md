@@ -46,20 +46,24 @@ gateway, se puede ver en la imagen de arriba.
 
 
 ### Microservicio Activity
+El microservicio Activity tiene un punto de entrada que devuleve una lista de actividades, y es el que se usa para la prueba.
+
+
 <br>
 
 <div align="center">
-<img src="./img/activitylista.jpg" height="549" width="1063" />
+<img src="./img/activitylista.jpg" height="616" width="1098" />
 </div>
 <br>
 <br>
 
 
 ### Microservicio Login
-<br>
+El microservicio Login tiene un punto de entrada que devuleve los datos de un usuario a partir de su nombre, y es el que se usa para la prueba.
 
+<br>
 <div align="center">
-<img src="./img/login.jpg" height="549" width="1063" />
+<img src="./img/login.jpg" />
 </div>
 <br>
 <br>
@@ -69,11 +73,10 @@ gateway, se puede ver en la imagen de arriba.
 El microservicio Alert no tiene ningun punto de entrada, así que para comprobar su funcionamiento, que es el de comprobar qué actividades han de terminar
 y enviar un correo electrónico, he creado una actividad y he esperado a que llegue un correo que confirme su funcionamiento.
 
-### Microservicio Activity
 <br>
 
 <div align="center">
-<img src="./img/email.jpg" height="549" width="1063" />
+<img src="./img/email.jpg" height="300" width="400" />
 </div>
 <br>
 <br>
