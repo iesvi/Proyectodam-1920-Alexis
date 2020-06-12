@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: alerta
+  cloud:
+    config:
+      label: master
+      uri: http://54.161.173.48:8888  #where the config-service is running
+      fail-fast: true             #the service will not run if it can't reach the config-service
+
+
+#For Amazon
+#spring.mail.host=email-smtp.us-west-2.amazonaws.com
+#spring.mail.username=username
+#spring.mail.password=password
+#spring.mail.properties.mail.transport.protocol=smtp
+#spring.mail.properties.mail.smtp.port=25
+#spring.mail.properties.mail.smtp.auth=true
+#spring.mail.properties.mail.smtp.starttls.enable=true
+#spring.mail.properties.mail.smtp.starttls.required=tru
