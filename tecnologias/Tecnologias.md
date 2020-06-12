@@ -225,7 +225,7 @@ El componente devuelve un código HTML que forma su estructura:
 Y dentro de este código HTML podemos hacer referencia a las variables de estado o propiedades del componente
 
 <br>
-<img src="./img/react5.jpg" align="center" />
+<img src="./img/reac5.jpg" align="center" />
 <br>
 
 
@@ -237,15 +237,47 @@ Y dentro de este código HTML podemos hacer referencia a las variables de estado
 ### JSX
 
 JSX es una extensión de javascript desarrollada para definir estructuras de nodos con propiedades y atributos de forma sencilla con una sintaxis familiar
-y concisa.
+y concisa. Con JSX podemos anidar componentes como si se tratara de un XML, donde cada componente sería el equivalente a un elemento, y las propiedades que
+se le pasan los atributos.
 
+<br>
+<img src="./img/react6.jpg" align="center" />
+<br>
+<br>
+<br>
 
 
 <img src="./img/nodejs.png" height="110" width="100" align="right"/>
 <br>
 
+
 ## Node.Js:
-Gestor de paquetes
+Para instalar los paquetes necesarios de React, se usará Node.JS, un gestor de paquetes que nos permite, además de descargar e instalar paquetes,
+crear un fichero de dependencias llamado **package.json**, en el que se guarde una referencia a todos los paquetes que se han instalado en nuestro entorno de trabajo. De esta
+forma podremos mover el codigo de react sin necesidad de arrastrar con él la carpeta **node_modules**, que es donde se almacenan todos estos paquetes
+instalados y que puede llegar a alcanzar un peso considerable que relentize la movilidad del proyecto para realizar su despliegue en otras máquinas.
+
+Comandos usados para las instalación de dependencias:<br>
+<br>
+
+<code>    npm add 'nombreDependencia' --save</code>
+
+Con esta instrucción instalaremos cualquier paquete y con el parámetro --save guardaremos esa dependecia en el fichero **package.json**. Al parámetro
+--save se le puede añadir --save-dev, esto hará que la dependencia se guarde como una dependencia necesaria sólo para el desearrollo, de forma que
+cuando se instalen las depencias para la puesta en producción, no se instalen paquetes innecesarios.
+<br>
+<br>
+
+<code align="center">     npm install</code>
+
+Con esta otra será con la que podremos instalar todas las dependecias del fichero **package.json** y reconstruir la carpeta node_modules.
+
+Muestro aquí una captura con las dependecias usadas para este proyecto:
+
+<br>
+<br>
+<img src="./img/nodejs2.jpg" height="110" width="100" align="right"/>
+<br>
 
 <br>
 <br>
