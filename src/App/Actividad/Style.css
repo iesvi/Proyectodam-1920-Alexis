@@ -1,0 +1,81 @@
+.fondogris {
+    background-color: rgb(248, 244, 244);
+}       
+
+.fondoblanco {
+    background-color:white;
+}
+
+.fuentegris{
+    color: gray;
+}
+
+.preview{
+
+    height: 100%;
+}
+
+.truncado1{
+
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.truncado2{
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+.truncado3{
+    word-wrap: break-word;
+    overflow : hidden;
+    text-overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.textArea{
+    word-wrap: break-word;
+    background-color: white;
+    height: 20vh;
+    resize: none;
+}
+
+.botonRedondo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8vh;
+    height: 8vh;
+    opacity: 0.7;
+}
+
+.botonRedondo:hover { opacity: 0.9 }
+
+
+
+.botonRedondoUp{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8vh;
+    height: 8vh;
+    opacity: 0.7;
+}
+
+.botonRedondoUp:hover { opacity: 0.9 }
+
+
+
+
+
+

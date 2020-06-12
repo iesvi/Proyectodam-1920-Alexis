@@ -1,0 +1,20 @@
+.brand {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: honeydew;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.brand:hover {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: honeydew;
+
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.fondo {
+    background-color: white;
+}
