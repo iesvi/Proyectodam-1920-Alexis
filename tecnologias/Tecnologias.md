@@ -195,37 +195,37 @@ de nodos y es posible gracias al uso de Jsx.
 Ejemplo de un componente:
 
 <br>
-<img src=".img/componente.jpg" align="center" />
+<img src="./img/componente.jpg" align="center" />
 <br>
 
 En el ejemplo se puede ver como el componente es una función de Javascript que se llama LugarAdd:
 
 <br>
-<img src=".img/react1.jpg" align="center" />
+<img src="./img/react1.jpg" align="center" />
 <br>
 
 Que tiene una variable de estado llamada thisLugar:
 
 <br>
-<img src=".img/react2.jpg" align="center" />
+<img src="./img/react2.jpg" align="center" />
 <br>
 
 Este estado toma su valor de una propiedad que hereda del padre que lo declare:
 
 <br>
-<img src=".img/react3.jpg" align="center" />
+<img src="./img/react3.jpg" align="center" />
 <br>
 
 El componente devuelve un código HTML que forma su estructura:
 
 <br>
-<img src=".img/react4.jpg" align="center" />
+<img src="./img/react4.jpg" align="center" />
 <br>
 
 Y dentro de este código HTML podemos hacer referencia a las variables de estado o propiedades del componente
 
 <br>
-<img src=".img/react5.jpg" align="center" />
+<img src="./img/react5.jpg" align="center" />
 <br>
 
 
