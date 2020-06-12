@@ -24,8 +24,8 @@ Tienen 3 paquetes principales que son **controller**, **service** y **repository
 como **Vista** en un patrón **MVC**, este paquete, o componente, es el que ofrece una interfaz para que los clientes interactuen con el
 microservicio, es el encargado de recibir y responder peticiones. Por otro lado tenemos los paquetes **repository** y **model**, el **Modelo** de nuestra
 aplicación, que será el responsable de aglomerar las clases que representan los datos que maneja el sistema (*model*), y el encargado de manejar
-la persistencia de los datos(*repository*). Entre medias de estos dos componentes se encuentra el paquete **service**, nuestro **Controlador**, será el
-encargado de la lógica de negocios actuando como intermediario entre el componente controller y repository.
+la persistencia de los datos(*repository*) como si se tratase de las clases DAO. Entre medias de estos dos componentes se encuentra el paquete **service**,<
+nuestro **Controlador**, será el encargado de la lógica de negocios actuando como intermediario entre el componente controller y repository.
 
 El microservicio alert tiene una estructura similar, pero presciende del paquete controller ya que este no se comunica con otros microservicios directamente,
 sino que ejecuta una serie de comprobaciones los datos cada 24 horas e interactúa únicamente con la base de datos.
@@ -71,6 +71,24 @@ Ejemplo de uno de los microservicios:<br>
 
 <br>
 <br>
+
+Para poder usar la interfaz **NombreRepository**, tenemos que indicarle el tipo de documento que vamos a insertar en la base de datos, eso es lo que
+se indica en la extensión de MongoRepository entre ***"<>"***.
+<br>
+<img src="./img/mongorepository.jpg" align="center" />
+<br>
+
+Ahí escribiremos el nombre de la clase que se guardará en la base de datos, y el tipo de dato del atributo que funciona como identificador de cada
+objeto. Para indicar cual es el atributo que identifica cada a objeto de la clase de forma inequívoca, se usa la anotación @Id. Si declaramos este
+atributo como un tipo String, podremos guardar objetos donde el atributo esté vacío **(sólo si el atributo id es de tipo String)**, ya que MongoDB 
+generará automaticamente un id aleatorio al insertar el documento en la base de datos. Además del id, tendremos que indicar a Spring cuál es la clase
+que se va a guardar en la base de datos, ya que Spring es quién se encargará de hacer las conversiones de clase Java, a documento de MongoDB, cada vez
+que guardemos o recuperemos datos.
+
+<br>
+<img src="./img/activitydocument.jpg" align="center" />
+<br>
+
 
 
 Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** que es declarado como 
