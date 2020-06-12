@@ -79,10 +79,10 @@ se indica en la extensión de MongoRepository entre ***"<>"***.
 <br>
 
 Ahí escribiremos el nombre de la clase que se guardará en la base de datos, y el tipo de dato del atributo que funciona como identificador de cada
-objeto. Para indicar cual es el atributo que identifica cada a objeto de la clase de forma inequívoca, se usa la anotación @ Id. Si declaramos este
+objeto. Para indicar cual es el atributo que identifica cada a objeto de la clase de forma inequívoca, se usa la anotación [@Id](). Si declaramos este
 atributo como un tipo String, podremos guardar objetos donde el atributo esté vacío **(sólo si el atributo id es de tipo String)**, ya que MongoDB 
 generará automaticamente un id aleatorio al insertar el documento en la base de datos. Además del id, tendremos que indicar a Spring cuál es la clase
-que se va a guardar en la base de datos usando la anotación @ Document, ya que Spring es quién se encargará de hacer las conversiones de clase Java,
+que se va a guardar en la base de datos usando la anotación [@Document](), ya que Spring es quién se encargará de hacer las conversiones de clase Java,
 a documento de MongoDB, cada vez que guardemos o recuperemos datos.
 <br><br>
 Otro concepto a tener en cuenta es que cualquier clase que vaya ser inviada por http o vaya a ser almacenada en una base de datos, debe de implementar
@@ -95,7 +95,7 @@ Otro concepto a tener en cuenta es que cualquier clase que vaya ser inviada por 
 
 
 Por último, en el paquete service se crea la interfaz **NombreService** que implementa la clase **NombreServiceImpl** que es declarado como 
-**componente service** usando la anotación **@Service** y es donde se desarrolla la logica de negocio del microservicio.<br>
+**componente service** usando la anotación **'@Service'** y es donde se desarrolla la logica de negocio del microservicio.<br>
 Ejemplo de uno de los microservicios:<br>
 
 <br>
