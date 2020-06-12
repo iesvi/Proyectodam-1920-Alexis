@@ -28,7 +28,7 @@ de los perfiles de configuración que hay en el repositorio más la rama del rep
 <br>
 
 <div align="center">
-<img src="./img/config.jpg" />
+<img src="./img/config.jpg" height="549" width="1063" />
 </div>
 <br>
 <br>
