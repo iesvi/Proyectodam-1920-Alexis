@@ -109,14 +109,12 @@ conseguir:
 
 
 La aplicación se basará en este tipo de arquitectura, siendo estos los microservicios que se desarrollarán:
-- Activity
-- Login
-- Alert
-- Gateway
-- Cloud Config
-- Eureak
+- Activity:.
+- Login.
+- Alert.
+- Gateway, Cloud Config, Eureka *(Service Discovery)*.
 
-En este [apartado](/codificacion/Codificacion.md) se explica más a fondo la funcionalidad de cada uno, y como se han desarrollado. Más [abajo](#figura) encontraréis una figura<br>
+En este [apartado](/codificacion/Codificacion.md) se explica a fondo la funcionalidad de cada uno, y como se han desarrollado. Más [abajo](#figura) encontraréis una figura<br>
 en la que se explica gráficamente la arquitectura de la aplicación.
 
 
@@ -130,7 +128,7 @@ en la que se explica gráficamente la arquitectura de la aplicación.
 <img src="./img/spring.png" height="261" width="350" align="right"/>
 
  
-Spring es un framework para java que ofrece herramientas con las que podremos construir rápidamente los <br>
+Spring es un framework para Java que ofrece herramientas con las que podremos construir rápidamente los <br>
  servicios mencionados en el punto anterior. Para cada uno de ellos usaremos las siguientes herramientas<br>
  de Spring:
 
@@ -155,7 +153,13 @@ Spring es un framework para java que ofrece herramientas con las que podremos co
 <br>
 
 ## MongoDB:
-MongoDB es una base de datos no relacional, y será la utilizada para almacenar los datos de la aplicación.
+MongoDB es una base de datos no relacional, y será la utilizada para almacenar los datos de la aplicación. Se usará lanzando una máquina<br>
+virtual **EC2** de **aws** en la que se instalará un servidor de MongoDB que será al que se conectarán los microservicios para recuperar y<br>
+guardar los datos. Gracias a que es un tipo de base de datos no relacional, podemos comenzar a trabajar con ella sin necesidad de configurar
+ni crear nada, se instala el servidor, se arranca y ya se puede utilizar, la base de datos creará automaticamente una colección. Una colección,
+sin entrar demasiado en detalle de como funcionan las bases de datos no relacionales, es algo así como una carpeta en la que se guardan todos
+los documentos que pertenecen a una misma clase. Esto de identificar una clase como documento se puede ver en la [explicación del código](codificacion/Codificacion.md/#repository)
+inserte el primer documento, y ya el resto de documentos que sean de la misma clase, se insertarán en esa colección.
 
 
 
