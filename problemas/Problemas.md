@@ -1,0 +1,1 @@
+#Problemas encontrados durante el darrollo de proyecto.
