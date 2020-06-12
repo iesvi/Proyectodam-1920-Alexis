@@ -1,0 +1,9 @@
+#Application Name
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      label: master
+      uri: http://54.161.173.48:8888  #where the config-service is running
+      fail-fast: true             #the service will not run if it can't reach the config-service
