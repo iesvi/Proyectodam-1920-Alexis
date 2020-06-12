@@ -1,0 +1,22 @@
+# HTTP Server
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config
+  # Spring Cloud Config Server Repository
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AlexisRuiz00/servercloudconfig.git
+          force-pull: true
+          clone-on-start: true
+          default-label: master
+          repos:
+            local:
+              uri: https://github.com/AlexisRuiz00/servercloudconfig.git
+              force-pull: true
+              clone-on-start: true
+              default-label: master
