@@ -1,10 +1,11 @@
 # ProyectoDam: Organize-It App
 
-
+<div align="center">
+<img src="Portada.jpg" />
+</div>
 
 
 <br>
-
 <br>
 <br>
 
