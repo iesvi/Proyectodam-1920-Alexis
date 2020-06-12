@@ -158,7 +158,7 @@ virtual **EC2** de **aws** en la que se instalará un servidor de MongoDB que se
 guardar los datos. Gracias a que es un tipo de base de datos no relacional, podemos comenzar a trabajar con ella sin necesidad de configurar
 ni crear nada, se instala el servidor, se arranca y ya se puede utilizar, la base de datos creará automaticamente una colección. Una colección,
 sin entrar demasiado en detalle de como funcionan las bases de datos no relacionales, es algo así como una carpeta en la que se guardan todos
-los documentos que pertenecen a una misma clase. Esto de identificar una clase como documento se puede ver en la [explicación del código](codificacion/Codificacion.md/#repository)
+los documentos que pertenecen a una misma clase. Esto de identificar una clase como documento se puede ver en la [explicación del código](codificacion/Codificacion.md#repository)
 inserte el primer documento, y ya el resto de documentos que sean de la misma clase, se insertarán en esa colección.
 
 
