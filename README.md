@@ -42,8 +42,8 @@ llegar a desplegar una aplicación basada en esta arquitectura.
         </ul>
     </li>    
     <li>Codificación de la aplicación usando el modelo MVC y la arquitectura de microservicios.</li>
-    <li>Desarrolo de una interfaz usando la biblioteca React</li>
-    <li>Despliege de la aplicación en aws.</li>
+    <li>Desarrollo de una interfaz usando la biblioteca React</li>
+    <li>Despliegue de la aplicación en AWS.</li>
 </ul>
 
 
