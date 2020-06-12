@@ -74,8 +74,13 @@ Ejemplo de uno de los microservicios:<br>
 
 Para poder usar la interfaz **NombreRepository**, tenemos que indicarle el tipo de documento que vamos a insertar en la base de datos, eso es lo que
 se indica en la extensión de MongoRepository entre ***"<>"***.
+
 <br>
-<img src="./img/mongorepository.jpg" align="center" />
+<br>
+<div align="center">
+    <img src="./img/mongorepository.jpg" />
+</div>
+<br>
 <br>
 
 Ahí escribiremos el nombre de la clase que se guardará en la base de datos, y el tipo de dato del atributo que funciona como identificador de cada
@@ -89,7 +94,11 @@ Otro concepto a tener en cuenta es que cualquier clase que vaya ser inviada por 
 ***Serializable*** para que funcione.
 
 <br>
+<br>
+<div align="center">
 <img src="./img/activitydocument.jpg" align="center" />
+</div>
+<br>
 <br>
 
 
