@@ -82,8 +82,11 @@ Ahí escribiremos el nombre de la clase que se guardará en la base de datos, y 
 objeto. Para indicar cual es el atributo que identifica cada a objeto de la clase de forma inequívoca, se usa la anotación @Id. Si declaramos este
 atributo como un tipo String, podremos guardar objetos donde el atributo esté vacío **(sólo si el atributo id es de tipo String)**, ya que MongoDB 
 generará automaticamente un id aleatorio al insertar el documento en la base de datos. Además del id, tendremos que indicar a Spring cuál es la clase
-que se va a guardar en la base de datos, ya que Spring es quién se encargará de hacer las conversiones de clase Java, a documento de MongoDB, cada vez
-que guardemos o recuperemos datos.
+que se va a guardar en la base de datos usando la anotación @Document, ya que Spring es quién se encargará de hacer las conversiones de clase Java,
+a documento de MongoDB, cada vez que guardemos o recuperemos datos.
+<br><br>
+Otro concepto a tener en cuenta es que cualquier clase que vaya ser inviada por http o vaya a ser almacenada en una base de datos, debe de implementar
+***Serializable*** para que funcione.
 
 <br>
 <img src="./img/activitydocument.jpg" align="center" />
