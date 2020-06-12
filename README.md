@@ -5,6 +5,12 @@
 
 <br>
 <br>
+
+#### Author
+&nbsp;&nbsp;&nbsp; Este proyecto ha sido producido por  <b>Alexis Ruiz Gómez</b> 
+con licencia Creative Commons:  <img src="/img/Licencia-Tipo2.png" height="25" width="75"/>  
+
+<br>
 <br>
 
 # Introducción
