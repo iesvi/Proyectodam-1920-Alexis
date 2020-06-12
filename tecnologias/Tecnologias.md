@@ -24,27 +24,39 @@ Con la aparición de los <b>cloud services</b> el escenario a dado un giro al co
  consumo, volviendose algo intangible para el usuario, que no conoce, ni necesita conocer, la localización física<br>
  de estos recursos (si fuese hardware), o la máquina en la que se está ejecutando (si fuese software).
 
-
+<br>
+<br>
 Veamos ahora cómo se aplicará esta tecnología al desarrollo y puesta en producción del proyecto:
-
+<br>
+<br>
 
 ### SaaS
+<hr>
 
 <b>SaaS</b> por tanto es un modelo de distribución de software en el que se ofrece al usuario un servicio disponible desde <br>
  cualquier dispositivo, pues al estar alojado en la nube sólo se necesita conexión a internet para acceder a este. Este modelo<br>
  de distribución es el que se usará para el despliegue de la aplicación.
 
 
+<br>
+<br>
+
 ### Gitab
+<hr>
 
 Gitlab es un **PaaS** *(Plataforma como servicio)* que nos permite hacer control de versiones de un proyecto de desarrollo, en este<br>
 servicio es donde se alojarán el código, y la documentación de la aplicación.
 
+<br>
+<br>
+<br>
+<img src="./img/aws.png" align="right" >
 
 ### AWS
+<hr>
 
-**Amazon Web Services** es una colección de servicios que ofrece amazon, será la plataforma que se usará para desplegar los microservicios<br>
-de la aplicación. Concretamente se usará un servicio de los que ofrece esta plataforma, llamado EC2, este servicio permite alquilar maquinas<br>
+**Amazon Web Services** es una colección de servicios que ofrece amazon, será la plataforma que se usará para desplegar los microservicios
+de la aplicación. Concretamente se usará un servicio de los que ofrece esta plataforma, llamado EC2, este servicio permite alquilar maquinas
 virtuales *(IaaS)* con unos recursos personalizables y en las que tenemos un control total sobre el sistema. En el apartado [despliegue](depliegue/Despliegue.md)
 se explica paso a paso cómo se han usado estos servicios para hacer el despliuegue de la aplicación.
 
@@ -167,8 +179,65 @@ inserte el primer documento, y ya el resto de documentos que sean de la misma cl
 <img src="./img/react.png" height="70" width="70" align="right"/>
 
 ## React:
-Es una colección de servicios cloud que ofrece amazon, y será donde se realizará el despliegue de la aplicación.
+React es una biblioteca de javascript que agiliza el desarrollo de interfaces y ha cambiado la forma en la que se entendía el uso de **HTML+CSS+Javascript**,
+que, hasta su aparación, se trataban como códigos independientes ya que se establecía una separación por lenguaje, en lugar de por funcionalidad,
+que es como funciona React. Para conseguir esta integración de HTML+CSS+Javascript, el desarrollo de interfaces con React se hace creando componentes.
 
+### Componentes
+
+Un componente es una función de Javascript que renderiza un codigo HTML al que se le puede dar estilo usando CSS, usando componentes podemos separar
+una interfaz por piezas que se usan unas a otras estableciendo relaciones padre-hijo. Los componentes pueden reutilizarse en diferentes partes del
+codigo de la interfaz y pueden tener variables de estado, en las que se almacene información que cambie de forma dinámica como puede ser un título,
+y propiedades, que se pueden entender como valores que recibe del componente que los declare. Cuando un componente declara a otro componente se
+establece una relación de padre-hijo, siendo el padre el componente que declara, esta relación se maneja internamente como si se tratara de un arbol
+de nodos y es posible gracias al uso de Jsx.
+
+Ejemplo de un componente:
+
+<br>
+<img src="componente.jpg" align="center" />
+<br>
+
+En el ejemplo se puede ver como el componente es una función de Javascript que se llama LugarAdd:
+
+<br>
+<img src="react1.jpg" align="center" />
+<br>
+
+Que tiene una variable de estado llamada thisLugar:
+
+<br>
+<img src="react2.jpg" align="center" />
+<br>
+
+Este estado toma su valor de una propiedad que hereda del padre que lo declare:
+
+<br>
+<img src="react3.jpg" align="center" />
+<br>
+
+El componente devuelve un código HTML que forma su estructura:
+
+<br>
+<img src="react4.jpg" align="center" />
+<br>
+
+Y dentro de este código HTML podemos hacer referencia a las variables de estado o propiedades del componente
+
+<br>
+<img src="react5.jpg" align="center" />
+<br>
+
+
+<br>
+<br>
+
+
+
+### JSX
+
+JSX es una extensión de javascript desarrollada para definir estructuras de nodos con propiedades y atributos de forma sencilla con una sintaxis familiar
+y concisa.
 
 
 
