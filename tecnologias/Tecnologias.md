@@ -225,7 +225,7 @@ El componente devuelve un código HTML que forma su estructura:
 Y dentro de este código HTML podemos hacer referencia a las variables de estado o propiedades del componente
 
 <br>
-<img src="./img/reac5.jpg" align="center" />
+<img src="./img/reac5.png" align="center" />
 <br>
 
 
