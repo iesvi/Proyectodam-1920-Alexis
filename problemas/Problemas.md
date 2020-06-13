@@ -1,4 +1,6 @@
 # Problemas encontrados durante el darrollo de proyecto.
+<br>
+<br>
 
 ## Subida de imágenes.
 Me ha sido imposible conseguir subir una imágen desde la interfaz de react al microservicio activity, sin embargo, usando Postman para el envío del archivo,
