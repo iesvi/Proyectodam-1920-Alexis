@@ -74,7 +74,7 @@ llegar a desplegar una aplicación basada en esta arquitectura.
 >
 > **[11- Conclusiones.](./conclusion.md)**
 >
-> **[12- Bibliografia/Webgrafía.](./Bibliografia.md)**
+> **[12- Bibliografia/Webgrafía.](./bibliografia.md)**
 >
 > **[Manual de Usuario](./manualUsuario/manualUsuario.md)**
 
