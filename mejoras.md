@@ -1,0 +1,1 @@
+# Posibles mejoras en la aplicación.
