@@ -64,17 +64,17 @@ llegar a desplegar una aplicación basada en esta arquitectura.
 >
 > **[6- Codificación del proyecto.](./codificacion/Codificacion.md)**
 >
-> **[7- Pruebas.](#8)**
+> **[7- Pruebas.](./pruebas/Pruebas.md)**
 >
-> **[8- Detalles técnicos.](#9)**
+> **[8- Detalles técnicos.]()**
 >
-> **[9- Problemas durante el desarrollo.](#10)**
+> **[9- Problemas durante el desarrollo.](./problemas/Problemas.md)**
 >
-> **[10- Mejoras posibles.](#11)**
+> **[10- Mejoras posibles.](./mejoras.md)**
 >
-> **[11- Conclusiones.](#12)**
+> **[11- Conclusiones.](./conclusion.md)**
 >
-> **[12- Bibliografia/Webgrafía.](#13)**
+> **[12- Bibliografia/Webgrafía.](./Bibliografia.md)**
 >
 > **[Manual de Usuario](./manualUsuario/manualUsuario.md)**
 
