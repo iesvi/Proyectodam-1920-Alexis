@@ -57,7 +57,7 @@ servicio es donde se alojarán el código, y la documentación de la aplicación
 
 **Amazon Web Services** es una colección de servicios que ofrece amazon, será la plataforma que se usará para desplegar los microservicios
 de la aplicación. Concretamente se usará un servicio de los que ofrece esta plataforma, llamado EC2, este servicio permite alquilar maquinas
-virtuales *(IaaS)* con unos recursos personalizables y en las que tenemos un control total sobre el sistema. En el apartado [despliegue](depliegue/Despliegue.md)
+virtuales *(IaaS)* con unos recursos personalizables y en las que tenemos un control total sobre el sistema. En el apartado [despliegue](despliegue/Despliegue.md)
 se explica paso a paso cómo se han usado estos servicios para hacer el despliuegue de la aplicación.
 
 <br>
