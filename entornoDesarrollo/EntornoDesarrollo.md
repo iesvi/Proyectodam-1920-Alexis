@@ -18,10 +18,9 @@ Detalle de versiones:
 
 Veamos un ejemplo de cómo crear un proyecto usando Spring Initializr.
 
-</br>
-</br>
-</br>
-</br>
+<br>
+<br>
+<br>
 
 <div align="center" />
 <img src="./img/init1.jpg" />
