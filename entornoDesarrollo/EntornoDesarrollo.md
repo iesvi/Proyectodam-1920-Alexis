@@ -1,9 +1,87 @@
 # Entorno de desarrollo
 
-Para el desarrollo de la aplicación se ha usado el IDE Intellij. Lo proyectos han sido creados en la página web
-[**Spring Initializr**](https://start.spring.io/), que permite configurar un proyecto maven con dependecias de
+Para el desarrollo de la aplicación se ha usado el IDE Intellij + Maven y Java. Lo proyectos han sido creados en la página web
+[**Spring Initializr**](https://start.spring.io/), que permite configurar un proyecto Maven con dependencias de
 Spring deseadas. Al descargar el proyecto, se puede importar desde Intellij y ya tendríamos el proyecto listo
 para comenzar a trabajar.
+<br>
+
+Detalle de versiones:
+
+-  Spring Boot: 2.3.1
+-  Maven: 3.6.1
+-  Java: 1.8
+-  IntelliJ IDEA: 2019.2.3 (Community Edition)
+-  Sistema Operativo: Windows 10 Home.
+
+<br>
+
+Veamos un ejemplo de cómo crear un proyecto usando Spring Initializr.<br>
+
+<div align="center" />
+<img src="./img/init1.jpg" />
+</div>
+
+A la izquierda podemos ver los detalles que configuran el proyecto. Podemos cambiar el lenguaje ***(Java, Kotlin, o Groovy)***,
+la versión de Spring Boot, y los metadatos del proyecto, que darán nombre a las carpetas que lo contienen.<br>
+A la derecha disponemos de un botón que al pulsarlo nos permite buscar y agregar dependencias al proyecto.
+
+<div align="center" />
+<img src="./img/init2.jpg" />
+</div>
+
+A continuación pondré una captura con las dependencias usadas en cada microservicio:
+
+
+<div align="center" />
+<p>Activity</p>
+<img src="./img/initActivity.jpg" />
+</div>
+
+<br>
+<br>
+
+<div align="center" />
+<p>Login</p>
+<img src="./img/initLogin.jpg" />
+</div>
+
+<br>
+<br>
+
+<div align="center" />
+<p>Alert</p>
+<img src="./img/initAlert.jpg" />
+</div>
+
+<br>
+<br>
+
+<div align="center" />
+<p>Login</p>
+<img src="./img/initGateway.jpg" />
+</div>
+
+<br>
+<br>
+
+<div align="center" />
+<p>Login</p>
+<img src="./img/initEureka.jpg" />
+</div>
+
+<br>
+<br>
+
+<div align="center" />
+<p>Login</p>
+<img src="./img/initConfig.jpg" />
+</div>
+
+<br>
+
+
+
 
 <br>
 Para el proyecto la única configuración destacable y necesaria, es la que permite a cada microservicio ir al config
