@@ -14,80 +14,106 @@ Detalle de versiones:
 -  IntelliJ IDEA: 2019.2.3 (Community Edition)
 -  Sistema Operativo: Windows 10 Home.
 
-</br>
-
-Veamos un ejemplo de cómo crear un proyecto usando Spring Initializr.
-
 <br>
 <br>
 <br>
 
-<div align="center" />
+## Veamos un ejemplo de cómo crear un proyecto usando Spring Initializr.
+
+<br>
+<br>
+
+<div align="center" >
 <img src="./img/init1.jpg" />
 </div>
 
+<br>
+<br>
+<br>
+<br>
+
 A la izquierda podemos ver los detalles que configuran el proyecto. Podemos cambiar el lenguaje ***(Java, Kotlin, o Groovy)***,
-la versión de Spring Boot, y los metadatos del proyecto, que darán nombre a las carpetas que lo contienen.<br>
+la versión de Spring Boot, y los metadatos del proyecto, que darán nombre a las carpetas que lo contienen.
+
 A la derecha disponemos de un botón que al pulsarlo nos permite buscar y agregar dependencias al proyecto.
 
-<div align="center" />
+<br>
+
+<div align="center" >
 <img src="./img/init2.jpg" />
 </div>
 
-A continuación pondré una captura con las dependencias usadas en cada microservicio:
+<br>
+<br>
 
+### A continuación pondré una captura con las dependencias usadas en cada microservicio:
 
-<div align="center" />
-<p>Activity</p>
+<br>
+<br>
+
+<div align="center">
+<br>
+
+*<h3>Activity</h3>*
 <img src="./img/initActivity.jpg" />
 </div>
 
-/<br>
-</br>
+<br>
+<br>
 
-<div align="center" />
-<p>Login</p>
+<div align="center">
+<br>
+
+*<h3>Login</h3>*
 <img src="./img/initLogin.jpg" />
 </div>
 
-</br>
-</br>
+<br>
+<br>
 
-<div align="center" />
-*<p>Alert</p>*
+<div align="center">
+<br>
+
+*<h3>Alert</h3>*
 <img src="./img/initAlert.jpg" />
 </div>
 
-</br>
-</br>
+<br>
+<br>
 
-<div align="center" />
-<p>Login</p>
+<div align="center">
+<br>
+
+*<h3>Gateway</h3>*
 <img src="./img/initGateway.jpg" />
 </div>
 
-</br>
-</br>
+<br>
+<br>
 
-<div align="center" />
-<p>Login</p>
+<div align="center">
+<br>
+
+*<h3>Eureka</h3>*
 <img src="./img/initEureka.jpg" />
 </div>
 
-</br>
-</br>
+<br>
+<br>
 
-<div align="center" />
-<p>Login</p>
+<div align="center">
+<br>
+
+*<h3>Config</h3>*
 <img src="./img/initConfig.jpg" />
 </div>
 
-</br>
+<br>
 
 
 
 
-</br>
+<br>
 Para el proyecto la única configuración destacable y necesaria, es la que permite a cada microservicio ir al config
 server a buscar su configuración, allí definida, y en el caso del config server, la indicación del repositorio
 que almacena los ficheros de configuración. Veamos cómo realizarlo:
