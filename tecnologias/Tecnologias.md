@@ -291,5 +291,5 @@ Muestro aquí una captura con las dependecias usadas para este proyecto:
 <br>
 
 
-<img src="./img/arquitectura.jpg" height="600" width="991" align="right"/>
+<img src="./img/arquitectura.jpg" height="612" width="1081" align="right"/>
 
