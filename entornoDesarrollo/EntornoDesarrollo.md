@@ -4,7 +4,7 @@ Para el desarrollo de la aplicación se ha usado el IDE Intellij + Maven y Java.
 [**Spring Initializr**](https://start.spring.io/), que permite configurar un proyecto Maven con dependencias de
 Spring deseadas. Al descargar el proyecto, se puede importar desde Intellij y ya tendríamos el proyecto listo
 para comenzar a trabajar.
-<br>
+</br>
 
 Detalle de versiones:
 
@@ -14,9 +14,14 @@ Detalle de versiones:
 -  IntelliJ IDEA: 2019.2.3 (Community Edition)
 -  Sistema Operativo: Windows 10 Home.
 
-<br>
+</br>
 
-Veamos un ejemplo de cómo crear un proyecto usando Spring Initializr.<br>
+Veamos un ejemplo de cómo crear un proyecto usando Spring Initializr.
+
+</br>
+</br>
+</br>
+</br>
 
 <div align="center" />
 <img src="./img/init1.jpg" />
@@ -38,52 +43,52 @@ A continuación pondré una captura con las dependencias usadas en cada microser
 <img src="./img/initActivity.jpg" />
 </div>
 
-<br>
-<br>
+/<br>
+</br>
 
 <div align="center" />
 <p>Login</p>
 <img src="./img/initLogin.jpg" />
 </div>
 
-<br>
-<br>
+</br>
+</br>
 
 <div align="center" />
-<p>Alert</p>
+*<p>Alert</p>*
 <img src="./img/initAlert.jpg" />
 </div>
 
-<br>
-<br>
+</br>
+</br>
 
 <div align="center" />
 <p>Login</p>
 <img src="./img/initGateway.jpg" />
 </div>
 
-<br>
-<br>
+</br>
+</br>
 
 <div align="center" />
 <p>Login</p>
 <img src="./img/initEureka.jpg" />
 </div>
 
-<br>
-<br>
+</br>
+</br>
 
 <div align="center" />
 <p>Login</p>
 <img src="./img/initConfig.jpg" />
 </div>
 
-<br>
+</br>
 
 
 
 
-<br>
+</br>
 Para el proyecto la única configuración destacable y necesaria, es la que permite a cada microservicio ir al config
 server a buscar su configuración, allí definida, y en el caso del config server, la indicación del repositorio
 que almacena los ficheros de configuración. Veamos cómo realizarlo:
