@@ -8,11 +8,50 @@ a cabo ese proceso.
 
 ## Despliegue de los microservicios
 
-Todos los microservicios han sido desplegados en instancias de ubuntu 18.04, a las que se le ha instalado el paquete **openjdk-8-jre-headless**,
-a cada una de estas instancias se les ha transferido con SCP los ficheros jar construidos en Intellij, con el comando
-<code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>, y se ha programado la ejecución de cada
-uno de los jar para que arranquen al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha creado un
-script llamado startapp.sh en la carpeta /etc/init.d/ con este codigo: <br>
+Todos los microservicios han sido desplegados en instancias de ubuntu 18.04, a las que se le ha instalado el paquete **openjdk-8-jre-headless** 
+con <code>sudo apt install openjdk-8-jdk</code>, a cada una de estas instancias se les ha transferido con SCP los ficheros jar construidos en Intellij
+de la siguiente forma:
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearjar.jpg" />
+</div>
+
+En la parte derecha de IntelliJ podremos la ventana que se ve en la imagen, en la que se nos muestran varias operaciones a realizar con Maven. Si no
+nos apareciera la ventana desplegada, para abrirla sólo hay que pulsar en el botón vertical que dice "**Maven**" (1).
+A continuación, seleccionamos el item **install** (2), y por último clicamos sobre el botón ▶ que se encuentra más arriba (3).
+<br>
+Cuando finalice la creación del Jar, nos aparecerá en consola la dirección en la que se ha creado este fichero.
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearjar2.jpg" />
+</div>
+
+De forma que, nos dirigimos al directorio que se nos indica, y allí veremos el fichero Jar.
+
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearjar3.jpg" />
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+
+Una vez disponemos del jar, podemos transferirlo a la instancia iniciada usando el comando <code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>,
+y se ha programado la ejecución de cada uno de los jar para que arranquen al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha
+creado un script llamado startapp.sh en la carpeta /etc/init.d/ con este codigo: <br>
 
 <code>#!/bin/bash
 java -jar 'direccion del fichero .jar'
@@ -48,7 +87,7 @@ direcciónes que permanezcan estáticas, para ello podemos usar las direcciones 
 nueva dirección Ip elástica y asociarla a la instancia que se desee.
 
 Cabe mencionar que todas las instancias por defecto se lanzan en una misma red virtual, por lo que debería de poder usarse
-la dirección ip privada para establecer las comunicaciones, pero tube algunos problemas y no lo he podido comprobar. Si esta opción
+la dirección ip privada para establecer las comunicaciones, pero tuve algunos problemas y no lo he podido comprobar. Si esta opción
 fuese válida, bastaría con asignar unicamente una dirección Ip elástica a la instancia donde corre nuestra interfaz para que los
 usuarios externos a la red puedan acceder sin problemas.
 
