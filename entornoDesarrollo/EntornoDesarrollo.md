@@ -193,3 +193,6 @@ spring:
               clone-on-start: true
               default-label: master<code>
 
+
+Por último, si quieres ver más detalles sobre cómo está estructurado el proyecto (MVC), los paquetes, clases, etc., puedes verlo en el apartado
+[codificación](/codificacion/Codificacion.md).
