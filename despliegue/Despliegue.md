@@ -105,19 +105,74 @@ creado. En este caso vamos a crear uno nuevo. Le damos un nombre al grupo de seg
 clicamos en **ADD Rule** y configuramos según nos sea necesario (protocolo, puerto, Ip de origen...).
 <br>
 <br>
-Por último clicamos en **Review and Launch**, nos llevará a una ventana que resume toda la configuración de la instancia, y para lanzarla, pulsamos en **Launch**.
+Por último clicamos en **Review and Launch**, nos llevará a una ventana que resume toda la configuración de la instancia, y para lanzarla, pulsamos en **Launch**,
+aquí tendremos que dar el último paso, antes de lanzar la instancia, hay que configurar una pareja de claves que será la que usaremos para conectarnos por ssh a la máquina
+cuando esté en ejecución.
 
+<br>
+<br>
 
+<div align="center">
+<img src="./img/crearinstancia5.jpg" />
+</div>
 
+<br>
+<br>
 
+<div align="center">
+<img src="./img/crearinstancia6.jpg" />
+</div>
 
+Podemos elegir una que tengamos yá creada en aws, subir una que hayamos creado previamente con otros métodos, o crear una nueva usando aws. Para no complicarnos elegiremos
+la opción de crear una nueva pareja de claves a través de aws. Sólo tendremos que darle un nombre y descargarla, y con esto ya podemos pasar a transferir el fichero jar 
+con nuestro microservicio y configurarlo para que se inicie al arrancar la máquina. Pulsamos en **Launch Instances** para lanzar la instancia y nos volvemos a pestaña
+Servicios -> EC2. En la columna de la izquierda pulsamos en instancias.
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearinstancia7.jpg" />
+</div>
+
+<br>
+<br>
+
+Esto nos enviará a una pantalla en la que podemos ver todas las instancias de EC2 que hemos creado. Haciendo click derecho sobre
+cada una de las instancias, podemos acceder a distintas opciones: Conectarnos (que nos da las instrucciones y los comandos para realizar la conexión SSH),
+configurar su IP, arrancarla, etc. Y a simple vista podemos ver otros datos como su estado, la dirección Ip pública o la dirección DNS, que será la que usaremos
+para conectarnos por SSH y para enviar los ficheros JAR con scp.
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearinstancia8.jpg" />
+</div>
 
 <br>
 <br>
 <br>
 
-Podemos transferirlo a la instancia iniciada usando el comando <code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>,
-y se ha programado la ejecución de cada uno de los jar para que arranquen al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha
+
+### Transferir fichero JAR y configurar la instancia.
+
+
+El fichero JAR los transferiremos a la instancia iniciada usando el comando <code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>. Los datos de
+**usuario** y **maquina** podemos verlos haciendo ***click derecho -> connect*** sobre la instancia.
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearinstancia8.jpg" />
+</div>
+
+<br>
+<br>
+
+
+Una vez se transfiere el fichero, se programa la ejecución del JAR para que arranque al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha
 creado un script llamado startapp.sh en la carpeta /etc/init.d/ con este codigo: <br>
 
 <code>#!/bin/bash
