@@ -57,6 +57,7 @@ Una vez disponemos del jar, vamos a lanzar una instanca en **AWS** para hecer el
 
 
 ### Crear y lanzar instancia en AWS.
+<hr>
 
 Cuando accedamos a la consola de AWS, nos dirigimos a la pestaña de servicios (1) y seleccionamos EC2 (2).
 
