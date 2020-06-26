@@ -161,7 +161,8 @@ está organizado en las siguientes carpetas y clases:<br>
       - **ActivityService**: Interfaz que funciona entre el controlador y el repositorio encargandose de procesar los datos que viajan entre estas.
       - **LoginFeign**: Intefaz que define un cliente feign del microservicio login. En esta interfaz se declaran los métodos que vayan a ser necesarios para obtener información del microservicio login.
   - **ActiviyApplication**: Clase principal de la aplición, es la que inicia el programa.
-
+-  **resources**: Carpeta en la que se localiza el archivo de configuración del proyecto y otros posibles recursos.
+  -  **bootstrap.yml**: Archivo de configuración que se lee al arrancar la aplicación. En el apartado [Entorno de desarrolo](/Entorno/entorno.md) se explica el contenido de este fichero.
 <br>
 <br>
 
