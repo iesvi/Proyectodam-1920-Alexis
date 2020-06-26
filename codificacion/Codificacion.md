@@ -16,7 +16,7 @@ genérica de las anotaciones que se usan en los microservicios y como se adapta 
 - **@Repository**: Con esta anotación definimos un comonente Repository
 - **@RequestBody**: Con esta anotación definimos un objeto que esperamos recibir en el cuerpo de una peticion http.
 - **@PathVariable()**: Con esta anotación definimos una variable que esperamos obtener en la url de una petición http.
-
+- **@Scheduled()**: Con esta anotación se consigue que un método se ejecute periodicamente, según se indique entre los paréntesis.
 
 Los microservicios activity y login están construido usando la misma estructura:<br>
 
@@ -174,7 +174,7 @@ está organizado en las siguientes carpetas y clases:<br>
 
 
 - **OrganizeIt**: Carpeta que contiene todo el proyecto.
-  - **login**: Carpeta que se usa para separar la clase ActivityApplication del resto del proyecto.
+  - **login**: Carpeta que se usa para separar la clase LoginApplication del resto del proyecto.
     - **config**
       - **Configuration**: Clase que define la configuración de beans.
     - **controller**
@@ -199,7 +199,37 @@ está organizado en las siguientes carpetas y clases:<br>
 
 <br>
 <br>
+
+
+### Microservicio Alert:<br>
+Este microservicio se encarga de comprobar diariamente las actividades que han llegado a la fecha límite, marcándolas como finalizadas y 
+enviando un email a todos los usuarios asistentes para avisar de que ya se ha concretado la actividad.<br>
+
+<img src="./img/arbolAlert.jpg" align="right" />
+
+
+- **OrganizeIt**: Carpeta que contiene todo el proyecto.
+  - **alert**: Carpeta que se usa para separar la clase AlertApplication del resto del proyecto.
+    - **config**
+      - **Configuration**: Clase que define la configuración de beans.
+    - **model**
+      - **Activity**: Clase que se almacena en la base de datos.
+      - **Fecha**: Clase que guarda una fecha junto a los votos de esta.
+      - **Lugar**: Clase que guarda un lugar junto a los votos de este.
+    - **repository**
+      - **ActivityRepository**: Interfaz que extiende a MongoRepository y con la que se manejan los documentos de la clase Activity.
+    - **service**
+      - **impl**
+        - **EmailServiceImpl** Clase que implementa a la interfaz EmailService y define los métodos de esta.
+      - **EmailService**: Interfaz que extiende a la interfaz JavaMailSender, esta interfaz contiene los métodos necesarios para el envío de emails.
+  - **Application**: Clase principal de la aplición, es la que inicia el programa.
+
 <br>
+<br>
+<br>
+
+
+
 
 
 ## Caso de Uso: Crear actividad:
@@ -775,4 +805,5 @@ Se crea un punto de entrada en el microservicio para recibir el id de una activi
 
 Para eliminar un documento usando el método **delete** del **repository**, hay que pasarle por parámetro el documento que se desea borrar, por lo que
 primero se obtiene el documento de la base de datos usando el id que se recibe por parámetro a través del método **findById** del **repository**.
-Finalmente se envía un objeto ResponseEntity con mensaje de estado http 200. 
+Finalmente se envía un objeto ResponseEntity con mensaje de estado http 200.
+
