@@ -13,7 +13,6 @@ con <code>sudo apt install openjdk-8-jdk</code>, a cada una de estas instancias 
 Comenzemos viendo cómo crear estos ficheros jar, y a continuación pasaremos a ver cómo crear las instancias.
 
 <br>
-<br>
 
 ### Crear Jar.
 <hr>
@@ -55,6 +54,12 @@ De forma que, nos dirigimos al directorio que se nos indica, y allí veremos el 
 
 Una vez disponemos del jar, vamos a lanzar una instanca en **AWS** para hecer el despliegue del microservicio.
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Crear y lanzar instancia en AWS.
 <hr>
@@ -150,10 +155,12 @@ para conectarnos por SSH y para enviar los ficheros JAR con scp.
 <img src="./img/crearinstancia8.jpg" />
 </div>
 
-<br>
-<br>
-<br>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Transferir fichero JAR y configurar la instancia.
 <hr>
