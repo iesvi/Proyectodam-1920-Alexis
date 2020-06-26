@@ -156,6 +156,7 @@ para conectarnos por SSH y para enviar los ficheros JAR con scp.
 
 
 ### Transferir fichero JAR y configurar la instancia.
+<hr>
 
 
 El fichero JAR los transferiremos a la instancia iniciada usando el comando <code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>. Los datos de
