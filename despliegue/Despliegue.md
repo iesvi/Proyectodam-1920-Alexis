@@ -9,11 +9,17 @@ a cabo ese proceso.
 ## Despliegue de los microservicios
 
 Todos los microservicios han sido desplegados en instancias de ubuntu 18.04, a las que se le ha instalado el paquete **openjdk-8-jre-headless** 
-con <code>sudo apt install openjdk-8-jdk</code>, a cada una de estas instancias se les ha transferido con SCP los ficheros jar construidos en Intellij
-de la siguiente forma:
+con <code>sudo apt install openjdk-8-jdk</code>, a cada una de estas instancias se les ha transferido con SCP los ficheros jar construidos en Intellij.
+Comenzemos viendo cómo crear estos ficheros jar, y a continuación pasaremos a ver cómo crear las instancias.
 
 <br>
 <br>
+
+### Crear Jar.
+<hr>
+
+Una vez hemos terminado de desarrollar un microservicio, el siguiente paso es compilarlo para crear el fichero JAR que nos permite realizar su ejecución
+fuera del IDE.
 
 <div align="center">
 <img src="./img/crearjar.jpg" />
@@ -47,9 +53,69 @@ De forma que, nos dirigimos al directorio que se nos indica, y allí veremos el 
 <br>
 <br>
 
+Una vez disponemos del jar, vamos a lanzar una instanca en **AWS** para hecer el despliegue del microservicio.
 
 
-Una vez disponemos del jar, podemos transferirlo a la instancia iniciada usando el comando <code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>,
+### Crear y lanzar instancia en AWS.
+
+Cuando accedamos a la consola de AWS, nos dirigimos a la pestaña de servicios (1) y seleccionamos EC2 (2).
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearinstancia1.jpg" />
+</div>
+
+<br>
+<br>
+
+Nos redirigirá a una nueva ventana, si bajamos un poco veremos la opción **Lanzar la Instancia**.
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearinstancia2.jpg" />
+</div>
+
+<br>
+<br>
+
+Y si pulsamos ahí, nos iremos al asistente para la creación y lanzado de la instancia. En la barra de búsqueda (1) podremos buscar intancias que tengan ciertas características,
+como por ejemplo que tenga instalada un SO Ubuntu. Pulsamos enter para realizar la búsqueda, y seleccionamos la que deseemos lanzar (2).
+
+A continuación pasaremos por varias pantallas en las que podremos configurar diferentes aspectos de la instancia, como la memoria ram, el almacenamiento... Pulsaremos en
+**next** dejando los valores por defecto hasta llegar a la ventana nº 6.
+
+
+<br>
+<br>
+
+<div align="center">
+<img src="./img/crearinstancia4.jpg" />
+</div>
+
+<br>
+<br>
+
+En esta pantalla podemos configurar las reglas que restringen el trafico de red. Para ello podemos crear un nuevo grupo de seguridad y configurarlo, o elegir uno que ya tengamos
+creado. En este caso vamos a crear uno nuevo. Le damos un nombre al grupo de seguridad y una descripción, y para abrir los puertos que nos sean necesarios en esta instancia,
+clicamos en **ADD Rule** y configuramos según nos sea necesario (protocolo, puerto, Ip de origen...).
+<br>
+<br>
+Por último clicamos en **Review and Launch**, nos llevará a una ventana que resume toda la configuración de la instancia, y para lanzarla, pulsamos en **Launch**.
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+Podemos transferirlo a la instancia iniciada usando el comando <code>scp -i "clave" fichero.jar usuario@maquina:fichero</code>,
 y se ha programado la ejecución de cada uno de los jar para que arranquen al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha
 creado un script llamado startapp.sh en la carpeta /etc/init.d/ con este codigo: <br>
 
