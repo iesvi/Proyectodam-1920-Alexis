@@ -173,8 +173,8 @@ El fichero JAR los transferiremos a la instancia iniciada usando el comando <cod
 <br>
 
 
-Una vez se transfiere el fichero, se programa la ejecución del JAR para que arranque al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha
-creado un script llamado startapp.sh en la carpeta /etc/init.d/ con este codigo: <br>
+Una vez se transfiere el fichero, nos conectamos por SSH usando el comando que se muestra en la imagen de arriba, y se programa la ejecución del JAR para que
+arranque al mismo tiempo que se inicia la instancia. Para automatizar este proceso, se ha creado un script llamado startapp.sh en la carpeta /etc/init.d/ con este codigo: <br>
 
 <code>#!/bin/bash
 java -jar 'direccion del fichero .jar'
