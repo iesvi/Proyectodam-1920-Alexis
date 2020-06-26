@@ -166,7 +166,7 @@ El fichero JAR los transferiremos a la instancia iniciada usando el comando <cod
 <br>
 
 <div align="center">
-<img src="./img/crearinstancia8.jpg" />
+<img src="./img/crearinstancia9.jpg" />
 </div>
 
 <br>
