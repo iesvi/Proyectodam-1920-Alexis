@@ -139,7 +139,7 @@ que almacena los ficheros de configuración. Veamos cómo realizarlo:
     - **fail-test**: Esta propiedad, si se indica como verdadera, hará que el microservicio no arranque si no es capaz
                  de obtener la configuración del Service Config.
 
-#### Codigo usado en el proyecto:
+#### Código usado en el proyecto:
 
 <code>spring:
   application:
@@ -171,7 +171,7 @@ que almacena los ficheros de configuración. Veamos cómo realizarlo:
         <br><br>
     - **default-label**: Configura la rama por defecto del repositorio.
 
-#### Codigo usado en el proyecto:
+#### Código usado en el proyecto:
 
 <code>server:
   port: 8888
