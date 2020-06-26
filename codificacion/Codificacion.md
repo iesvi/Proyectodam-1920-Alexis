@@ -228,7 +228,7 @@ enviando un email a todos los usuarios asistentes para avisar de que ya se ha co
   - **Application**: Clase principal de la aplición, es la que inicia el programa.
 -  **resources**: Carpeta en la que se localiza el archivo de configuración del proyecto y otros posibles recursos.
   -  **bootstrap.yml**: Archivo de configuración que se lee al arrancar la aplicación. En el apartado [entorno de desarrollo](/entornoDesarrollo/EntornoDesarrollo.md) se explica el contenido de este fichero.
-  -  
+
 <br>
 <br>
 <br>
