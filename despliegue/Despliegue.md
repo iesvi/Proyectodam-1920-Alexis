@@ -128,7 +128,7 @@ cuando esté en ejecución.
 <img src="./img/crearinstancia6.jpg" />
 </div>
 
-Podemos elegir una que tengamos yá creada en aws, subir una que hayamos creado previamente con otros métodos, o crear una nueva usando aws. Para no complicarnos elegiremos
+Podemos elegir una que tengamos yá creada en **AWS**, subir una que hayamos creado previamente con otros métodos, o pedir a **AWS** que genere una nueva. Para no complicarnos elegiremos
 la opción de crear una nueva pareja de claves a través de aws. Sólo tendremos que darle un nombre y descargarla, y con esto ya podemos pasar a transferir el fichero jar 
 con nuestro microservicio y configurarlo para que se inicie al arrancar la máquina. Pulsamos en **Launch Instances** para lanzar la instancia y nos volvemos a pestaña
 Servicios -> EC2. En la columna de la izquierda pulsamos en instancias.
