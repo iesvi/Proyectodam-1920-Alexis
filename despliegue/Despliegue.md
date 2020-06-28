@@ -88,7 +88,7 @@ Nos redirigirá a una nueva ventana, si bajamos un poco veremos la opción **Lan
 <br>
 <br>
 
-Y si pulsamos ahí, nos iremos al asistente para la creación y lanzado de la instancia. En la barra de búsqueda (1) podremos buscar intancias que tengan ciertas características,
+Pulsamos ahí para ir al asistente de creación y lanzado de la instancia. En la barra de búsqueda (1) podremos buscar intancias que tengan ciertas características,
 como por ejemplo que tenga instalada un SO Ubuntu. Pulsamos enter para realizar la búsqueda, y seleccionamos la que deseemos lanzar (2).
 
 A continuación pasaremos por varias pantallas en las que podremos configurar diferentes aspectos de la instancia, como la memoria ram, el almacenamiento... Pulsaremos en
