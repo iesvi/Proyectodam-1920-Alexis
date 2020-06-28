@@ -10,7 +10,7 @@ a cabo ese proceso.
 
 Todos los microservicios han sido desplegados en instancias de ubuntu 18.04, a las que se le ha instalado el paquete **openjdk-8-jre-headless** 
 con <code>sudo apt install openjdk-8-jdk</code>, a cada una de estas instancias se les ha transferido con SCP los ficheros jar construidos en Intellij.
-Comenzemos viendo cómo crear estos ficheros jar, y a continuación pasaremos a ver cómo crear las instancias.
+Comenzemos viendo cómo crear estos ficheros **JAR**, y a continuación pasaremos a ver cómo crear las instancias.
 
 <br>
 
@@ -24,13 +24,15 @@ fuera del IDE.
 <img src="./img/crearjar.jpg" />
 </div>
 
-En la parte derecha de IntelliJ podremos la ventana que se ve en la imagen, en la que se nos muestran varias operaciones a realizar con Maven. Si no
+En la parte derecha de IntelliJ podremos ver la ventana que se ve en la imagen, en la que se nos muestran varias operaciones a realizar con Maven. Si no
 nos apareciera la ventana desplegada, para abrirla sólo hay que pulsar en el botón vertical que dice "**Maven**" (1).
 A continuación, seleccionamos el item **install** (2), y por último clicamos sobre el botón ▶ que se encuentra más arriba (3).
-<br>
-Cuando finalice la creación del Jar, nos aparecerá en consola la dirección en la que se ha creado este fichero.
 
 <br>
+<br>
+
+Cuando finalice la creación del Jar, nos aparecerá en consola la dirección en la que se ha creado este fichero.
+
 <br>
 
 <div align="center">
@@ -47,16 +49,11 @@ De forma que, nos dirigimos al directorio que se nos indica, y allí veremos el 
 <img src="./img/crearjar3.jpg" />
 </div>
 
-
-<br>
-<br>
 <br>
 
 Una vez disponemos del jar, vamos a lanzar una instanca en **AWS** para hecer el despliegue del microservicio.
 
 
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -83,6 +80,9 @@ Nos redirigirá a una nueva ventana, si bajamos un poco veremos la opción **Lan
 
 <div align="center">
 <img src="./img/crearinstancia2.jpg" />
+<br>
+<br>
+<img src="./img/crearinstancia3.jpg" />
 </div>
 
 <br>
@@ -92,7 +92,7 @@ Pulsamos ahí para ir al asistente de creación y lanzado de la instancia. En la
 como por ejemplo que tenga instalada un SO Ubuntu. Pulsamos enter para realizar la búsqueda, y seleccionamos la que deseemos lanzar (2).
 
 A continuación pasaremos por varias pantallas en las que podremos configurar diferentes aspectos de la instancia, como la memoria ram, el almacenamiento... Pulsaremos en
-**next** dejando los valores por defecto hasta llegar a la ventana nº 6.
+**next** dejando los valores por defecto hasta llegar al paso nº 6.
 
 
 <br>
@@ -128,8 +128,11 @@ cuando esté en ejecución.
 <img src="./img/crearinstancia6.jpg" />
 </div>
 
+<br>
+<br>
+
 Podemos elegir una que tengamos yá creada en **AWS**, subir una que hayamos creado previamente con otros métodos, o pedir a **AWS** que genere una nueva. Para no complicarnos elegiremos
-la opción de crear una nueva pareja de claves a través de aws. Sólo tendremos que darle un nombre y descargarla, y con esto ya podemos pasar a transferir el fichero jar 
+la opción de generar una nueva pareja de claves a través de AWS. Sólo tendremos que darle un nombre y descargarla, y con esto ya podemos pasar a transferir el fichero jar 
 con nuestro microservicio y configurarlo para que se inicie al arrancar la máquina. Pulsamos en **Launch Instances** para lanzar la instancia y nos volvemos a pestaña
 Servicios -> EC2. En la columna de la izquierda pulsamos en instancias.
 
@@ -188,9 +191,8 @@ java -jar 'direccion del fichero .jar'
 </code>
 
 <br>
-Y una vez creado el script, se configura cron en la máquina para ejecutarlo al inicio. Esto se hace ejecutando 'crontab -e',
-con esto podremos editar el fichero de configuración crontab. Para añadir el script y que se ejecute al iniciar la máquina
-se añade una línea como la siguiente:
+Y una vez creado el script, se configura cron en la máquina para que el script se ejecute automáticamente al inicio. Esto se hace ejecutando 'crontab -e',
+para editar el fichero de configuración crontab y añadiendo la siguiente línea:
 <br>
 
 <code>@reboot /etc/init.d/startapp.sh</code>
